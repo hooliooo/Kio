@@ -27,27 +27,27 @@ public class SynchronizedDictionary<Key: Hashable, Value> {
 public extension SynchronizedDictionary {
 
     var count: Int {
-        return self.queue.sync { self.dictionary.count }
+        return self.queue.sync { return self.dictionary.count }
     }
 
     var first: (key: Key, value: Value)? {
-        return self.queue.sync { self.dictionary.first }
+        return self.queue.sync { return self.dictionary.first }
     }
 
     var isEmpty: Bool {
-        return self.queue.sync { self.dictionary.isEmpty }
+        return self.queue.sync { return self.dictionary.isEmpty }
     }
 
     var keys: LazyMapCollection<[Key : Value], Key> {
-        return self.queue.sync { self.dictionary.keys }
+        return self.queue.sync { return self.dictionary.keys }
     }
 
     var underestimatedCount: Int {
-        return self.queue.sync { self.dictionary.underestimatedCount }
+        return self.queue.sync { return self.dictionary.underestimatedCount }
     }
 
     var values: LazyMapCollection<[Key : Value], Value> {
-        return self.queue.sync { self.dictionary.values }
+        return self.queue.sync { return self.dictionary.values }
     }
 
     func contains(where predicate: (Key, Value) throws -> Bool) rethrows -> Bool {
@@ -65,7 +65,7 @@ public extension SynchronizedDictionary {
     }
 
     func enumerated() -> EnumeratedSequence<Dictionary<Key, Value>> { // swiftlint:disable:this syntactic_sugar
-        return self.queue.sync { self.dictionary.enumerated() }
+        return self.queue.sync { return self.dictionary.enumerated() }
 
     }
 
@@ -73,7 +73,7 @@ public extension SynchronizedDictionary {
         return try self.queue.sync {
             do {
 
-                return  try self.dictionary.filter(isIncluded)
+                return try self.dictionary.filter(isIncluded)
 
             } catch let error {
 

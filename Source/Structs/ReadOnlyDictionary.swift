@@ -10,9 +10,13 @@ import Foundation
 
 public struct ReadOnlyDictionary<Key: RawRepresentable, Value> where Key.RawValue: Hashable {
 
-    let dictionary: [Key.RawValue: Value]
+    private let _dictionary: [Key.RawValue: Value]
+
+    var dictionary: [Key.RawValue: Value] {
+        return self._dictionary
+    }
 
     subscript(key: Key) -> Value {
-        return self.dictionary[key.rawValue]!
+        return self._dictionary[key.rawValue]!
     }
 }
