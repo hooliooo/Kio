@@ -15,13 +15,17 @@ import Foundation
 */
 public struct ReadOnlyDictionary<Key: RawRepresentable, Value> where Key.RawValue: Hashable {
 
+    public init(_ dictionary: [Key.RawValue: Value]) {
+        self._dictionary = dictionary
+    }
+
     private let _dictionary: [Key.RawValue: Value]
 
-    var dictionary: [Key.RawValue: Value] {
+    public var dictionary: [Key.RawValue: Value] {
         return self._dictionary
     }
 
-    subscript(key: Key) -> Value {
+    public subscript(key: Key) -> Value {
         return self._dictionary[key.rawValue]!
     }
 }
