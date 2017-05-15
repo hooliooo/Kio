@@ -23,6 +23,11 @@
 		14A038721EC86F470024E23D /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A038711EC86F470024E23D /* AppCoordinator.swift */; };
 		14A038751EC872AC0024E23D /* NavigationItemSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A038741EC872AC0024E23D /* NavigationItemSetting.swift */; };
 		14A038771EC872E10024E23D /* TargetActionSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A038761EC872E10024E23D /* TargetActionSetting.swift */; };
+		14D5CE7B1EC9BAF900982047 /* DataProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D5CE791EC9BAF900982047 /* DataProviding.swift */; };
+		14D5CE7C1EC9BAF900982047 /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D5CE7A1EC9BAF900982047 /* Configurable.swift */; };
+		14D5CE801EC9BB0900982047 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D5CE7D1EC9BB0900982047 /* DataSource.swift */; };
+		14D5CE811EC9BB0900982047 /* ArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D5CE7E1EC9BB0900982047 /* ArrayDataSource.swift */; };
+		14D5CE821EC9BB0900982047 /* ArrayProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D5CE7F1EC9BB0900982047 /* ArrayProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +60,11 @@
 		14A038711EC86F470024E23D /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		14A038741EC872AC0024E23D /* NavigationItemSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationItemSetting.swift; sourceTree = "<group>"; };
 		14A038761EC872E10024E23D /* TargetActionSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetActionSetting.swift; sourceTree = "<group>"; };
+		14D5CE791EC9BAF900982047 /* DataProviding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProviding.swift; sourceTree = "<group>"; };
+		14D5CE7A1EC9BAF900982047 /* Configurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
+		14D5CE7D1EC9BB0900982047 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		14D5CE7E1EC9BB0900982047 /* ArrayDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayDataSource.swift; sourceTree = "<group>"; };
+		14D5CE7F1EC9BB0900982047 /* ArrayProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +149,9 @@
 		14A038601EC865580024E23D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				14D5CE7D1EC9BB0900982047 /* DataSource.swift */,
+				14D5CE7E1EC9BB0900982047 /* ArrayDataSource.swift */,
+				14D5CE7F1EC9BB0900982047 /* ArrayProvider.swift */,
 				14A038611EC865750024E23D /* JAView.swift */,
 				14A038631EC8671B0024E23D /* JAViewController.swift */,
 				14A038651EC868C20024E23D /* JAObject.swift */,
@@ -167,6 +180,8 @@
 		14A038731EC871A60024E23D /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				14D5CE791EC9BAF900982047 /* DataProviding.swift */,
+				14D5CE7A1EC9BAF900982047 /* Configurable.swift */,
 				14A038741EC872AC0024E23D /* NavigationItemSetting.swift */,
 				14A038761EC872E10024E23D /* TargetActionSetting.swift */,
 			);
@@ -303,16 +318,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14D5CE7C1EC9BAF900982047 /* Configurable.swift in Sources */,
 				14A038721EC86F470024E23D /* AppCoordinator.swift in Sources */,
 				14A038591EC860F60024E23D /* UIViewExtensions.swift in Sources */,
 				14A038621EC865750024E23D /* JAView.swift in Sources */,
 				14A038701EC86F170024E23D /* Coordinator.swift in Sources */,
 				14A0385B1EC862260024E23D /* UIColorExtensions.swift in Sources */,
+				14D5CE801EC9BB0900982047 /* DataSource.swift in Sources */,
 				14A0386D1EC86CD20024E23D /* StringExtensions.swift in Sources */,
 				14A038691EC869820024E23D /* ReadOnlyDictionary.swift in Sources */,
 				14A038771EC872E10024E23D /* TargetActionSetting.swift in Sources */,
 				14A038751EC872AC0024E23D /* NavigationItemSetting.swift in Sources */,
 				14A038661EC868C20024E23D /* JAObject.swift in Sources */,
+				14D5CE821EC9BB0900982047 /* ArrayProvider.swift in Sources */,
+				14D5CE7B1EC9BAF900982047 /* DataProviding.swift in Sources */,
+				14D5CE811EC9BB0900982047 /* ArrayDataSource.swift in Sources */,
 				14A0386B1EC86A420024E23D /* SynchronizedDictionary.swift in Sources */,
 				14A0385D1EC862A00024E23D /* DictionaryExtensions.swift in Sources */,
 				14A038641EC8671B0024E23D /* JAViewController.swift in Sources */,
