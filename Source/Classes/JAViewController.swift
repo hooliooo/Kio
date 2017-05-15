@@ -12,7 +12,7 @@ import UIKit
  A subclass of UIViewController that implements a print statement when deinitialized. 
  Conforms to NavigationItemSetting and TargetActionSetting.
 */
-public class JAViewController: UIViewController, NavigationItemSetting, TargetActionSetting {
+open class JAViewController: UIViewController, NavigationItemSetting, TargetActionSetting {
     deinit {
         print("\(self) was deallocated")
     }

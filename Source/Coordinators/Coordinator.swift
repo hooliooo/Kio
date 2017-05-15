@@ -17,12 +17,8 @@ import UIKit
 */
 public protocol Coordinator: class {
 
-    associatedtype ViewController: UIViewController
-
     func start()
 
-    var viewController: ViewController { get }
-
-    var childCoordinators: [AnyCoordinator] { get }
+    var childCoordinators: [Coordinator] { get }
 
 }

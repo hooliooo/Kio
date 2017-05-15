@@ -11,7 +11,7 @@ import UIKit
 /**
  A subclass of UIView that implements a print statement when deinitialized
 */
-public class JAView: UIView {
+open class JAView: UIView {
     deinit {
         print("\(self) was deallocated")
     }

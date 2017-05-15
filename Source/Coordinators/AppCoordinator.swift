@@ -14,7 +14,11 @@ import UIKit
 */
 public protocol AppCoordinator: Coordinator {
 
-    init<RootViewController: UIViewController>(window: UIWindow, rootViewController: RootViewController)
+    associatedtype RootViewController: UIViewController
+
+    init(window: UIWindow, rootViewController: RootViewController)
 
     var window: UIWindow { get }
+
+    var viewController: RootViewController { get }
 }

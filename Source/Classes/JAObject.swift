@@ -11,7 +11,7 @@ import Foundation
 /**
  A subclass of NSObject that implements a print statement when deinitialized
 */
-public class JAObject: NSObject {
+open class JAObject: NSObject {
     deinit {
         print("\(self) was deallocated")
     }
