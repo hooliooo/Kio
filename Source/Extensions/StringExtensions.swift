@@ -3,7 +3,7 @@
 //  JAShorthand
 //
 //  Created by Julio Alorro on 5/14/17.
-//  Copyright © 2017 Some Enterprises. All rights reserved.
+//
 //
 
 import Foundation
@@ -74,9 +74,9 @@ public extension String {
      */
     var asciiValue: String {
         let regexPattern: String = "(0x)?([0-9a-f]{2})"
-        let regex = try! NSRegularExpression(pattern: regexPattern, options: .caseInsensitive)
+        let regex = try! NSRegularExpression(pattern: regexPattern, options: .caseInsensitive) //swiftlint:disable:this force_try
         let nsString = self as NSString
-        let matches = regex.matches(in: self, options: [], range: NSMakeRange(0, nsString.length))
+        let matches = regex.matches(in: self, options: [], range: NSRange(location: 0, length: nsString.length))
         let characters = matches.map {
             Character(UnicodeScalar(UInt32(nsString.substring(with: $0.rangeAt(2)), radix: 16)!)!)
         }
@@ -97,7 +97,7 @@ public extension String {
      Returns the string's hex value
      */
     var hexValue: String {
-        return self.data(using: String.Encoding.utf8)!.map{ String(format: "%02hhx", $0) }.joined()
+        return self.data(using: String.Encoding.utf8)!.map { String(format: "%02hhx", $0) }.joined()
     }
 
 }

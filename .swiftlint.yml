@@ -1,0 +1,16 @@
+disabled_rules:
+  - variable_name
+  - todo
+
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Carthage
+  - Pods
+
+line_length:
+  ignores_function_declarations: true
+  ignores_comments: true
+  warning: 130
+
+file_length:
+  warning: 390
+  error: 400

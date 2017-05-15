@@ -224,23 +224,23 @@ public extension SynchronizedDictionary {
     subscript(key: Key) -> Value? {
         get {
             var value: Value?
-            
+
             self.queue.sync {
                 guard let dictValue = self.dictionary[key] else { return }
                 value = dictValue
             }
-            
+
             return value
         }
-        
+
         set {
-            
+
             guard let newValue = newValue else { return }
-            
+
             self.queue.async(flags: DispatchWorkItemFlags.barrier) {
                 self.dictionary[key] = newValue
             }
-            
+
         }
     }
 }

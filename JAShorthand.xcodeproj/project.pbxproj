@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1424EC3C1EC94F870083C0F7 /* AnyCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1424EC3B1EC94F870083C0F7 /* AnyCoordinator.swift */; };
 		14A038481EC860AD0024E23D /* JAShorthand.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14A0383E1EC860AD0024E23D /* JAShorthand.framework */; };
 		14A0384D1EC860AD0024E23D /* JAShorthandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A0384C1EC860AD0024E23D /* JAShorthandTests.swift */; };
 		14A0384F1EC860AD0024E23D /* JAShorthand.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A038411EC860AD0024E23D /* JAShorthand.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1424EC3B1EC94F870083C0F7 /* AnyCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyCoordinator.swift; sourceTree = "<group>"; };
 		14A0383E1EC860AD0024E23D /* JAShorthand.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JAShorthand.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14A038411EC860AD0024E23D /* JAShorthand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JAShorthand.h; sourceTree = "<group>"; };
 		14A038421EC860AD0024E23D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 			children = (
 				14A0386F1EC86F170024E23D /* Coordinator.swift */,
 				14A038711EC86F470024E23D /* AppCoordinator.swift */,
+				1424EC3B1EC94F870083C0F7 /* AnyCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 				14A0383A1EC860AD0024E23D /* Frameworks */,
 				14A0383B1EC860AD0024E23D /* Headers */,
 				14A0383C1EC860AD0024E23D /* Resources */,
+				1424EC3A1EC94BF20083C0F7 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -281,6 +285,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1424EC3A1EC94BF20083C0F7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		14A038391EC860AD0024E23D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -291,6 +311,7 @@
 				14A038621EC865750024E23D /* JAView.swift in Sources */,
 				14A038701EC86F170024E23D /* Coordinator.swift in Sources */,
 				14A0385B1EC862260024E23D /* UIColorExtensions.swift in Sources */,
+				1424EC3C1EC94F870083C0F7 /* AnyCoordinator.swift in Sources */,
 				14A0386D1EC86CD20024E23D /* StringExtensions.swift in Sources */,
 				14A038691EC869820024E23D /* ReadOnlyDictionary.swift in Sources */,
 				14A038771EC872E10024E23D /* TargetActionSetting.swift in Sources */,
@@ -508,6 +529,7 @@
 				14A038541EC860AD0024E23D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		14A038551EC860AD0024E23D /* Build configuration list for PBXNativeTarget "JAShorthandTests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +538,7 @@
 				14A038571EC860AD0024E23D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

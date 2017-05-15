@@ -22,11 +22,11 @@ public extension TargetActionSetting where Self: UIViewController {
 
             switch control {
 
-            case is UISegmentedControl, is UIDatePicker, is UIRefreshControl:
-                controlEvent = UIControlEvents.valueChanged
+                case is UISegmentedControl, is UIDatePicker, is UIRefreshControl:
+                    controlEvent = UIControlEvents.valueChanged
 
-            default:
-                controlEvent = UIControlEvents.touchUpInside
+                default:
+                    controlEvent = UIControlEvents.touchUpInside
             }
 
             control.addTarget(self, action: action, for: controlEvent)

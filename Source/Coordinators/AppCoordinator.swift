@@ -8,8 +8,13 @@
 
 import UIKit
 
+/**
+ The AppCoordinator is the highest Coordinator within an application whose primary purpose is to set up the window instance from
+ the AppDelegate and kick off the start of the application.
+*/
 public protocol AppCoordinator: Coordinator {
 
     init<RootViewController: UIViewController>(window: UIWindow, rootViewController: RootViewController)
 
+    var window: UIWindow { get }
 }
