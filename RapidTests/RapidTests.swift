@@ -1,15 +1,15 @@
 //
-//  JAShorthandTests.swift
-//  JAShorthandTests
+//  RapidTests.swift
+//  RapidTests
 //
 //  Created by Julio Alorro on 5/14/17.
 //  Copyright © 2017 Some Enterprises. All rights reserved.
 //
 
 import XCTest
-import JAShorthand
+import Rapid
 
-class JAShorthandTests: XCTestCase {
+class RapidTests: XCTestCase {
 
     override func setUp() {
         super.setUp()

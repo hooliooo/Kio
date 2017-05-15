@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		14A038481EC860AD0024E23D /* JAShorthand.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14A0383E1EC860AD0024E23D /* JAShorthand.framework */; };
-		14A0384D1EC860AD0024E23D /* JAShorthandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A0384C1EC860AD0024E23D /* JAShorthandTests.swift */; };
-		14A0384F1EC860AD0024E23D /* JAShorthand.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A038411EC860AD0024E23D /* JAShorthand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		14A038481EC860AD0024E23D /* Rapid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14A0383E1EC860AD0024E23D /* Rapid.framework */; };
+		14A0384D1EC860AD0024E23D /* RapidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A0384C1EC860AD0024E23D /* RapidTests.swift */; };
+		14A0384F1EC860AD0024E23D /* Rapid.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A038411EC860AD0024E23D /* Rapid.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		14A038591EC860F60024E23D /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A038581EC860F60024E23D /* UIViewExtensions.swift */; };
 		14A0385B1EC862260024E23D /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A0385A1EC862260024E23D /* UIColorExtensions.swift */; };
 		14A0385D1EC862A00024E23D /* DictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A0385C1EC862A00024E23D /* DictionaryExtensions.swift */; };
@@ -41,11 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		14A0383E1EC860AD0024E23D /* JAShorthand.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JAShorthand.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		14A038411EC860AD0024E23D /* JAShorthand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JAShorthand.h; sourceTree = "<group>"; };
+		14A0383E1EC860AD0024E23D /* Rapid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Rapid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		14A038411EC860AD0024E23D /* Rapid.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rapid.h; sourceTree = "<group>"; };
 		14A038421EC860AD0024E23D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		14A038471EC860AD0024E23D /* JAShorthandTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JAShorthandTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		14A0384C1EC860AD0024E23D /* JAShorthandTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JAShorthandTests.swift; sourceTree = "<group>"; };
+		14A038471EC860AD0024E23D /* RapidTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RapidTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		14A0384C1EC860AD0024E23D /* RapidTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RapidTests.swift; sourceTree = "<group>"; };
 		14A0384E1EC860AD0024E23D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14A038581EC860F60024E23D /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		14A0385A1EC862260024E23D /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
@@ -79,7 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14A038481EC860AD0024E23D /* JAShorthand.framework in Frameworks */,
+				14A038481EC860AD0024E23D /* Rapid.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				14A038401EC860AD0024E23D /* Source */,
-				14A0384B1EC860AD0024E23D /* JAShorthandTests */,
+				14A0384B1EC860AD0024E23D /* RapidTests */,
 				14A0383F1EC860AD0024E23D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,8 +98,8 @@
 		14A0383F1EC860AD0024E23D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				14A0383E1EC860AD0024E23D /* JAShorthand.framework */,
-				14A038471EC860AD0024E23D /* JAShorthandTests.xctest */,
+				14A0383E1EC860AD0024E23D /* Rapid.framework */,
+				14A038471EC860AD0024E23D /* RapidTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,19 +117,19 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
-		14A0384B1EC860AD0024E23D /* JAShorthandTests */ = {
+		14A0384B1EC860AD0024E23D /* RapidTests */ = {
 			isa = PBXGroup;
 			children = (
-				14A0384C1EC860AD0024E23D /* JAShorthandTests.swift */,
+				14A0384C1EC860AD0024E23D /* RapidTests.swift */,
 				14A0384E1EC860AD0024E23D /* Info.plist */,
 			);
-			path = JAShorthandTests;
+			path = RapidTests;
 			sourceTree = "<group>";
 		};
 		14A0385E1EC863FC0024E23D /* Support */ = {
 			isa = PBXGroup;
 			children = (
-				14A038411EC860AD0024E23D /* JAShorthand.h */,
+				14A038411EC860AD0024E23D /* Rapid.h */,
 				14A038421EC860AD0024E23D /* Info.plist */,
 			);
 			path = Support;
@@ -195,16 +195,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14A0384F1EC860AD0024E23D /* JAShorthand.h in Headers */,
+				14A0384F1EC860AD0024E23D /* Rapid.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		14A0383D1EC860AD0024E23D /* JAShorthand */ = {
+		14A0383D1EC860AD0024E23D /* Rapid */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 14A038521EC860AD0024E23D /* Build configuration list for PBXNativeTarget "JAShorthand" */;
+			buildConfigurationList = 14A038521EC860AD0024E23D /* Build configuration list for PBXNativeTarget "Rapid" */;
 			buildPhases = (
 				14A038391EC860AD0024E23D /* Sources */,
 				14A0383A1EC860AD0024E23D /* Frameworks */,
@@ -216,14 +216,14 @@
 			);
 			dependencies = (
 			);
-			name = JAShorthand;
+			name = Rapid;
 			productName = JAShorthand;
-			productReference = 14A0383E1EC860AD0024E23D /* JAShorthand.framework */;
+			productReference = 14A0383E1EC860AD0024E23D /* Rapid.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		14A038461EC860AD0024E23D /* JAShorthandTests */ = {
+		14A038461EC860AD0024E23D /* RapidTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 14A038551EC860AD0024E23D /* Build configuration list for PBXNativeTarget "JAShorthandTests" */;
+			buildConfigurationList = 14A038551EC860AD0024E23D /* Build configuration list for PBXNativeTarget "RapidTests" */;
 			buildPhases = (
 				14A038431EC860AD0024E23D /* Sources */,
 				14A038441EC860AD0024E23D /* Frameworks */,
@@ -234,9 +234,9 @@
 			dependencies = (
 				14A0384A1EC860AD0024E23D /* PBXTargetDependency */,
 			);
-			name = JAShorthandTests;
+			name = RapidTests;
 			productName = JAShorthandTests;
-			productReference = 14A038471EC860AD0024E23D /* JAShorthandTests.xctest */;
+			productReference = 14A038471EC860AD0024E23D /* RapidTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -262,7 +262,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 14A038381EC860AD0024E23D /* Build configuration list for PBXProject "JAShorthand" */;
+			buildConfigurationList = 14A038381EC860AD0024E23D /* Build configuration list for PBXProject "Rapid" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -274,8 +274,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				14A0383D1EC860AD0024E23D /* JAShorthand */,
-				14A038461EC860AD0024E23D /* JAShorthandTests */,
+				14A0383D1EC860AD0024E23D /* Rapid */,
+				14A038461EC860AD0024E23D /* RapidTests */,
 			);
 		};
 /* End PBXProject section */
@@ -343,7 +343,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14A0384D1EC860AD0024E23D /* JAShorthandTests.swift in Sources */,
+				14A0384D1EC860AD0024E23D /* RapidTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,7 +352,7 @@
 /* Begin PBXTargetDependency section */
 		14A0384A1EC860AD0024E23D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 14A0383D1EC860AD0024E23D /* JAShorthand */;
+			target = 14A0383D1EC860AD0024E23D /* Rapid */;
 			targetProxy = 14A038491EC860AD0024E23D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -473,7 +473,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.someenterprises.JAShorthand;
+				PRODUCT_BUNDLE_IDENTIFIER = com.someenterprises.Rapid;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -495,7 +495,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.someenterprises.JAShorthand;
+				PRODUCT_BUNDLE_IDENTIFIER = com.someenterprises.Rapid;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -507,9 +507,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = S886WPSL95;
-				INFOPLIST_FILE = JAShorthandTests/Info.plist;
+				INFOPLIST_FILE = RapidTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.someenterprises.JAShorthandTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.someenterprises.RapidTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -520,9 +520,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = S886WPSL95;
-				INFOPLIST_FILE = JAShorthandTests/Info.plist;
+				INFOPLIST_FILE = RapidTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.someenterprises.JAShorthandTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.someenterprises.RapidTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -531,7 +531,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		14A038381EC860AD0024E23D /* Build configuration list for PBXProject "JAShorthand" */ = {
+		14A038381EC860AD0024E23D /* Build configuration list for PBXProject "Rapid" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				14A038501EC860AD0024E23D /* Debug */,
@@ -540,7 +540,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		14A038521EC860AD0024E23D /* Build configuration list for PBXNativeTarget "JAShorthand" */ = {
+		14A038521EC860AD0024E23D /* Build configuration list for PBXNativeTarget "Rapid" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				14A038531EC860AD0024E23D /* Debug */,
@@ -549,7 +549,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		14A038551EC860AD0024E23D /* Build configuration list for PBXNativeTarget "JAShorthandTests" */ = {
+		14A038551EC860AD0024E23D /* Build configuration list for PBXNativeTarget "RapidTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				14A038561EC860AD0024E23D /* Debug */,

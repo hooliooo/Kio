@@ -1,6 +1,6 @@
 //
 //  UIColorExtensions.swift
-//  JAShorthand
+//  Rapid
 //
 //  Created by Julio Alorro on 5/14/17.
 //

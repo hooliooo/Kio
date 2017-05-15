@@ -1,9 +1,9 @@
 //
 //  ArrayDataSource.swift
-//  swift3-pokedex
+//  Rapid
 //
 //  Created by Julio Alorro on 2/27/17.
-//  Copyright © 2017 Some Enterprises, Inc. All rights reserved.
+//
 //
 
 import UIKit

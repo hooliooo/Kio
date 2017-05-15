@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:JAShorthand.xcodeproj">
+      location = "self:/Users/hooliooo/Swift Frameworks/JAShorthand/Rapid.xcodeproj">
    </FileRef>
 </Workspace>

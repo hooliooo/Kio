@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "14A0383D1EC860AD0024E23D"
-               BuildableName = "JAShorthand.framework"
-               BlueprintName = "JAShorthand"
-               ReferencedContainer = "container:JAShorthand.xcodeproj">
+               BuildableName = "Rapid.framework"
+               BlueprintName = "Rapid"
+               ReferencedContainer = "container:Rapid.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "14A038461EC860AD0024E23D"
-               BuildableName = "JAShorthandTests.xctest"
-               BlueprintName = "JAShorthandTests"
-               ReferencedContainer = "container:JAShorthand.xcodeproj">
+               BuildableName = "RapidTests.xctest"
+               BlueprintName = "RapidTests"
+               ReferencedContainer = "container:Rapid.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "14A0383D1EC860AD0024E23D"
-            BuildableName = "JAShorthand.framework"
-            BlueprintName = "JAShorthand"
-            ReferencedContainer = "container:JAShorthand.xcodeproj">
+            BuildableName = "Rapid.framework"
+            BlueprintName = "Rapid"
+            ReferencedContainer = "container:Rapid.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -65,9 +65,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "14A0383D1EC860AD0024E23D"
-            BuildableName = "JAShorthand.framework"
-            BlueprintName = "JAShorthand"
-            ReferencedContainer = "container:JAShorthand.xcodeproj">
+            BuildableName = "Rapid.framework"
+            BlueprintName = "Rapid"
+            ReferencedContainer = "container:Rapid.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -83,9 +83,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "14A0383D1EC860AD0024E23D"
-            BuildableName = "JAShorthand.framework"
-            BlueprintName = "JAShorthand"
-            ReferencedContainer = "container:JAShorthand.xcodeproj">
+            BuildableName = "Rapid.framework"
+            BlueprintName = "Rapid"
+            ReferencedContainer = "container:Rapid.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
