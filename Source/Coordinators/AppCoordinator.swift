@@ -18,7 +18,13 @@ public protocol AppCoordinator: Coordinator {
 
     init(window: UIWindow, rootViewController: RootViewController)
 
+    /**
+     The UIWindow instance the AppCoordinator manages. Typically the AppDelegate's UIWindow instance
+    */
     var window: UIWindow { get }
 
+    /**
+     The UIWindow instance's rootViewController
+    */
     var viewController: RootViewController { get }
 }

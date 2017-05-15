@@ -14,11 +14,19 @@ import UIKit
  these properties and methods
  
  The Coordinator also manages model mutation and data fetching for its underlying UIViewController.
+ 
+ The Coordinator communicates with its underlying UIViewController via delegattion
 */
 public protocol Coordinator: class {
 
+    /**
+     The start method is where the Coordinator instantiates its UIViewController instance and presents it.
+    */
     func start()
 
+    /**
+     An Array of Coordinators the Coordinator manages
+    */
     var childCoordinators: [Coordinator] { get }
 
 }
