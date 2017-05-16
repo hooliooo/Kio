@@ -6,8 +6,6 @@
 //
 //
 
-import UIKit
-
 public final class ArrayProvider<Type>: DataProviding {
 
     public init(objects: [Type]) {

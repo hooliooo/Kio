@@ -6,8 +6,6 @@
 //
 //
 
-import Foundation
-
 /**
  A struct wrapper around a Dictionary instance that can access the dictionary by subcripting with Enumerations
  that conform to the RawRepresetable and Hashable protocols. Does not mutate the underlying Dictionary, 

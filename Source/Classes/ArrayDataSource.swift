@@ -6,8 +6,6 @@
 //
 //
 
-import UIKit
-
 open class ArrayDataSource<Type, Cell: UICollectionViewCell>: DataSource<ArrayProvider<Type>, Cell>
     where Cell: Configurable, Cell.Object == Type {
 

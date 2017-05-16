@@ -6,13 +6,11 @@
 //
 //
 
-import Foundation
-
 /**
  A subclass of NSObject that implements a print statement when deinitialized
 */
 open class JAObject: NSObject {
     deinit {
-        print("\(self) was deallocated")
+        print("\(type(of: self)) was deallocated")
     }
 }

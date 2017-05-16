@@ -6,8 +6,6 @@
 //
 //
 
-import Foundation
-
 public extension String {
     /**
      Checks if string contains a number

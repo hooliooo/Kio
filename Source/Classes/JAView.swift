@@ -6,13 +6,11 @@
 //
 //
 
-import UIKit
-
 /**
  A subclass of UIView that implements a print statement when deinitialized
 */
 open class JAView: UIView {
     deinit {
-        print("\(self) was deallocated")
+        print("\(type(of: self)) was deallocated")
     }
 }

@@ -6,9 +6,7 @@
 //
 //
 
-import UIKit
-
-open class DataSource<Provider: DataProviding, Cell: UICollectionViewCell>: NSObject, UICollectionViewDataSource
+open class DataSource<Provider: DataProviding, Cell: UICollectionViewCell>: JAObject, UICollectionViewDataSource
     where Cell: Configurable, Provider.Object == Cell.Object {
 
     // MARK: - Initializers

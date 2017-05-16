@@ -6,8 +6,6 @@
 //  Copyright © 2017 Some Enterprises, Inc. All rights reserved.
 //
 
-import UIKit
-
 public protocol Configurable: class {
 
     associatedtype Object

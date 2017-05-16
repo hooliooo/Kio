@@ -6,8 +6,6 @@
 //
 //
 
-import Foundation
-
 public class SynchronizedDictionary<Key: Hashable, Value> {
 
     fileprivate let queue: DispatchQueue = DispatchQueue(

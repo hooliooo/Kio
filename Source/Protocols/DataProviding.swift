@@ -6,8 +6,6 @@
 //  Copyright © 2017 Some Enterprises, Inc. All rights reserved.
 //
 
-import Foundation
-
 public protocol DataProviding {
 
     associatedtype Object

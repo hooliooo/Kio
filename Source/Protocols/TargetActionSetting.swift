@@ -6,8 +6,6 @@
 //  
 //
 
-import UIKit
-
 public protocol TargetActionSetting: class {
     func setUpTargetActions(with dict: [UIControl: Selector])
 }
