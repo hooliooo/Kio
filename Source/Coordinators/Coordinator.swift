@@ -25,6 +25,22 @@ public protocol Coordinator: class {
     /**
      An Array of Coordinators the Coordinator manages
     */
-    var childCoordinators: [Coordinator] { get }
+    var childCoordinators: [Coordinator] { get set }
+
+    func deallocate<T: Coordinator>(_ coordinator: T)
+
+}
+
+public extension Coordinator {
+
+    public func deallocate<T: Coordinator>(_ coordinator: T) {
+
+        guard let coordinatorIndex = self.childCoordinators.index(where: { $0 === coordinator }) else {
+            return
+        }
+
+        _ = self.childCoordinators.remove(at: coordinatorIndex)
+
+    }
 
 }
