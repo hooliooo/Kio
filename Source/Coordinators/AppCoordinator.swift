@@ -10,19 +10,21 @@
  The AppCoordinator is the highest Coordinator within an application whose primary purpose is to set up the window instance from
  the AppDelegate and kick off the start of the application.
 */
-public protocol AppCoordinator: Coordinator {
+public class AppCoordinator<RootViewController: UIViewController>: AbstractCoordinator {
 
-    associatedtype RootViewController: UIViewController
-
-    init(window: UIWindow, rootViewController: RootViewController)
+    init(window: UIWindow, rootViewController: RootViewController) {
+        self.window = window
+        self.rootViewController = rootViewController
+        super.init()
+    }
 
     /**
      The UIWindow instance the AppCoordinator manages. Typically the AppDelegate's UIWindow instance
     */
-    var window: UIWindow { get }
+    let window: UIWindow
 
     /**
      The UIWindow instance's rootViewController
     */
-    var viewController: RootViewController { get }
+    let rootViewController: RootViewController
 }

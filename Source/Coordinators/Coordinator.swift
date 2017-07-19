@@ -18,29 +18,25 @@
 public protocol Coordinator: class {
 
     /**
-     The start method is where the Coordinator instantiates its UIViewController instance and presents it.
-    */
-    func start()
-
-    /**
      An Array of Coordinators the Coordinator manages
     */
-    var childCoordinators: [Coordinator] { get set }
+    var childCoordinators: [Coordinator] { get }
 
-    func deallocate<T: Coordinator>(_ coordinator: T)
+    /**
+     Add child coordinator to childCoordinators array
+     - parameter coordinator: Coordinator to add.
+    */
+    func add(childCoordinator coordinator: Coordinator)
 
-}
+    /**
+     Remove child coordinator to childCoordinators array
+     - parameter coordinator: Coordinator to remove.
+    */
+    func remove(childCoordinator coordinator: Coordinator)
 
-public extension Coordinator {
-
-    public func deallocate<T: Coordinator>(_ coordinator: T) {
-
-        guard let coordinatorIndex = self.childCoordinators.index(where: { $0 === coordinator }) else {
-            return
-        }
-
-        _ = self.childCoordinators.remove(at: coordinatorIndex)
-
-    }
+    /**
+     The start method is where the Coordinator instantiates its UIViewController instance and presents it.
+     */
+    func start()
 
 }

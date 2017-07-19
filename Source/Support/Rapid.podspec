@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Rapid"
-  s.version      = "0.0.2"
+  s.version      = "0.0.1"
   s.summary      = "A personal toolset I use in iOS Projects"
 
   s.homepage     = "https://github.com/hooliooo/Rapid"
@@ -106,7 +106,6 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-  # s.framework  = "SomeFramework"
   s.frameworks = "UIKit", "Foundation"
 
   # s.library   = "iconv"
