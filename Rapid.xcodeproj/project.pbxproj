@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		145D60A21F1F0F9D00FE565B /* AbstractCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145D60A11F1F0F9D00FE565B /* AbstractCoordinator.swift */; };
 		145D60A41F1F229D00FE565B /* Rapid.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 145D60A31F1F229D00FE565B /* Rapid.podspec */; };
-		145D60A61F1F22E800FE565B /* LICENSE.md in Sources */ = {isa = PBXBuildFile; fileRef = 145D60A51F1F22E800FE565B /* LICENSE.md */; };
+		145D60A81F1F35F500FE565B /* SynchronizedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145D60A71F1F35F500FE565B /* SynchronizedArray.swift */; };
 		14A038481EC860AD0024E23D /* Rapid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14A0383E1EC860AD0024E23D /* Rapid.framework */; };
 		14A0384D1EC860AD0024E23D /* RapidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A0384C1EC860AD0024E23D /* RapidTests.swift */; };
 		14A0384F1EC860AD0024E23D /* Rapid.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A038411EC860AD0024E23D /* Rapid.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -46,7 +46,8 @@
 /* Begin PBXFileReference section */
 		145D60A11F1F0F9D00FE565B /* AbstractCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractCoordinator.swift; sourceTree = "<group>"; };
 		145D60A31F1F229D00FE565B /* Rapid.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Rapid.podspec; sourceTree = "<group>"; };
-		145D60A51F1F22E800FE565B /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = LICENSE.md; path = ../../LICENSE.md; sourceTree = "<group>"; };
+		145D60A51F1F22E800FE565B /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		145D60A71F1F35F500FE565B /* SynchronizedArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynchronizedArray.swift; sourceTree = "<group>"; };
 		14A0383E1EC860AD0024E23D /* Rapid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Rapid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14A038411EC860AD0024E23D /* Rapid.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rapid.h; sourceTree = "<group>"; };
 		14A038421EC860AD0024E23D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -95,6 +96,7 @@
 		14A038341EC860AD0024E23D = {
 			isa = PBXGroup;
 			children = (
+				145D60A51F1F22E800FE565B /* LICENSE.md */,
 				14A038401EC860AD0024E23D /* Source */,
 				14A0384B1EC860AD0024E23D /* RapidTests */,
 				14A0383F1EC860AD0024E23D /* Products */,
@@ -135,7 +137,6 @@
 		14A0385E1EC863FC0024E23D /* Support */ = {
 			isa = PBXGroup;
 			children = (
-				145D60A51F1F22E800FE565B /* LICENSE.md */,
 				145D60A31F1F229D00FE565B /* Rapid.podspec */,
 				14A038411EC860AD0024E23D /* Rapid.h */,
 				14A038421EC860AD0024E23D /* Info.plist */,
@@ -164,6 +165,7 @@
 				14A038631EC8671B0024E23D /* JAViewController.swift */,
 				14A038651EC868C20024E23D /* JAObject.swift */,
 				14A0386A1EC86A420024E23D /* SynchronizedDictionary.swift */,
+				145D60A71F1F35F500FE565B /* SynchronizedArray.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -328,7 +330,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				145D60A61F1F22E800FE565B /* LICENSE.md in Sources */,
+				145D60A81F1F35F500FE565B /* SynchronizedArray.swift in Sources */,
 				14D5CE7C1EC9BAF900982047 /* Configurable.swift in Sources */,
 				145D60A21F1F0F9D00FE565B /* AbstractCoordinator.swift in Sources */,
 				14A038721EC86F470024E23D /* AppCoordinator.swift in Sources */,

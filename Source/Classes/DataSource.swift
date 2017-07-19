@@ -22,7 +22,7 @@ open class DataSource<Provider: DataProviding, Cell: UICollectionViewCell>: JAOb
      Instance constant of Provider
     */
     fileprivate let _provider: Provider
-    
+
     /**
      Instance constant of the collectionView
     */

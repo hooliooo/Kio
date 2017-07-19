@@ -30,7 +30,7 @@ public class SynchronizedDictionary<Key: Hashable, Value> {
 
 }
 
-// MAKR: - Read Properties & Methods
+// MARK: - Read Properties & Methods
 public extension SynchronizedDictionary {
     /**
      Synchronous read of the dictionary's count property.
@@ -95,7 +95,6 @@ public extension SynchronizedDictionary {
     */
     func enumerated() -> EnumeratedSequence<Dictionary<Key, Value>> { // swiftlint:disable:this syntactic_sugar
         return self.queue.sync { return self.dictionary.enumerated() }
-
     }
 
     /**
@@ -255,9 +254,9 @@ public extension SynchronizedDictionary {
     /**
      Asynchronous write of the dictionary's popFirst method.
     */
-    func popFirst(completionBlock: @escaping ((key: Key, value: Value)?) -> Void) {
+    func popFirst(callback: @escaping ((key: Key, value: Value)?) -> Void) {
         self.queue.async(flags: DispatchWorkItemFlags.barrier) {
-            completionBlock(self.dictionary.popFirst())
+            callback(self.dictionary.popFirst())
         }
     }
 
@@ -271,18 +270,18 @@ public extension SynchronizedDictionary {
     /**
      Asynchronous write of the dictionary's updateValue method.
     */
-    func updateValue(_ value: Value, forKey key: Key, completionBlock: @escaping (Value?) -> Void) {
+    func updateValue(_ value: Value, forKey key: Key, callback: @escaping (Value?) -> Void) {
         return self.queue.async(flags: DispatchWorkItemFlags.barrier) {
-            completionBlock(self.dictionary.updateValue(value, forKey: key))
+            callback(self.dictionary.updateValue(value, forKey: key))
         }
     }
 
     /**
      Asynchronous write of the dictionary's removeValue method.
     */
-    func removeValue(forKey key: Key, completionBlock: @escaping (Value?) -> Void) {
+    func removeValue(forKey key: Key, callback: @escaping (Value?) -> Void) {
         return self.queue.async(flags: DispatchWorkItemFlags.barrier) {
-            completionBlock(self.dictionary.removeValue(forKey: key))
+            callback(self.dictionary.removeValue(forKey: key))
         }
     }
 }
