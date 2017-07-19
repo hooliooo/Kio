@@ -1,8 +1,8 @@
 //
-//  JAObject.swift
 //  Rapid
+//  Copyright © Julio Alorro 2017
 //
-//  Created by Julio Alorro on 5/14/17.
+//  Licensed under the MIT license. See LICENSE file.
 //
 //
 

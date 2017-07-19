@@ -1,12 +1,15 @@
 //
-//  TargetActionSetting.swift
 //  Rapid
+//  Copyright © Julio Alorro 2017
 //
-//  Created by Julio Alorro on 5/14/17.
-//  
+//  Licensed under the MIT license. See LICENSE file.
+//
 //
 
 public protocol TargetActionSetting: class {
+    /**
+     Convenience method that assigns a selector method to a UIControl instance
+    */
     func setUpTargetActions(with dict: [UIControl: Selector])
 }
 

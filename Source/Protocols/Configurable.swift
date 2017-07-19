@@ -1,9 +1,9 @@
 //
-//  Configurable.swift
-//  swift3-pokedex
+//  Rapid
+//  Copyright © Julio Alorro 2017
 //
-//  Created by Julio Alorro on 2/9/17.
-//  Copyright © 2017 Some Enterprises, Inc. All rights reserved.
+//  Licensed under the MIT license. See LICENSE file.
+//
 //
 
 public protocol Configurable: class {

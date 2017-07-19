@@ -1,9 +1,9 @@
 //
-//  AbstractCoordinator.swift
 //  Rapid
+//  Copyright © Julio Alorro 2017
 //
-//  Created by Julio Alorro on 7/19/17.
-//  Copyright © 2017 Some Enterprises. All rights reserved.
+//  Licensed under the MIT license. See LICENSE file.
+//
 //
 
 import Foundation

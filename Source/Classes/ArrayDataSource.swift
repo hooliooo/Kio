@@ -1,11 +1,14 @@
 //
-//  ArrayDataSource.swift
 //  Rapid
+//  Copyright © Julio Alorro 2017
 //
-//  Created by Julio Alorro on 2/27/17.
+//  Licensed under the MIT license. See LICENSE file.
 //
 //
 
+/**
+ A subclass of the DataSource class that works together with the ArrayProvider class.
+*/
 open class ArrayDataSource<Type, Cell: UICollectionViewCell>: DataSource<ArrayProvider<Type>, Cell>
     where Cell: Configurable, Cell.Object == Type {
 
