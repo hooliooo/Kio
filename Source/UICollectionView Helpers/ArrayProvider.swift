@@ -12,6 +12,10 @@
 */
 public final class ArrayProvider<Type>: DataProviding {
 
+    /**
+     Initializer for an ArrayProvider instance
+     - parameter objects: Array of Type to be managed
+    */
     public init(objects: [Type]) {
         self._objects = objects
     }

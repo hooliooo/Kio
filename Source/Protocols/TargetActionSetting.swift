@@ -9,6 +9,7 @@
 public protocol TargetActionSetting: class {
     /**
      Convenience method that assigns a selector method to a UIControl instance
+     - parameter dict: The dictionary containing the UIControl and Selector pairing
     */
     func setUpTargetActions(with dict: [UIControl: Selector])
 }

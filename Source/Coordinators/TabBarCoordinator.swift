@@ -18,7 +18,7 @@ public protocol TabBarCoordinator: Coordinator {
     /**
      Type erasing method for TabCoordinator
     */
-    public func degenericize<T: TabCoordinator>(_ coordinator: T) -> AnyTabCoordinator
+    func degenericize<T: TabCoordinator>(_ coordinator: T) -> AnyTabCoordinator
 }
 
 public extension TabBarCoordinator {

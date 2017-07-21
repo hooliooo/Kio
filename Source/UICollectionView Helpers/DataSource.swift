@@ -10,6 +10,11 @@ open class DataSource<Provider: DataProviding, Cell: UICollectionViewCell>: JAOb
     where Cell: Configurable, Provider.Object == Cell.Object {
 
     // MARK: Initializers
+    /**
+     Initializer for the DataSource instance
+     - parameter provider: DataProviding type that contains information regarding the array it manages
+     - parameter collectionView: UICollectionView instance to be managed
+    */
     public init(provider: Provider, collectionView: UICollectionView) {
         self._provider = provider
         self._collectionView = collectionView
