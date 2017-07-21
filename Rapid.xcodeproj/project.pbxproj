@@ -10,7 +10,7 @@
 		142152711F1F944300EB421A /* Rapid.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 142152701F1F944300EB421A /* Rapid.podspec */; };
 		145D60A21F1F0F9D00FE565B /* AbstractCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145D60A11F1F0F9D00FE565B /* AbstractCoordinator.swift */; };
 		145D60A81F1F35F500FE565B /* SynchronizedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145D60A71F1F35F500FE565B /* SynchronizedArray.swift */; };
-		145D60AA1F1F4DA600FE565B /* TabAppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145D60A91F1F4DA600FE565B /* TabAppCoordinator.swift */; };
+		145D60AA1F1F4DA600FE565B /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145D60A91F1F4DA600FE565B /* TabBarCoordinator.swift */; };
 		145D60AC1F1F4E7C00FE565B /* AnyTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145D60AB1F1F4E7C00FE565B /* AnyTabCoordinator.swift */; };
 		145D60AE1F1F4EBB00FE565B /* TabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145D60AD1F1F4EBB00FE565B /* TabCoordinator.swift */; };
 		14A038481EC860AD0024E23D /* Rapid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14A0383E1EC860AD0024E23D /* Rapid.framework */; };
@@ -51,7 +51,7 @@
 		145D60A11F1F0F9D00FE565B /* AbstractCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractCoordinator.swift; sourceTree = "<group>"; };
 		145D60A51F1F22E800FE565B /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		145D60A71F1F35F500FE565B /* SynchronizedArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynchronizedArray.swift; sourceTree = "<group>"; };
-		145D60A91F1F4DA600FE565B /* TabAppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabAppCoordinator.swift; sourceTree = "<group>"; };
+		145D60A91F1F4DA600FE565B /* TabBarCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
 		145D60AB1F1F4E7C00FE565B /* AnyTabCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyTabCoordinator.swift; sourceTree = "<group>"; };
 		145D60AD1F1F4EBB00FE565B /* TabCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabCoordinator.swift; sourceTree = "<group>"; };
 		14A0383E1EC860AD0024E23D /* Rapid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Rapid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,6 +99,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1491C6491F224997002B468C /* Collections */ = {
+			isa = PBXGroup;
+			children = (
+				14A0386A1EC86A420024E23D /* SynchronizedDictionary.swift */,
+				145D60A71F1F35F500FE565B /* SynchronizedArray.swift */,
+			);
+			path = Collections;
+			sourceTree = "<group>";
+		};
+		1491C64A1F2249AF002B468C /* UICollectionView Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				14D5CE791EC9BAF900982047 /* DataProviding.swift */,
+				14D5CE7A1EC9BAF900982047 /* Configurable.swift */,
+				14D5CE7D1EC9BB0900982047 /* DataSource.swift */,
+				14D5CE7E1EC9BB0900982047 /* ArrayDataSource.swift */,
+				14D5CE7F1EC9BB0900982047 /* ArrayProvider.swift */,
+			);
+			path = "UICollectionView Helpers";
+			sourceTree = "<group>";
+		};
 		14A038341EC860AD0024E23D = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +143,8 @@
 		14A038401EC860AD0024E23D /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				1491C64A1F2249AF002B468C /* UICollectionView Helpers */,
+				1491C6491F224997002B468C /* Collections */,
 				14A0386E1EC86EFB0024E23D /* Coordinators */,
 				14A038601EC865580024E23D /* Classes */,
 				14A0385F1EC864240024E23D /* Extensions */,
@@ -164,14 +187,9 @@
 		14A038601EC865580024E23D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				14D5CE7D1EC9BB0900982047 /* DataSource.swift */,
-				14D5CE7E1EC9BB0900982047 /* ArrayDataSource.swift */,
-				14D5CE7F1EC9BB0900982047 /* ArrayProvider.swift */,
 				14A038611EC865750024E23D /* JAView.swift */,
 				14A038631EC8671B0024E23D /* JAViewController.swift */,
 				14A038651EC868C20024E23D /* JAObject.swift */,
-				14A0386A1EC86A420024E23D /* SynchronizedDictionary.swift */,
-				145D60A71F1F35F500FE565B /* SynchronizedArray.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -191,7 +209,7 @@
 				145D60AD1F1F4EBB00FE565B /* TabCoordinator.swift */,
 				145D60A11F1F0F9D00FE565B /* AbstractCoordinator.swift */,
 				14A038711EC86F470024E23D /* AppCoordinator.swift */,
-				145D60A91F1F4DA600FE565B /* TabAppCoordinator.swift */,
+				145D60A91F1F4DA600FE565B /* TabBarCoordinator.swift */,
 				145D60AB1F1F4E7C00FE565B /* AnyTabCoordinator.swift */,
 			);
 			path = Coordinators;
@@ -200,8 +218,6 @@
 		14A038731EC871A60024E23D /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				14D5CE791EC9BAF900982047 /* DataProviding.swift */,
-				14D5CE7A1EC9BAF900982047 /* Configurable.swift */,
 				14A038741EC872AC0024E23D /* NavigationItemSetting.swift */,
 				14A038761EC872E10024E23D /* TargetActionSetting.swift */,
 			);
@@ -348,7 +364,7 @@
 				14A038701EC86F170024E23D /* Coordinator.swift in Sources */,
 				14A0385B1EC862260024E23D /* UIColorExtensions.swift in Sources */,
 				14D5CE801EC9BB0900982047 /* DataSource.swift in Sources */,
-				145D60AA1F1F4DA600FE565B /* TabAppCoordinator.swift in Sources */,
+				145D60AA1F1F4DA600FE565B /* TabBarCoordinator.swift in Sources */,
 				14A0386D1EC86CD20024E23D /* StringExtensions.swift in Sources */,
 				145D60AC1F1F4E7C00FE565B /* AnyTabCoordinator.swift in Sources */,
 				145D60AE1F1F4EBB00FE565B /* TabCoordinator.swift in Sources */,
