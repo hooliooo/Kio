@@ -7,7 +7,8 @@
 //
 
 /**
- The Configurable protocol defines the interface of the UICollectionViewCell type that will work with a DataSource class or subclass
+ The Configurable protocol defines the interface of the UICollectionViewCell type that 
+ will work with a DataSource class or subclass
 */
 public protocol Configurable: class {
 

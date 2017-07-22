@@ -9,15 +9,15 @@
 /**
  A subclass of the DataSource class that works together with the ArrayProvider class.
 */
-open class ArrayDataSource<Type, Cell: UICollectionViewCell>: DataSource<ArrayProvider<Type>, Cell>
-    where Cell: Configurable, Cell.Object == Type {
+open class ArrayDataSource<Object, Cell: UICollectionViewCell>: DataSource<ArrayProvider<Object>, Cell>
+    where Cell: Configurable, Cell.Object == Object {
 
     /**
      Initializer for an ArrayDataSource instance
      - parameter objects: Array of Type to be managed by an ArrayProvider instance
      - parameter collectionView: UICollectionView instance to be managed
     */
-    public init(objects: [Type], collectionView: UICollectionView) {
+    public init(objects: [Object], collectionView: UICollectionView) {
 
         super.init(provider: ArrayProvider(objects: objects), collectionView: collectionView)
 
@@ -26,7 +26,7 @@ open class ArrayDataSource<Type, Cell: UICollectionViewCell>: DataSource<ArrayPr
     /**
      Array of objects managed by the DataProviding instance. Get-only property
     */
-    public var objects: [Type] {
+    public var objects: [Object] {
         return self.provider.objects
     }
 

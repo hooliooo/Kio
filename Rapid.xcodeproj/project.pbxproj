@@ -13,6 +13,8 @@
 		145D60AA1F1F4DA600FE565B /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145D60A91F1F4DA600FE565B /* TabBarCoordinator.swift */; };
 		145D60AC1F1F4E7C00FE565B /* AnyTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145D60AB1F1F4E7C00FE565B /* AnyTabCoordinator.swift */; };
 		145D60AE1F1F4EBB00FE565B /* TabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145D60AD1F1F4EBB00FE565B /* TabCoordinator.swift */; };
+		148BE0B31F22F31800B2C7B5 /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = 145D60A51F1F22E800FE565B /* LICENSE.md */; };
+		148BE0B41F22F31800B2C7B5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 148BE0B11F22F2F200B2C7B5 /* README.md */; };
 		14A038481EC860AD0024E23D /* Rapid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14A0383E1EC860AD0024E23D /* Rapid.framework */; };
 		14A0384D1EC860AD0024E23D /* RapidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A0384C1EC860AD0024E23D /* RapidTests.swift */; };
 		14A0384F1EC860AD0024E23D /* Rapid.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A038411EC860AD0024E23D /* Rapid.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -54,6 +56,7 @@
 		145D60A91F1F4DA600FE565B /* TabBarCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
 		145D60AB1F1F4E7C00FE565B /* AnyTabCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyTabCoordinator.swift; sourceTree = "<group>"; };
 		145D60AD1F1F4EBB00FE565B /* TabCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabCoordinator.swift; sourceTree = "<group>"; };
+		148BE0B11F22F2F200B2C7B5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		14A0383E1EC860AD0024E23D /* Rapid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Rapid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14A038411EC860AD0024E23D /* Rapid.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rapid.h; sourceTree = "<group>"; };
 		14A038421EC860AD0024E23D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -125,6 +128,7 @@
 			children = (
 				142152701F1F944300EB421A /* Rapid.podspec */,
 				145D60A51F1F22E800FE565B /* LICENSE.md */,
+				148BE0B11F22F2F200B2C7B5 /* README.md */,
 				14A038401EC860AD0024E23D /* Source */,
 				14A0384B1EC860AD0024E23D /* RapidTests */,
 				14A0383F1EC860AD0024E23D /* Products */,
@@ -321,6 +325,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				148BE0B31F22F31800B2C7B5 /* LICENSE.md in Resources */,
+				148BE0B41F22F31800B2C7B5 /* README.md in Resources */,
 				142152711F1F944300EB421A /* Rapid.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

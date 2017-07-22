@@ -10,13 +10,13 @@
  An implementation of the DataProviding protocol that manages a one dimensional array, 
  meaning that it is suitable for collectionViews with a single section.
 */
-public final class ArrayProvider<Type>: DataProviding {
+public final class ArrayProvider<Object>: DataProviding {
 
     /**
      Initializer for an ArrayProvider instance
      - parameter objects: Array of Type to be managed
     */
-    public init(objects: [Type]) {
+    public init(objects: [Object]) {
         self._objects = objects
     }
 
@@ -24,12 +24,12 @@ public final class ArrayProvider<Type>: DataProviding {
     /**
      Instance variable of objects
     */
-    fileprivate var _objects: [Type]
+    fileprivate var _objects: [Object]
 
     /**
      Array of objects. Get-only property
     */
-    public var objects: [Type] {
+    public var objects: [Object] {
         return self._objects
     }
 
@@ -50,21 +50,21 @@ public final class ArrayProvider<Type>: DataProviding {
     /**
      Returns the object at the specifided indexPath
     */
-    public func object(at indexPath: IndexPath) -> Type {
+    public func object(at indexPath: IndexPath) -> Object {
         return self.objects[indexPath.row]
     }
 
     /**
      Mutating function that adds an object to the end of the array of objects
     */
-    public func add(object: Type) {
+    public func add(object: Object) {
         self._objects.append(object)
     }
 
     /**
      Mutating function that removes an object from the array of objects
     */
-    public func remove(object: Type, at indexPath: IndexPath) {
+    public func remove(object: Object, at indexPath: IndexPath) {
         self._objects.remove(at: indexPath.row)
     }
 
