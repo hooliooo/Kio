@@ -1,5 +1,6 @@
 # Rapid
-Rapid is a personal toolset I usually incorporate into projects. 
+Rapid is a personal toolset I usually incorporate into projects. This toolset is the result of various iOS blog posts I've come across and found useful.
+
 It contains many convenience tools to handle conventional iOS application boiler plate code such as UICollectionViewDataSource setup,
 defining specific UIColors, setting UIViews up for AutoLayout, adding Selectors to UIControls, etc.
 
