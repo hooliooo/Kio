@@ -18,7 +18,7 @@ public class SynchronizedDictionary<Key: Hashable, Value> {
     /**
      The queue that handles the read/writes to the dictionary instance.
     */
-    fileprivate let queue: DispatchQueue = DispatchQueue(
+    fileprivate let _queue: DispatchQueue = DispatchQueue(
         label: "SynchronizedDictionary",
         attributes: DispatchQueue.Attributes.concurrent
     )
@@ -28,6 +28,13 @@ public class SynchronizedDictionary<Key: Hashable, Value> {
     */
     fileprivate var dictionary: [Key: Value]
 
+    // MARK: Computed Properties
+    /**
+     The DispatchQueue instance used by the SynchronizedDictionary instance
+    */
+    public var queue: DispatchQueue {
+        return self._queue
+    }
 }
 
 // MARK: - Read Properties & Methods
@@ -36,48 +43,48 @@ public extension SynchronizedDictionary {
      Synchronous read of the dictionary's count property.
     */
     var count: Int {
-        return self.queue.sync { return self.dictionary.count }
+        return self._queue.sync { return self.dictionary.count }
     }
     /**
      Synchronous read of the dictionary's first property.
     */
     var first: (key: Key, value: Value)? {
-        return self.queue.sync { return self.dictionary.first }
+        return self._queue.sync { return self.dictionary.first }
     }
 
     /**
      Synchronous read of the dictionary's isEmpty property.
     */
     var isEmpty: Bool {
-        return self.queue.sync { return self.dictionary.isEmpty }
+        return self._queue.sync { return self.dictionary.isEmpty }
     }
 
     /**
      Synchronous read of the dictionary's key property.
     */
     var keys: LazyMapCollection<[Key : Value], Key> {
-        return self.queue.sync { return self.dictionary.keys }
+        return self._queue.sync { return self.dictionary.keys }
     }
 
     /**
      Synchronous read of the dictionary's underestimatedCount property.
     */
     var underestimatedCount: Int {
-        return self.queue.sync { return self.dictionary.underestimatedCount }
+        return self._queue.sync { return self.dictionary.underestimatedCount }
     }
 
     /**
      Synchronous read of the dictionary's values property.
     */
     var values: LazyMapCollection<[Key : Value], Value> {
-        return self.queue.sync { return self.dictionary.values }
+        return self._queue.sync { return self.dictionary.values }
     }
 
     /**
      Synchronous read of the dictionary's contains method.
     */
     func contains(where predicate: (Key, Value) throws -> Bool) rethrows -> Bool {
-        return try self.queue.sync {
+        return try self._queue.sync {
             do {
 
                 return try self.dictionary.contains(where: predicate)
@@ -94,14 +101,14 @@ public extension SynchronizedDictionary {
      Synchronous read of the dictionary's enumerated method.
     */
     func enumerated() -> EnumeratedSequence<Dictionary<Key, Value>> { // swiftlint:disable:this syntactic_sugar
-        return self.queue.sync { return self.dictionary.enumerated() }
+        return self._queue.sync { return self.dictionary.enumerated() }
     }
 
     /**
      Synchronous read of the dictionary's filter method.
     */
     func filter(_ isIncluded: (Key, Value) throws -> Bool) rethrows -> [(key: Key, value: Value)] {
-        return try self.queue.sync {
+        return try self._queue.sync {
             do {
 
                 return try self.dictionary.filter(isIncluded)
@@ -119,7 +126,7 @@ public extension SynchronizedDictionary {
     */
     func first(where predicate: ((key: Key, value: Value)) throws -> Bool) rethrows -> (key: Key, value: Value)? {
 
-        return try self.queue.sync {
+        return try self._queue.sync {
 
             do {
 
@@ -138,7 +145,7 @@ public extension SynchronizedDictionary {
     */
     func flatMap<ElementOfResult>(_ transform: (Key, Value) throws -> ElementOfResult?) rethrows -> [ElementOfResult] {
 
-        return try self.queue.sync {
+        return try self._queue.sync {
             do {
 
                 return try self.dictionary.flatMap(transform)
@@ -156,7 +163,7 @@ public extension SynchronizedDictionary {
     */
     func flatMap<SegmentOfResult : Sequence>(_ transform: (Key, Value) throws -> SegmentOfResult) rethrows -> [SegmentOfResult.Iterator.Element] {
 
-        return try self.queue.sync {
+        return try self._queue.sync {
             do {
 
                 return try self.dictionary.flatMap(transform)
@@ -174,7 +181,7 @@ public extension SynchronizedDictionary {
     */
     func forEach(_ body: (Key, Value) throws -> Void) rethrows {
 
-        return try self.queue.sync {
+        return try self._queue.sync {
             do {
 
                 return try self.dictionary.forEach(body)
@@ -192,7 +199,7 @@ public extension SynchronizedDictionary {
     */
     func index(where predicate: (Key, Value) throws -> Bool) rethrows -> DictionaryIndex<Key, Value>? {
 
-        return try self.queue.sync {
+        return try self._queue.sync {
             do {
 
                 return try self.dictionary.index(where: predicate)
@@ -210,7 +217,7 @@ public extension SynchronizedDictionary {
     */
     func map<T>(_ transform: (Key, Value) throws -> T) rethrows -> [T] {
 
-        return try self.queue.sync {
+        return try self._queue.sync {
             do {
 
                 return try self.dictionary.map(transform)
@@ -228,7 +235,7 @@ public extension SynchronizedDictionary {
     */
     func reduce<Result>(_ initialResult: Result, _ nextPartialResult: (Result, (key: Key, value: Value)) throws -> Result) rethrows -> Result {
 
-        return try self.queue.sync {
+        return try self._queue.sync {
             do {
 
                 return try self.dictionary.reduce(initialResult, nextPartialResult)
@@ -245,7 +252,7 @@ public extension SynchronizedDictionary {
      Synchronous read of the dictionary's reversed method.
     */
     func reversed() -> [(key: Key, value: Value)] {
-        return self.queue.sync { self.dictionary.reversed() }
+        return self._queue.sync { self.dictionary.reversed() }
     }
 }
 
@@ -255,7 +262,7 @@ public extension SynchronizedDictionary {
      Asynchronous write of the dictionary's popFirst method.
     */
     func popFirst(callback: @escaping ((key: Key, value: Value)?) -> Void) {
-        self.queue.async(flags: DispatchWorkItemFlags.barrier) {
+        self._queue.async(flags: DispatchWorkItemFlags.barrier) {
             callback(self.dictionary.popFirst())
         }
     }
@@ -264,14 +271,14 @@ public extension SynchronizedDictionary {
      Asynchronous write of the dictionary's removeAll method.
     */
     func removeAll() {
-        self.queue.async(flags: DispatchWorkItemFlags.barrier) { self.dictionary.removeAll() }
+        self._queue.async(flags: DispatchWorkItemFlags.barrier) { self.dictionary.removeAll() }
     }
 
     /**
      Asynchronous write of the dictionary's updateValue method.
     */
     func updateValue(_ value: Value, forKey key: Key, callback: @escaping (Value?) -> Void) {
-        return self.queue.async(flags: DispatchWorkItemFlags.barrier) {
+        return self._queue.async(flags: DispatchWorkItemFlags.barrier) {
             callback(self.dictionary.updateValue(value, forKey: key))
         }
     }
@@ -280,7 +287,7 @@ public extension SynchronizedDictionary {
      Asynchronous write of the dictionary's removeValue method.
     */
     func removeValue(forKey key: Key, callback: @escaping (Value?) -> Void) {
-        return self.queue.async(flags: DispatchWorkItemFlags.barrier) {
+        return self._queue.async(flags: DispatchWorkItemFlags.barrier) {
             callback(self.dictionary.removeValue(forKey: key))
         }
     }
@@ -296,7 +303,7 @@ public extension SynchronizedDictionary {
         get {
             var value: Value?
 
-            self.queue.sync {
+            self._queue.sync {
                 guard let dictValue = self.dictionary[key] else { return }
                 value = dictValue
             }
@@ -308,7 +315,7 @@ public extension SynchronizedDictionary {
 
             guard let newValue = newValue else { return }
 
-            self.queue.async(flags: DispatchWorkItemFlags.barrier) {
+            self._queue.async(flags: DispatchWorkItemFlags.barrier) {
                 self.dictionary[key] = newValue
             }
 
