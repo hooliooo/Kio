@@ -1,6 +1,6 @@
 //
 //  Rapid
-//  Copyright © Julio Alorro 2017
+//  Copyright (c) 2017 Julio Miguel Alorro
 //
 //  Licensed under the MIT license. See LICENSE file.
 //

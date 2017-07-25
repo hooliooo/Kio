@@ -3,7 +3,7 @@
 //  Rapid
 //
 //  Created by Julio Alorro on 7/24/17.
-//  Copyright © 2017 Some Enterprises. All rights reserved.
+//  Copyright (c) 2017 Some Enterprises. All rights reserved.
 //
 
 import Foundation
