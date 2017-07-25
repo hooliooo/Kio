@@ -9,7 +9,7 @@
 import Foundation
 
 public extension Int {
-    
+
     /**
      Integer as a String
     */
