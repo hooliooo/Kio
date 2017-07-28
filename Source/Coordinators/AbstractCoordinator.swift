@@ -34,7 +34,7 @@ open class AbstractCoordinator: JAObject, Coordinator {
     }
 
     // MARK: Instance Methods
-    public func start() {
+    open func start() {
         fatalError("Must override, do not call super.start() in your subclasses!")
     }
 
