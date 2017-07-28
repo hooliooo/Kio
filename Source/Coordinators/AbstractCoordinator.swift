@@ -13,7 +13,7 @@ import Foundation
  of its subclasses. Not intended to be instantiated directly.
 */
 open class AbstractCoordinator: JAObject, Coordinator {
-    override init() {
+    override public init() {
         guard type(of: self) != AbstractCoordinator.self else {
             fatalError(
                 "AbstractCoordinator instances cannot be created. Use subclasses instead"
