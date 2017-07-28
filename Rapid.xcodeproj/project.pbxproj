@@ -168,7 +168,6 @@
 			isa = PBXGroup;
 			children = (
 				1491C64A1F2249AF002B468C /* UICollectionView Helpers */,
-				1491C6491F224997002B468C /* Collections */,
 				14A0386E1EC86EFB0024E23D /* Coordinators */,
 				14A038601EC865580024E23D /* Classes */,
 				14A0385F1EC864240024E23D /* Extensions */,
@@ -213,6 +212,7 @@
 		14A038601EC865580024E23D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				1491C6491F224997002B468C /* Collections */,
 				14A038611EC865750024E23D /* JAView.swift */,
 				14A038631EC8671B0024E23D /* JAViewController.swift */,
 				14A038651EC868C20024E23D /* JAObject.swift */,

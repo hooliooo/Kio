@@ -43,20 +43,26 @@ public extension SynchronizedDictionary {
      Synchronous read of the dictionary's count property.
     */
     var count: Int {
-        return self._queue.sync { return self.dictionary.count }
+        var count: Int = 0
+        self._queue.sync { count = self.dictionary.count }
+        return count
     }
     /**
      Synchronous read of the dictionary's first property.
     */
     var first: (key: Key, value: Value)? {
-        return self._queue.sync { return self.dictionary.first }
+        var first: (key: Key, value: Value)?
+        self._queue.sync { first = self.dictionary.first }
+        return first
     }
 
     /**
      Synchronous read of the dictionary's isEmpty property.
     */
     var isEmpty: Bool {
-        return self._queue.sync { return self.dictionary.isEmpty }
+        var isEmpty: Bool = true
+        self._queue.sync { isEmpty = self.dictionary.isEmpty }
+        return isEmpty
     }
 
     /**
@@ -70,7 +76,9 @@ public extension SynchronizedDictionary {
      Synchronous read of the dictionary's underestimatedCount property.
     */
     var underestimatedCount: Int {
-        return self._queue.sync { return self.dictionary.underestimatedCount }
+        var underestimatedCount: Int = 0
+        self._queue.sync { underestimatedCount = self.dictionary.underestimatedCount }
+        return underestimatedCount
     }
 
     /**
@@ -84,10 +92,11 @@ public extension SynchronizedDictionary {
      Synchronous read of the dictionary's contains method.
     */
     func contains(where predicate: (Key, Value) throws -> Bool) rethrows -> Bool {
-        return try self._queue.sync {
+        var contains: Bool = false
+        try self._queue.sync {
             do {
 
-                return try self.dictionary.contains(where: predicate)
+                contains = try self.dictionary.contains(where: predicate)
 
             } catch let error {
 
@@ -95,6 +104,7 @@ public extension SynchronizedDictionary {
 
             }
         }
+        return contains
     }
 
     /**
@@ -108,10 +118,11 @@ public extension SynchronizedDictionary {
      Synchronous read of the dictionary's filter method.
     */
     func filter(_ isIncluded: (Key, Value) throws -> Bool) rethrows -> [(key: Key, value: Value)] {
-        return try self._queue.sync {
+        var filtered: [(key: Key, value: Value)] = []
+        try self._queue.sync {
             do {
 
-                return try self.dictionary.filter(isIncluded)
+                filtered = try self.dictionary.filter(isIncluded)
 
             } catch let error {
 
@@ -119,18 +130,18 @@ public extension SynchronizedDictionary {
 
             }
         }
+        return filtered
     }
 
     /**
      Synchronous read of the dictionary's first method.
     */
     func first(where predicate: ((key: Key, value: Value)) throws -> Bool) rethrows -> (key: Key, value: Value)? {
-
-        return try self._queue.sync {
-
+        var first: (key: Key, value: Value)?
+        try self._queue.sync {
             do {
 
-                return try self.dictionary.first(where: predicate)
+                first = try self.dictionary.first(where: predicate)
 
             } catch let error {
 
@@ -138,17 +149,18 @@ public extension SynchronizedDictionary {
 
             }
         }
+        return first
     }
 
     /**
      Synchronous read of the dictionary's flatMap<ElementOfResult> method.
     */
     func flatMap<ElementOfResult>(_ transform: (Key, Value) throws -> ElementOfResult?) rethrows -> [ElementOfResult] {
-
-        return try self._queue.sync {
+        var result: [ElementOfResult] = []
+        try self._queue.sync {
             do {
 
-                return try self.dictionary.flatMap(transform)
+                result = try self.dictionary.flatMap(transform)
 
             } catch let error {
 
@@ -156,17 +168,18 @@ public extension SynchronizedDictionary {
 
             }
         }
+        return result
     }
 
     /**
      Synchronous read of the dictionary's flatMap<SegmentOfResult> method.
     */
     func flatMap<SegmentOfResult : Sequence>(_ transform: (Key, Value) throws -> SegmentOfResult) rethrows -> [SegmentOfResult.Iterator.Element] {
-
-        return try self._queue.sync {
+        var result: [SegmentOfResult.Iterator.Element] = []
+        try self._queue.sync {
             do {
 
-                return try self.dictionary.flatMap(transform)
+                result = try self.dictionary.flatMap(transform)
 
             } catch let error {
 
@@ -174,6 +187,7 @@ public extension SynchronizedDictionary {
 
             }
         }
+        return result
     }
 
     /**
@@ -198,11 +212,11 @@ public extension SynchronizedDictionary {
      Synchronous read of the dictionary's index method.
     */
     func index(where predicate: (Key, Value) throws -> Bool) rethrows -> DictionaryIndex<Key, Value>? {
-
-        return try self._queue.sync {
+        var index: DictionaryIndex<Key, Value>?
+        try self._queue.sync {
             do {
 
-                return try self.dictionary.index(where: predicate)
+                index = try self.dictionary.index(where: predicate)
 
             } catch let error {
 
@@ -210,17 +224,18 @@ public extension SynchronizedDictionary {
 
             }
         }
+        return index
     }
 
     /**
      Synchronous read of the dictionary's map<T> method.
     */
     func map<T>(_ transform: (Key, Value) throws -> T) rethrows -> [T] {
-
-        return try self._queue.sync {
+        var result: [T] = []
+        try self._queue.sync {
             do {
 
-                return try self.dictionary.map(transform)
+                result = try self.dictionary.map(transform)
 
             } catch let error {
 
@@ -228,17 +243,18 @@ public extension SynchronizedDictionary {
 
             }
         }
+        return result
     }
 
     /**
      Synchronous read of the dictionary's reduce<Result> method.
     */
     func reduce<Result>(_ initialResult: Result, _ nextPartialResult: (Result, (key: Key, value: Value)) throws -> Result) rethrows -> Result {
-
-        return try self._queue.sync {
+        var result: Result = initialResult
+        try self._queue.sync {
             do {
 
-                return try self.dictionary.reduce(initialResult, nextPartialResult)
+                result = try self.dictionary.reduce(initialResult, nextPartialResult)
 
             } catch let error {
 
@@ -246,13 +262,16 @@ public extension SynchronizedDictionary {
 
             }
         }
+        return result
     }
 
     /**
      Synchronous read of the dictionary's reversed method.
     */
     func reversed() -> [(key: Key, value: Value)] {
-        return self._queue.sync { self.dictionary.reversed() }
+        var result: [(key: Key, value: Value)] = []
+        self._queue.sync { result = self.dictionary.reversed() }
+        return result
     }
 }
 
@@ -263,7 +282,9 @@ public extension SynchronizedDictionary {
     */
     func popFirst(callback: @escaping ((key: Key, value: Value)?) -> Void) {
         self._queue.async(flags: DispatchWorkItemFlags.barrier) {
-            callback(self.dictionary.popFirst())
+            DispatchQueue.main.async {
+                callback(self.dictionary.popFirst())
+            }
         }
     }
 
@@ -278,8 +299,10 @@ public extension SynchronizedDictionary {
      Asynchronous write of the dictionary's updateValue method.
     */
     func updateValue(_ value: Value, forKey key: Key, callback: @escaping (Value?) -> Void) {
-        return self._queue.async(flags: DispatchWorkItemFlags.barrier) {
-            callback(self.dictionary.updateValue(value, forKey: key))
+        self._queue.async(flags: DispatchWorkItemFlags.barrier) {
+            DispatchQueue.main.async {
+                callback(self.dictionary.updateValue(value, forKey: key))
+            }
         }
     }
 
@@ -287,8 +310,10 @@ public extension SynchronizedDictionary {
      Asynchronous write of the dictionary's removeValue method.
     */
     func removeValue(forKey key: Key, callback: @escaping (Value?) -> Void) {
-        return self._queue.async(flags: DispatchWorkItemFlags.barrier) {
-            callback(self.dictionary.removeValue(forKey: key))
+        self._queue.async(flags: DispatchWorkItemFlags.barrier) {
+            DispatchQueue.main.async {
+                callback(self.dictionary.removeValue(forKey: key))
+            }
         }
     }
 }
