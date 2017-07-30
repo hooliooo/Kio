@@ -7,10 +7,10 @@
 //
 
 /**
- The DataProviding protcol defines the interface of the type that will manage an array of objects 
+ The DataProvider protcol defines the interface of the type that will manage an array of objects
  that will be shown in a UICollectionView instance
 */
-public protocol DataProviding {
+public protocol DataProvider {
 
     /**
      Object is a placeholder type that will be used in the array managed by the DataProviding instance

@@ -5,11 +5,12 @@
 //  Licensed under the MIT license. See LICENSE file.
 //
 //
+
 /**
  DataSource is the class that adopts the UICollectionViewDataSource protcol and manages the boilerplate set up for
  using UICollectionView
 */
-open class DataSource<Provider: DataProviding, Cell: UICollectionViewCell>: JAObject, UICollectionViewDataSource
+open class DataSource<Provider: DataProvider, Cell: UICollectionViewCell>: JAObject, UICollectionViewDataSource
     where Cell: Configurable, Provider.Object == Cell.Object {
 
     // MARK: Initializers

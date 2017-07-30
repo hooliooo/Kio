@@ -14,8 +14,8 @@ public class SynchronizedArray<Element> {
      The initializer
      - parameter dict: Array instance to be managed
     */
-    init(array: [Element]) {
-        self.array = array
+    init(elements: [Element]) {
+        self.elements = elements
     }
 
     // MARK: Stored Properties
@@ -30,7 +30,7 @@ public class SynchronizedArray<Element> {
     /**
      The array instance.
     */
-    fileprivate var array: [Element]
+    fileprivate var elements: [Element]
 
     // MARK: - Computed Properties
     /**
@@ -49,7 +49,7 @@ public extension SynchronizedArray {
     var count: Int {
         var count: Int = 0
         self._queue.sync {
-            count = self.array.count
+            count = self.elements.count
         }
         return count
     }
@@ -60,7 +60,7 @@ public extension SynchronizedArray {
     var description: String {
         var description: String = ""
         self._queue.sync {
-            description = self.array.description
+            description = self.elements.description
         }
         return description
     }
@@ -71,7 +71,7 @@ public extension SynchronizedArray {
     var first: Element? {
         var first: Element?
         self._queue.sync {
-            first = self.array.first
+            first = self.elements.first
         }
         return first
     }
@@ -82,7 +82,7 @@ public extension SynchronizedArray {
     var isEmpty: Bool {
         var isEmpty: Bool = true
         self._queue.sync {
-            isEmpty = self.array.isEmpty
+            isEmpty = self.elements.isEmpty
         }
         return isEmpty
     }
@@ -93,7 +93,7 @@ public extension SynchronizedArray {
     var last: Element? {
         var last: Element?
         self._queue.sync {
-            last = self.array.last
+            last = self.elements.last
         }
         return last
     }
@@ -104,7 +104,7 @@ public extension SynchronizedArray {
     func contains(where predicate: (Element) throws -> Bool) rethrows -> Bool {
         var result: Bool = false
         try self._queue.sync {
-            result = try self.array.contains(where: predicate)
+            result = try self.elements.contains(where: predicate)
         }
         return result
     }
@@ -115,7 +115,7 @@ public extension SynchronizedArray {
     func first(where predicate: (Element) throws -> Bool) rethrows -> Element? {
         var result: Element?
         try self._queue.sync {
-            result = try self.array.first(where: predicate)
+            result = try self.elements.first(where: predicate)
         }
         return result
     }
@@ -126,7 +126,7 @@ public extension SynchronizedArray {
     func filter(_ isIncluded: (Element) throws -> Bool) rethrows -> [Element] {
         var result: [Element] = []
         try self._queue.sync {
-            result = try self.array.filter(isIncluded)
+            result = try self.elements.filter(isIncluded)
         }
         return result
     }
@@ -137,7 +137,7 @@ public extension SynchronizedArray {
     func flatMap<SegmentOfResult>(_ transform: (Element) throws -> SegmentOfResult) rethrows -> [SegmentOfResult.Iterator.Element] where SegmentOfResult : Sequence {
         var result: [SegmentOfResult.Iterator.Element] = []
         try self._queue.sync {
-            result = try self.array.flatMap(transform)
+            result = try self.elements.flatMap(transform)
         }
         return result
     }
@@ -148,7 +148,7 @@ public extension SynchronizedArray {
     func flatMap<ElementOfResult>(_ transform: (Element) throws -> ElementOfResult?) rethrows -> [ElementOfResult] {
         var result: [ElementOfResult] = []
         try self._queue.sync {
-            result = try self.array.flatMap(transform)
+            result = try self.elements.flatMap(transform)
         }
         return result
     }
@@ -158,7 +158,7 @@ public extension SynchronizedArray {
     */
     func forEach(_ body: (Element) -> Void) {
         return self._queue.sync {
-            return self.array.forEach(body)
+            return self.elements.forEach(body)
         }
     }
 
@@ -168,7 +168,7 @@ public extension SynchronizedArray {
     func index(where predicate: (Element) -> Bool) -> Int? {
         var index: Int?
         self._queue.sync {
-            index = self.array.index(where: predicate)
+            index = self.elements.index(where: predicate)
         }
         return index
     }
@@ -179,7 +179,7 @@ public extension SynchronizedArray {
     func map<T>(_ transform: (Element) throws -> T) rethrows -> [T] {
         var result: [T] = []
         try self._queue.sync {
-            result = try self.array.map(transform)
+            result = try self.elements.map(transform)
         }
         return result
     }
@@ -190,7 +190,7 @@ public extension SynchronizedArray {
     func reduce<Result>(_ initialResult: Result, _ nextPartialResult: (Result, Element) throws -> Result) rethrows -> Result {
         var result: Result = initialResult
         try self._queue.sync {
-            result = try self.array.reduce(initialResult, nextPartialResult)
+            result = try self.elements.reduce(initialResult, nextPartialResult)
         }
         return result
     }
@@ -201,7 +201,7 @@ public extension SynchronizedArray {
     func sorted(by areInIncreasingOrder: (Element, Element) -> Bool) -> [Element] {
         var result: [Element] = []
         self._queue.sync {
-            result = self.array.sorted(by: areInIncreasingOrder)
+            result = self.elements.sorted(by: areInIncreasingOrder)
         }
         return result
     }
@@ -214,7 +214,7 @@ public extension SynchronizedArray {
     */
     func append(_ newElement: Element) {
         self._queue.async(flags: DispatchWorkItemFlags.barrier) {
-            self.array.append(newElement)
+            self.elements.append(newElement)
         }
     }
 
@@ -223,7 +223,7 @@ public extension SynchronizedArray {
     */
     func append<S>(contentsOf newElements: S) where S : Sequence, S.Iterator.Element == Element {
         self._queue.async(flags: DispatchWorkItemFlags.barrier) {
-            self.array.append(contentsOf: newElements)
+            self.elements.append(contentsOf: newElements)
         }
     }
 
@@ -232,7 +232,7 @@ public extension SynchronizedArray {
     */
     func insert(_ newElement: Element, at i: Int) {
         self._queue.async(flags: DispatchWorkItemFlags.barrier) {
-            self.array.insert(newElement, at: i)
+            self.elements.insert(newElement, at: i)
         }
     }
     /**
@@ -241,7 +241,7 @@ public extension SynchronizedArray {
     func remove(at index: Int, callback: @escaping (Element) -> Void) {
         self._queue.async(flags: DispatchWorkItemFlags.barrier) {
             DispatchQueue.main.async {
-                callback(self.array.remove(at: index))
+                callback(self.elements.remove(at: index))
             }
         }
     }
@@ -251,9 +251,9 @@ public extension SynchronizedArray {
     */
     func remove(where predicate: @escaping (Element) -> Bool, callback: ((Element) -> Void)? = nil) {
         self._queue.async(flags: DispatchWorkItemFlags.barrier) {
-            guard let index = self.array.index(where: predicate) else { return }
+            guard let index = self.elements.index(where: predicate) else { return }
 
-            let element = self.array.remove(at: index)
+            let element = self.elements.remove(at: index)
 
             DispatchQueue.main.async {
                 callback?(element)
@@ -266,9 +266,9 @@ public extension SynchronizedArray {
     */
     func removeAll(callback: (([Element]) -> Void)? = nil) {
         self._queue.async(flags: DispatchWorkItemFlags.barrier) {
-            let elements: [Element] = self.array
+            let elements: [Element] = self.elements
 
-            self.array.removeAll()
+            self.elements.removeAll()
             DispatchQueue.main.async {
                 callback?(elements)
             }
@@ -283,7 +283,7 @@ public extension SynchronizedArray where Element: Equatable {
     func contains(_ element: Element) -> Bool {
         var result: Bool = false
         self._queue.sync {
-            result = self.array.contains(element)
+            result = self.elements.contains(element)
         }
         return result
     }

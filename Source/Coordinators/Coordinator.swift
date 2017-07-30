@@ -36,7 +36,7 @@ public protocol Coordinator: class {
 
     /**
      The start method is where the Coordinator instantiates its UIViewController instance and presents it.
-     */
+    */
     func start()
 
 }

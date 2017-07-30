@@ -10,7 +10,7 @@
  An implementation of the DataProviding protocol that manages a one dimensional array, 
  meaning that it is suitable for collectionViews with a single section.
 */
-public final class ArrayProvider<Object>: DataProviding {
+public final class ArrayProvider<Object>: DataProvider {
 
     /**
      Initializer for an ArrayProvider instance

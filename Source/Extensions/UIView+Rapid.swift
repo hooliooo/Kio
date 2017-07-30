@@ -6,15 +6,28 @@
 //
 //
 
-public extension UIView {
+/**
+ A DSL for UIView to access custom methods
+*/
+public struct RapidViewDSL {
+
+    // MARK: Stored Propeties
+    /**
+     Underlying UIView instance
+    */
+    public let view: UIView
+
+}
+
+public extension RapidViewDSL {
 
     /**
      Adds subview and sets translatesAutoresizingMaskIntoConstraints to false.
 
      - parameter subview: The subview to add and prepare for AutoLayout.
     */
-    public func subview(forAutoLayout subview: UIView) {
-        self.addSubview(subview)
+    func subview(forAutoLayout subview: UIView) {
+        self.view.addSubview(subview)
         subview.translatesAutoresizingMaskIntoConstraints = false
     }
 
@@ -25,7 +38,7 @@ public extension UIView {
 
      - parameter subviews: The subviews to add and prepare for AutoLayout.
     */
-    public func subviews(forAutoLayout subviews: UIView...) {
+    func subviews(forAutoLayout subviews: UIView...) {
         self.subviews(forAutoLayout: subviews)
     }
 
@@ -36,8 +49,8 @@ public extension UIView {
 
      - parameter subviews: The subviews to add and prepare for AutoLayout.
     */
-    public func subviews(forAutoLayout subviews: [UIView]) {
-        subviews.forEach { [unowned self] (subview: UIView) -> Void in
+    func subviews(forAutoLayout subviews: [UIView]) {
+        subviews.forEach { (subview: UIView) -> Void in
             self.subview(forAutoLayout: subview)
         }
     }
@@ -48,9 +61,18 @@ public extension UIView {
 
      - parameter value: The value used to set the UIView's cornerRadius.
     */
-    public func cornerRadius(of value: CGFloat) {
-        self.layer.cornerRadius = value
-        self.clipsToBounds = true
+    func cornerRadius(of value: CGFloat) {
+        self.view.layer.cornerRadius = value
+        self.view.clipsToBounds = true
     }
 
+}
+
+public extension UIView {
+    /**
+     RapidViewDSL instance to access custom methods
+    */
+    var rpd: RapidViewDSL {
+        return RapidViewDSL(view: self)
+    }
 }

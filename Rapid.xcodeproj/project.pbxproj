@@ -19,6 +19,7 @@
 		148BE0B41F22F31800B2C7B5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 148BE0B11F22F2F200B2C7B5 /* README.md */; };
 		148BE0B71F2304E700B2C7B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 148BE0B61F2304E700B2C7B5 /* Foundation.framework */; };
 		148BE0B91F2304EF00B2C7B5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 148BE0B81F2304EF00B2C7B5 /* UIKit.framework */; };
+		149C62521F2DE3D50099E1A4 /* Date+Rapid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149C62511F2DE3D50099E1A4 /* Date+Rapid.swift */; };
 		14A038481EC860AD0024E23D /* Rapid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14A0383E1EC860AD0024E23D /* Rapid.framework */; };
 		14A0384D1EC860AD0024E23D /* RapidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A0384C1EC860AD0024E23D /* RapidTests.swift */; };
 		14A0384F1EC860AD0024E23D /* Rapid.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A038411EC860AD0024E23D /* Rapid.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -35,7 +36,7 @@
 		14A038721EC86F470024E23D /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A038711EC86F470024E23D /* AppCoordinator.swift */; };
 		14A038751EC872AC0024E23D /* NavigationItemSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A038741EC872AC0024E23D /* NavigationItemSetting.swift */; };
 		14A038771EC872E10024E23D /* TargetActionSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A038761EC872E10024E23D /* TargetActionSetting.swift */; };
-		14D5CE7B1EC9BAF900982047 /* DataProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D5CE791EC9BAF900982047 /* DataProviding.swift */; };
+		14D5CE7B1EC9BAF900982047 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D5CE791EC9BAF900982047 /* DataProvider.swift */; };
 		14D5CE7C1EC9BAF900982047 /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D5CE7A1EC9BAF900982047 /* Configurable.swift */; };
 		14D5CE801EC9BB0900982047 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D5CE7D1EC9BB0900982047 /* DataSource.swift */; };
 		14D5CE811EC9BB0900982047 /* ArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D5CE7E1EC9BB0900982047 /* ArrayDataSource.swift */; };
@@ -65,6 +66,7 @@
 		148BE0B11F22F2F200B2C7B5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		148BE0B61F2304E700B2C7B5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		148BE0B81F2304EF00B2C7B5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		149C62511F2DE3D50099E1A4 /* Date+Rapid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Rapid.swift"; sourceTree = "<group>"; };
 		14A0383E1EC860AD0024E23D /* Rapid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Rapid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14A038411EC860AD0024E23D /* Rapid.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rapid.h; sourceTree = "<group>"; };
 		14A038421EC860AD0024E23D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -84,7 +86,7 @@
 		14A038711EC86F470024E23D /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		14A038741EC872AC0024E23D /* NavigationItemSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationItemSetting.swift; sourceTree = "<group>"; };
 		14A038761EC872E10024E23D /* TargetActionSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetActionSetting.swift; sourceTree = "<group>"; };
-		14D5CE791EC9BAF900982047 /* DataProviding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProviding.swift; sourceTree = "<group>"; };
+		14D5CE791EC9BAF900982047 /* DataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		14D5CE7A1EC9BAF900982047 /* Configurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
 		14D5CE7D1EC9BB0900982047 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		14D5CE7E1EC9BB0900982047 /* ArrayDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayDataSource.swift; sourceTree = "<group>"; };
@@ -133,11 +135,11 @@
 		1491C64A1F2249AF002B468C /* UICollectionView Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				14D5CE791EC9BAF900982047 /* DataProviding.swift */,
+				14D5CE791EC9BAF900982047 /* DataProvider.swift */,
+				14D5CE7F1EC9BB0900982047 /* ArrayProvider.swift */,
 				14D5CE7A1EC9BAF900982047 /* Configurable.swift */,
 				14D5CE7D1EC9BB0900982047 /* DataSource.swift */,
 				14D5CE7E1EC9BB0900982047 /* ArrayDataSource.swift */,
-				14D5CE7F1EC9BB0900982047 /* ArrayProvider.swift */,
 			);
 			path = "UICollectionView Helpers";
 			sourceTree = "<group>";
@@ -205,6 +207,7 @@
 				14A0386C1EC86CD20024E23D /* String+Rapid.swift */,
 				147952A91F25AB130036611A /* Double+Rapid.swift */,
 				147952AB1F25AB1F0036611A /* Int+Rapid.swift */,
+				149C62511F2DE3D50099E1A4 /* Date+Rapid.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				14D5CE7C1EC9BAF900982047 /* Configurable.swift in Sources */,
 				145D60A21F1F0F9D00FE565B /* AbstractCoordinator.swift in Sources */,
 				14A038721EC86F470024E23D /* AppCoordinator.swift in Sources */,
+				149C62521F2DE3D50099E1A4 /* Date+Rapid.swift in Sources */,
 				147952AA1F25AB130036611A /* Double+Rapid.swift in Sources */,
 				14A038591EC860F60024E23D /* UIView+Rapid.swift in Sources */,
 				14A038621EC865750024E23D /* JAView.swift in Sources */,
@@ -402,7 +406,7 @@
 				14A038751EC872AC0024E23D /* NavigationItemSetting.swift in Sources */,
 				14A038661EC868C20024E23D /* JAObject.swift in Sources */,
 				14D5CE821EC9BB0900982047 /* ArrayProvider.swift in Sources */,
-				14D5CE7B1EC9BAF900982047 /* DataProviding.swift in Sources */,
+				14D5CE7B1EC9BAF900982047 /* DataProvider.swift in Sources */,
 				147952AC1F25AB1F0036611A /* Int+Rapid.swift in Sources */,
 				14D5CE811EC9BB0900982047 /* ArrayDataSource.swift in Sources */,
 				14A0386B1EC86A420024E23D /* SynchronizedDictionary.swift in Sources */,
