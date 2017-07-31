@@ -16,12 +16,12 @@ public struct RapidDateDSL {
     /**
      UTC TimeZone instance
     */
-    fileprivate static let timeZone: TimeZone = TimeZone(identifier: "UTC")!
+    public static let timeZone: TimeZone = TimeZone(identifier: "UTC")!
 
     /**
      Calendar Instance
     */
-    fileprivate static let calendar: Calendar = {
+    public static let calendar: Calendar = {
         var calendar: Calendar = Calendar.autoupdatingCurrent
         calendar.firstWeekday = 0
         calendar.timeZone = RapidDateDSL.timeZone

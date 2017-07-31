@@ -8,6 +8,9 @@
 
 import Foundation
 
+/**
+ A DSL for Double to access custom methods
+*/
 public struct RapidDoubleDSL {
 
     // MARK: Stored Propeties

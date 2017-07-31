@@ -6,8 +6,15 @@
 //
 //
 
+/**
+ A DSL for String to access custom methods
+*/
 public struct RapidStringDSL {
 
+    // MARK: Stored Propeties
+    /**
+     Underlying String instance
+    */
     let string: String
 
 }
@@ -107,6 +114,10 @@ public extension RapidStringDSL {
 }
 
 public extension String {
+
+    /**
+     RapidDoubleDSL instance to access custom methods
+    */
     var rpd: RapidStringDSL {
         return RapidStringDSL(string: self)
     }
