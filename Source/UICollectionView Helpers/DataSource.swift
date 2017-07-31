@@ -68,7 +68,7 @@ open class DataSource<Provider: DataProvider, Cell: UICollectionViewCell>: JAObj
     }
 
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self._provider.numberOfRows(in: section)
+        return self._provider.numberOfItems(in: section)
     }
 
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

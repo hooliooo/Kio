@@ -43,7 +43,7 @@ public final class ArrayProvider<Object>: DataProvider {
     /**
      Returns the number of objects in the objects array
     */
-    public func numberOfRows(in section: Int) -> Int {
+    public func numberOfItems(in section: Int) -> Int {
         return self.objects.count
     }
 

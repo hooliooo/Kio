@@ -26,7 +26,7 @@ public protocol DataProvider {
      Number of rows to be shown in section of UICollectionView
      - parameter section: Section index of UICollectionView
     */
-    func numberOfRows(in section: Int) -> Int
+    func numberOfItems(in section: Int) -> Int
 
     /**
      The object at the specific indexPath of the UICollectionView
