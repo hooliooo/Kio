@@ -26,7 +26,7 @@ open class ArrayDataSource<Object, Cell: UICollectionViewCell>: DataSource<Array
     /**
      Array of objects managed by the DataProviding instance. Get-only property
     */
-    public var objects: [Object] {
+    open var objects: [Object] {
         return self.provider.objects
     }
 

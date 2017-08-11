@@ -41,14 +41,14 @@ open class DataSource<Provider: DataProvider, Cell: UICollectionViewCell>: JAObj
     /**
      Returns the Provider instance that carries the collection for the collectionView. Get-only property.
     */
-    public var provider: Provider {
+    open var provider: Provider {
         return self._provider
     }
 
     /**
      Returns the UICollectionView instance. Get-only property.
     */
-    public var collectionView: UICollectionView {
+    open var collectionView: UICollectionView {
         return self._collectionView
     }
 
@@ -57,21 +57,21 @@ open class DataSource<Provider: DataProvider, Cell: UICollectionViewCell>: JAObj
      The setup method is boilerplate code that assigns the collectionView's dataSource as self and
      registers the specified cell to the collectionView with a given identifier
     */
-    public func setup() {
+    open func setup() {
         self._collectionView.dataSource = self
         self._collectionView.register(Cell.self, forCellWithReuseIdentifier: Cell.identifier)
     }
 
     // MARK: - UICollectionViewDataSource Methods
-    public func numberOfSections(in collectionView: UICollectionView) -> Int {
+    open func numberOfSections(in collectionView: UICollectionView) -> Int {
         return self._provider.numberOfSections()
     }
 
-    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    open func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self._provider.numberOfItems(in: section)
     }
 
-    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    open func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         // swiftlint:disable:next force_cast
         let cell: Cell = collectionView.dequeueReusableCell(withReuseIdentifier: Cell.identifier, for: indexPath) as! Cell
         let object: Provider.Object = self._provider.object(at: indexPath)

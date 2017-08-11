@@ -61,6 +61,18 @@
 		145D60A91F1F4DA600FE565B /* TabBarCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
 		145D60AB1F1F4E7C00FE565B /* AnyTabCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyTabCoordinator.swift; sourceTree = "<group>"; };
 		145D60AD1F1F4EBB00FE565B /* TabCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabCoordinator.swift; sourceTree = "<group>"; };
+		14615B4B1F38100800F95116 /* Rapid.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Rapid.podspec; sourceTree = "<group>"; };
+		14615B4D1F38100800F95116 /* Rapid.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Rapid.podspec; sourceTree = "<group>"; };
+		14615B4F1F38100800F95116 /* Rapid.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Rapid.podspec; sourceTree = "<group>"; };
+		14615B511F38100800F95116 /* Rapid.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Rapid.podspec; sourceTree = "<group>"; };
+		14615B531F38100800F95116 /* Rapid.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Rapid.podspec; sourceTree = "<group>"; };
+		14615B551F38100800F95116 /* Rapid.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Rapid.podspec; sourceTree = "<group>"; };
+		14615B571F38100800F95116 /* Rapid.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Rapid.podspec; sourceTree = "<group>"; };
+		14615B591F38100800F95116 /* Rapid.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Rapid.podspec; sourceTree = "<group>"; };
+		14615B5B1F38100800F95116 /* Rapid.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Rapid.podspec; sourceTree = "<group>"; };
+		14615B5D1F38100800F95116 /* Rapid.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Rapid.podspec; sourceTree = "<group>"; };
+		14615B5F1F38100800F95116 /* Rapid.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Rapid.podspec; sourceTree = "<group>"; };
+		14615B611F38100800F95116 /* Rapid.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Rapid.podspec; sourceTree = "<group>"; };
 		147952A91F25AB130036611A /* Double+Rapid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Rapid.swift"; sourceTree = "<group>"; };
 		147952AB1F25AB1F0036611A /* Int+Rapid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Rapid.swift"; sourceTree = "<group>"; };
 		148BE0B11F22F2F200B2C7B5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -114,6 +126,131 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14615B491F38100800F95116 /* Rapid */ = {
+			isa = PBXGroup;
+			children = (
+				14615B4A1F38100800F95116 /* 0.0.1 */,
+				14615B4C1F38100800F95116 /* 0.0.2 */,
+				14615B4E1F38100800F95116 /* 0.0.3 */,
+				14615B501F38100800F95116 /* 0.0.4 */,
+				14615B521F38100800F95116 /* 0.0.5 */,
+				14615B541F38100800F95116 /* 0.0.6 */,
+				14615B561F38100800F95116 /* 0.0.7 */,
+				14615B581F38100800F95116 /* 0.0.8 */,
+				14615B5A1F38100800F95116 /* 0.0.9 */,
+				14615B5C1F38100800F95116 /* 0.1.0 */,
+				14615B5E1F38100800F95116 /* 0.1.1 */,
+				14615B601F38100800F95116 /* 0.1.2 */,
+			);
+			path = Rapid;
+			sourceTree = "<group>";
+		};
+		14615B4A1F38100800F95116 /* 0.0.1 */ = {
+			isa = PBXGroup;
+			children = (
+				14615B4B1F38100800F95116 /* Rapid.podspec */,
+			);
+			path = 0.0.1;
+			sourceTree = "<group>";
+		};
+		14615B4C1F38100800F95116 /* 0.0.2 */ = {
+			isa = PBXGroup;
+			children = (
+				14615B4D1F38100800F95116 /* Rapid.podspec */,
+			);
+			path = 0.0.2;
+			sourceTree = "<group>";
+		};
+		14615B4E1F38100800F95116 /* 0.0.3 */ = {
+			isa = PBXGroup;
+			children = (
+				14615B4F1F38100800F95116 /* Rapid.podspec */,
+			);
+			path = 0.0.3;
+			sourceTree = "<group>";
+		};
+		14615B501F38100800F95116 /* 0.0.4 */ = {
+			isa = PBXGroup;
+			children = (
+				14615B511F38100800F95116 /* Rapid.podspec */,
+			);
+			path = 0.0.4;
+			sourceTree = "<group>";
+		};
+		14615B521F38100800F95116 /* 0.0.5 */ = {
+			isa = PBXGroup;
+			children = (
+				14615B531F38100800F95116 /* Rapid.podspec */,
+			);
+			path = 0.0.5;
+			sourceTree = "<group>";
+		};
+		14615B541F38100800F95116 /* 0.0.6 */ = {
+			isa = PBXGroup;
+			children = (
+				14615B551F38100800F95116 /* Rapid.podspec */,
+			);
+			path = 0.0.6;
+			sourceTree = "<group>";
+		};
+		14615B561F38100800F95116 /* 0.0.7 */ = {
+			isa = PBXGroup;
+			children = (
+				14615B571F38100800F95116 /* Rapid.podspec */,
+			);
+			path = 0.0.7;
+			sourceTree = "<group>";
+		};
+		14615B581F38100800F95116 /* 0.0.8 */ = {
+			isa = PBXGroup;
+			children = (
+				14615B591F38100800F95116 /* Rapid.podspec */,
+			);
+			path = 0.0.8;
+			sourceTree = "<group>";
+		};
+		14615B5A1F38100800F95116 /* 0.0.9 */ = {
+			isa = PBXGroup;
+			children = (
+				14615B5B1F38100800F95116 /* Rapid.podspec */,
+			);
+			path = 0.0.9;
+			sourceTree = "<group>";
+		};
+		14615B5C1F38100800F95116 /* 0.1.0 */ = {
+			isa = PBXGroup;
+			children = (
+				14615B5D1F38100800F95116 /* Rapid.podspec */,
+			);
+			path = 0.1.0;
+			sourceTree = "<group>";
+		};
+		14615B5E1F38100800F95116 /* 0.1.1 */ = {
+			isa = PBXGroup;
+			children = (
+				14615B5F1F38100800F95116 /* Rapid.podspec */,
+			);
+			path = 0.1.1;
+			sourceTree = "<group>";
+		};
+		14615B601F38100800F95116 /* 0.1.2 */ = {
+			isa = PBXGroup;
+			children = (
+				14615B611F38100800F95116 /* Rapid.podspec */,
+			);
+			path = 0.1.2;
+			sourceTree = "<group>";
+		};
+		14615B621F38101700F95116 /* Podspec Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				142152701F1F944300EB421A /* Rapid.podspec */,
+				145D60A51F1F22E800FE565B /* LICENSE.md */,
+				148BE0B11F22F2F200B2C7B5 /* README.md */,
+			);
+			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
 		148BE0B51F2304E700B2C7B5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,9 +284,8 @@
 		14A038341EC860AD0024E23D = {
 			isa = PBXGroup;
 			children = (
-				142152701F1F944300EB421A /* Rapid.podspec */,
-				145D60A51F1F22E800FE565B /* LICENSE.md */,
-				148BE0B11F22F2F200B2C7B5 /* README.md */,
+				14615B621F38101700F95116 /* Podspec Metadata */,
+				14615B491F38100800F95116 /* Rapid */,
 				14A038401EC860AD0024E23D /* Source */,
 				14A0384B1EC860AD0024E23D /* RapidTests */,
 				14A0383F1EC860AD0024E23D /* Products */,
