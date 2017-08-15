@@ -16,22 +16,29 @@ public protocol ActivityIndicatorManaging: class {
 
 public extension ActivityIndicatorManaging where Self: UIViewController {
 
+    private func createActivityIndicator() -> JAActivityIndicatorView {
+        let activityIndicatorView: JAActivityIndicatorView = JAActivityIndicatorView(
+            activityIndicatorStyle: UIActivityIndicatorViewStyle.gray
+        )
+        activityIndicatorView.translatesAutoresizingMaskIntoConstraints = false
+        activityIndicatorView.hidesWhenStopped = true
+        activityIndicatorView.backgroundColor = UIColor(red: 225, green: 225, blue: 225)
+        activityIndicatorView.rpd.cornerRadius(of: 5.0)
+
+        self.view.addSubview(activityIndicatorView)
+        NSLayoutConstraint.activate([
+            activityIndicatorView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+            activityIndicatorView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor),
+            activityIndicatorView.heightAnchor.constraint(equalToConstant: 50.0),
+            activityIndicatorView.widthAnchor.constraint(equalToConstant: 50.0)
+        ])
+        return activityIndicatorView
+    }
+
     func showActivityIndicator() {
         DispatchQueue.main.async {
-            let activityIndicatorView: JAActivityIndicatorView = JAActivityIndicatorView(
-                activityIndicatorStyle: UIActivityIndicatorViewStyle.gray
-            )
-            activityIndicatorView.hidesWhenStopped = true
-            activityIndicatorView.translatesAutoresizingMaskIntoConstraints = false
-            self.view.addSubview(activityIndicatorView)
-            NSLayoutConstraint.activate([
-                activityIndicatorView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
-                activityIndicatorView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor),
-                activityIndicatorView.heightAnchor.constraint(equalToConstant: 50.0),
-                activityIndicatorView.widthAnchor.constraint(equalToConstant: 50.0)
-            ])
-
-            activityIndicatorView.startAnimating()
+            self.createActivityIndicator()
+                .startAnimating()
         }
     }
 
