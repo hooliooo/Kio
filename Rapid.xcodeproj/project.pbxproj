@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		142152711F1F944300EB421A /* Rapid.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 142152701F1F944300EB421A /* Rapid.podspec */; };
+		1448BEBA1F42D03000A17F12 /* ActivityIndicatorManaging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1448BEB91F42D03000A17F12 /* ActivityIndicatorManaging.swift */; };
+		1448BEBC1F42D46700A17F12 /* JAActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1448BEBB1F42D46700A17F12 /* JAActivityIndicatorView.swift */; };
 		145D60A21F1F0F9D00FE565B /* AbstractCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145D60A11F1F0F9D00FE565B /* AbstractCoordinator.swift */; };
 		145D60A81F1F35F500FE565B /* SynchronizedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145D60A71F1F35F500FE565B /* SynchronizedArray.swift */; };
 		145D60AA1F1F4DA600FE565B /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145D60A91F1F4DA600FE565B /* TabBarCoordinator.swift */; };
@@ -55,6 +57,8 @@
 
 /* Begin PBXFileReference section */
 		142152701F1F944300EB421A /* Rapid.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Rapid.podspec; sourceTree = "<group>"; };
+		1448BEB91F42D03000A17F12 /* ActivityIndicatorManaging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorManaging.swift; sourceTree = "<group>"; };
+		1448BEBB1F42D46700A17F12 /* JAActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JAActivityIndicatorView.swift; sourceTree = "<group>"; };
 		145D60A11F1F0F9D00FE565B /* AbstractCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractCoordinator.swift; sourceTree = "<group>"; };
 		145D60A51F1F22E800FE565B /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		145D60A71F1F35F500FE565B /* SynchronizedArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynchronizedArray.swift; sourceTree = "<group>"; };
@@ -355,6 +359,7 @@
 				14A038611EC865750024E23D /* JAView.swift */,
 				14A038631EC8671B0024E23D /* JAViewController.swift */,
 				14A038651EC868C20024E23D /* JAObject.swift */,
+				1448BEBB1F42D46700A17F12 /* JAActivityIndicatorView.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -385,6 +390,7 @@
 			children = (
 				14A038741EC872AC0024E23D /* NavigationItemSetting.swift */,
 				14A038761EC872E10024E23D /* TargetActionSetting.swift */,
+				1448BEB91F42D03000A17F12 /* ActivityIndicatorManaging.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -523,12 +529,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				145D60A81F1F35F500FE565B /* SynchronizedArray.swift in Sources */,
+				1448BEBA1F42D03000A17F12 /* ActivityIndicatorManaging.swift in Sources */,
 				14D5CE7C1EC9BAF900982047 /* Configurable.swift in Sources */,
 				145D60A21F1F0F9D00FE565B /* AbstractCoordinator.swift in Sources */,
 				14A038721EC86F470024E23D /* AppCoordinator.swift in Sources */,
 				149C62521F2DE3D50099E1A4 /* Date+Rapid.swift in Sources */,
 				147952AA1F25AB130036611A /* Double+Rapid.swift in Sources */,
 				14A038591EC860F60024E23D /* UIView+Rapid.swift in Sources */,
+				1448BEBC1F42D46700A17F12 /* JAActivityIndicatorView.swift in Sources */,
 				14A038621EC865750024E23D /* JAView.swift in Sources */,
 				14A038701EC86F170024E23D /* Coordinator.swift in Sources */,
 				14A0385B1EC862260024E23D /* UIColor+Rapid.swift in Sources */,

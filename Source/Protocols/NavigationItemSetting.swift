@@ -6,7 +6,7 @@
 //
 //
 
-public protocol NavigationItemSetting {
+public protocol NavigationItemSetting: class {
 
     /**
      Accesses the UIViewController's UINavigationItem instance to manipulate inside a closure.
