@@ -21,7 +21,7 @@ public extension ActivityIndicatorManaging where Self: UIViewController {
             let activityIndicatorView: JAActivityIndicatorView = JAActivityIndicatorView(
                 activityIndicatorStyle: UIActivityIndicatorViewStyle.gray
             )
-
+            activityIndicatorView.hidesWhenStopped = true
             activityIndicatorView.translatesAutoresizingMaskIntoConstraints = false
             self.view.addSubview(activityIndicatorView)
             NSLayoutConstraint.activate([
@@ -30,6 +30,8 @@ public extension ActivityIndicatorManaging where Self: UIViewController {
                 activityIndicatorView.heightAnchor.constraint(equalToConstant: 50.0),
                 activityIndicatorView.widthAnchor.constraint(equalToConstant: 50.0)
             ])
+
+            activityIndicatorView.startAnimating()
         }
     }
 
@@ -37,11 +39,11 @@ public extension ActivityIndicatorManaging where Self: UIViewController {
         DispatchQueue.main.async {
             guard
                 let activityIndicatorView = self.view.subviews.reversed()
-                    .filter({ (view: UIView) -> Bool in view is JAActivityIndicatorView }).first
+                    .filter({ (view: UIView) -> Bool in view is JAActivityIndicatorView }).first as? UIActivityIndicatorView
             else {
                 return
             }
-
+            activityIndicatorView.stopAnimating()
             activityIndicatorView.removeFromSuperview()
         }
     }
