@@ -77,6 +77,8 @@
 		14615B5D1F38100800F95116 /* Rapid.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Rapid.podspec; sourceTree = "<group>"; };
 		14615B5F1F38100800F95116 /* Rapid.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Rapid.podspec; sourceTree = "<group>"; };
 		14615B611F38100800F95116 /* Rapid.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Rapid.podspec; sourceTree = "<group>"; };
+		146F9E051F432E760055A081 /* Rapid.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Rapid.podspec; sourceTree = "<group>"; };
+		146F9E071F432E760055A081 /* Rapid.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Rapid.podspec; sourceTree = "<group>"; };
 		147952A91F25AB130036611A /* Double+Rapid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Rapid.swift"; sourceTree = "<group>"; };
 		147952AB1F25AB1F0036611A /* Int+Rapid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Rapid.swift"; sourceTree = "<group>"; };
 		148BE0B11F22F2F200B2C7B5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -145,6 +147,8 @@
 				14615B5C1F38100800F95116 /* 0.1.0 */,
 				14615B5E1F38100800F95116 /* 0.1.1 */,
 				14615B601F38100800F95116 /* 0.1.2 */,
+				146F9E041F432E760055A081 /* 0.1.3 */,
+				146F9E061F432E760055A081 /* 0.1.4 */,
 			);
 			path = Rapid;
 			sourceTree = "<group>";
@@ -253,6 +257,22 @@
 				148BE0B11F22F2F200B2C7B5 /* README.md */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		146F9E041F432E760055A081 /* 0.1.3 */ = {
+			isa = PBXGroup;
+			children = (
+				146F9E051F432E760055A081 /* Rapid.podspec */,
+			);
+			path = 0.1.3;
+			sourceTree = "<group>";
+		};
+		146F9E061F432E760055A081 /* 0.1.4 */ = {
+			isa = PBXGroup;
+			children = (
+				146F9E071F432E760055A081 /* Rapid.podspec */,
+			);
+			path = 0.1.4;
 			sourceTree = "<group>";
 		};
 		148BE0B51F2304E700B2C7B5 /* Frameworks */ = {

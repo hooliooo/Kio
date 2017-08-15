@@ -85,7 +85,10 @@ public extension RapidStringDSL {
     */
     var asciiValue: String {
         let regexPattern: String = "(0x)?([0-9a-f]{2})"
-        let regex = try! NSRegularExpression(pattern: regexPattern, options: NSRegularExpression.Options.caseInsensitive) //swiftlint:disable:this force_try
+        let regex = try! NSRegularExpression( //swiftlint:disable:this force_try
+            pattern: regexPattern,
+            options: NSRegularExpression.Options.caseInsensitive
+        )
         let nsString = self.string as NSString
         let matches = regex.matches(in: self.string, options: [], range: NSRange(location: 0, length: nsString.length))
         let characters = matches.map {
