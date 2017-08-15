@@ -29,29 +29,34 @@ public extension ActivityIndicatorManaging where Self: UIViewController {
         NSLayoutConstraint.activate([
             activityIndicatorView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
             activityIndicatorView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor),
-            activityIndicatorView.heightAnchor.constraint(equalToConstant: 50.0),
-            activityIndicatorView.widthAnchor.constraint(equalToConstant: 50.0)
+            activityIndicatorView.heightAnchor.constraint(equalToConstant: 60.0),
+            activityIndicatorView.widthAnchor.constraint(equalToConstant: 60.0)
         ])
         return activityIndicatorView
+    }
+
+    private func findActivityIndicator() -> JAActivityIndicatorView? {
+        return self.view.subviews.reversed()
+            .filter({ (view: UIView) -> Bool in view is JAActivityIndicatorView}).first as? JAActivityIndicatorView
     }
 
     func showActivityIndicator() {
         DispatchQueue.main.async {
             self.createActivityIndicator()
                 .startAnimating()
+
+            self.view.isUserInteractionEnabled = false
         }
     }
 
     func hideActivityIndicator() {
         DispatchQueue.main.async {
-            guard
-                let activityIndicatorView = self.view.subviews.reversed()
-                    .filter({ (view: UIView) -> Bool in view is JAActivityIndicatorView }).first as? UIActivityIndicatorView
-            else {
+            guard let activityIndicatorView = self.findActivityIndicator() else {
                 return
             }
             activityIndicatorView.stopAnimating()
             activityIndicatorView.removeFromSuperview()
+            self.view.isUserInteractionEnabled = true
         }
     }
 
