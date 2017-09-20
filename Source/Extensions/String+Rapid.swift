@@ -92,7 +92,7 @@ public extension RapidStringDSL {
         let nsString = self.string as NSString
         let matches = regex.matches(in: self.string, options: [], range: NSRange(location: 0, length: nsString.length))
         let characters = matches.map {
-            Character(UnicodeScalar(UInt32(nsString.substring(with: $0.rangeAt(2)), radix: 16)!)!)
+            Character(UnicodeScalar(UInt32(nsString.substring(with: $0.range(at: 2)), radix: 16)!)!)
         }
 
         return String(characters)

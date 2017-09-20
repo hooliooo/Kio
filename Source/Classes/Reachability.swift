@@ -12,8 +12,7 @@ import SystemConfiguration
 public final class Reachability: JAObject {
 
     // MARK: Static Properties
-    // swiftlint:disable:next line_length
-    public static let ReachabilityDidChangeNotification: Notification.Name = Notification.Name("ReachabilityDidChangeNotificationName")
+    public static let StatusDidChangeNotification: Notification.Name = Notification.Name("StatusDidChangeNotification")
 
     // MARK: Static Methods
     public static func networkReachabilityForInternetConnection() -> Reachability? {
@@ -82,6 +81,7 @@ public final class Reachability: JAObject {
     private var flags: SCNetworkReachabilityFlags {
         var flags: SCNetworkReachabilityFlags = SCNetworkReachabilityFlags(rawValue: 0)
 
+        // swiftlint:disable:next line_length
         if withUnsafeMutablePointer(to: &flags, { SCNetworkReachabilityGetFlags(self.networkReachability, UnsafeMutablePointer<SCNetworkReachabilityFlags>($0))}) == true {
             return flags
         } else {
@@ -142,7 +142,7 @@ public final class Reachability: JAObject {
                 let infoObject: AnyObject = Unmanaged<AnyObject>.fromOpaque(currentInfo).takeUnretainedValue()
 
                 if let reachability = infoObject as? Reachability {
-                    NotificationCenter.default.post(name: Reachability.ReachabilityDidChangeNotification, object: reachability)
+                    NotificationCenter.default.post(name: Reachability.StatusDidChangeNotification, object: reachability)
                 }
             }
         }, &context) == true else { return false }

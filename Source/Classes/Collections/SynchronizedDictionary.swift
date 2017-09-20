@@ -68,7 +68,7 @@ public extension SynchronizedDictionary {
     /**
      Synchronous read of the dictionary's key property.
     */
-    var keys: LazyMapCollection<[Key : Value], Key> {
+    var keys: Dictionary<Key, Value>.Keys {
         return self._queue.sync { return self.dict.keys }
     }
 
@@ -84,7 +84,7 @@ public extension SynchronizedDictionary {
     /**
      Synchronous read of the dictionary's values property.
     */
-    var values: LazyMapCollection<[Key : Value], Value> {
+    var values: Dictionary<Key, Value>.Values {
         return self._queue.sync { return self.dict.values }
     }
 
