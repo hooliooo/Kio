@@ -134,7 +134,7 @@ public extension SynchronizedArray {
     /**
      Synchronous read of the array's flatMap<SegmentOfResult> method
     */
-    func flatMap<SegmentOfResult>(_ transform: (Element) throws -> SegmentOfResult) rethrows -> [SegmentOfResult.Iterator.Element] where SegmentOfResult : Sequence {
+    func flatMap<SegmentOfResult>(_ transform: (Element) throws -> SegmentOfResult) rethrows -> [SegmentOfResult.Iterator.Element] where SegmentOfResult: Sequence {
         var result: [SegmentOfResult.Iterator.Element] = []
         try self._queue.sync {
             result = try self.elements.flatMap(transform)
@@ -221,7 +221,7 @@ public extension SynchronizedArray {
     /**
      Asynchronous write of the array's append method for an array of Elements
     */
-    func append<S>(contentsOf newElements: S) where S : Sequence, S.Iterator.Element == Element {
+    func append<S>(contentsOf newElements: S) where S: Sequence, S.Iterator.Element == Element {
         self._queue.async(flags: DispatchWorkItemFlags.barrier) {
             self.elements.append(contentsOf: newElements)
         }

@@ -68,4 +68,27 @@ public final class ArrayProvider<Object>: DataProvider {
         self._objects.remove(at: indexPath.row)
     }
 
+    /**
+     Mutating function that adds objects to the end of the array of objects
+    */
+    public func add(objects: [Object]) {
+        objects.forEach { [unowned self] (object: Object) -> Void in
+            self.add(object: object)
+        }
+    }
+
+    /**
+     Mutating function that removes objects from the array of objects
+    */
+    public func remove(objects: [Object], at indexPaths: [IndexPath]) {
+        zip(objects, indexPaths).forEach { [unowned self] (object: Object, indexPath: IndexPath) -> Void in
+            self.remove(object: object, at: indexPath)
+        }
+    }
+    /**
+     Mutating function that replaces the array with a new array
+    */
+    public func set(objects: [Object]) {
+        self._objects = objects
+    }
 }
