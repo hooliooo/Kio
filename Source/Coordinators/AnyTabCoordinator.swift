@@ -8,10 +8,10 @@
 
 import UIKit
 
-public class AnyTabCoordinator {
+open class AnyTabCoordinator {
 
     // MARK: Initializer
-    init<T: TabCoordinator>(_ tabCoordinator: T) {
+    public init<T: TabCoordinator>(_ tabCoordinator: T) {
         self.viewController = tabCoordinator.viewController
         self.tabBarItem = tabCoordinator.tabBarItem
     }
@@ -20,10 +20,10 @@ public class AnyTabCoordinator {
     /**
      UIViewController instance being managed
      */
-    let viewController: UIViewController
+    open let viewController: UIViewController
 
     /**
      UITabBarItem for the UIViewController
      */
-    let tabBarItem: UITabBarItem
+    open let tabBarItem: UITabBarItem
 }
