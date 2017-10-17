@@ -24,7 +24,7 @@ public extension TargetActionSetting where Self: UIViewController {
 
             switch control {
 
-                case is UISegmentedControl, is UIDatePicker, is UIRefreshControl:
+                case is UISegmentedControl, is UIDatePicker, is UIRefreshControl, is UISwitch:
                     controlEvent = UIControlEvents.valueChanged
 
                 default:
