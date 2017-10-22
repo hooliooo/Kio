@@ -18,7 +18,7 @@ public class SynchronizedDictionary<Key: Hashable, Value> {
     /**
      The queue that handles the read/writes to the dictionary instance.
     */
-    fileprivate let _queue: DispatchQueue = DispatchQueue(
+    private let _queue: DispatchQueue = DispatchQueue(
         label: "SynchronizedDictionary",
         attributes: DispatchQueue.Attributes.concurrent
     )
@@ -26,7 +26,7 @@ public class SynchronizedDictionary<Key: Hashable, Value> {
     /**
      The dictionary instance.
     */
-    fileprivate var dict: [Key: Value]
+    private var dict: [Key: Value]
 
     // MARK: Computed Properties
     /**

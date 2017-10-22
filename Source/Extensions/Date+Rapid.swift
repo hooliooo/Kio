@@ -59,7 +59,7 @@ public extension RapidDateDSL {
     */
     var startDateOfCurrentWeek: Date {
         let currentDateComponents: DateComponents = RapidDateDSL.calendar.dateComponents(
-            [.yearForWeekOfYear, .weekOfYear],
+            [Calendar.Component.yearForWeekOfYear, Calendar.Component.weekOfYear],
             from: self.date
         )
 

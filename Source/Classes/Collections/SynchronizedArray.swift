@@ -22,7 +22,7 @@ public class SynchronizedArray<Element> {
     /**
      The queue that handles the read/writes to the array instance.
     */
-    fileprivate let _queue: DispatchQueue = DispatchQueue(
+    private let _queue: DispatchQueue = DispatchQueue(
         label: "SynchronizedArray",
         attributes: [DispatchQueue.Attributes.concurrent]
     )
@@ -30,7 +30,7 @@ public class SynchronizedArray<Element> {
     /**
      The array instance.
     */
-    fileprivate var elements: [Element]
+    private var elements: [Element]
 
     // MARK: - Computed Properties
     /**

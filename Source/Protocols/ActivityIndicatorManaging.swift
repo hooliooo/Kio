@@ -17,22 +17,22 @@ public protocol ActivityIndicatorManaging: class {
 public extension ActivityIndicatorManaging where Self: UIViewController {
 
     private func createActivityIndicator() -> JAActivityIndicatorView {
-        let activityIndicatorView: JAActivityIndicatorView = JAActivityIndicatorView(
+        let view: JAActivityIndicatorView = JAActivityIndicatorView(
             activityIndicatorStyle: UIActivityIndicatorViewStyle.gray
         )
-        activityIndicatorView.translatesAutoresizingMaskIntoConstraints = false
-        activityIndicatorView.hidesWhenStopped = true
-        activityIndicatorView.backgroundColor = UIColor(red: 225, green: 225, blue: 225)
-        activityIndicatorView.rpd.cornerRadius(of: 5.0)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.hidesWhenStopped = true
+        view.backgroundColor = UIColor(red: 225, green: 225, blue: 225)
+        view.rpd.cornerRadius(of: 5.0)
 
-        self.view.addSubview(activityIndicatorView)
+        self.view.addSubview(view)
         NSLayoutConstraint.activate([
-            activityIndicatorView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
-            activityIndicatorView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor),
-            activityIndicatorView.heightAnchor.constraint(equalToConstant: 60.0),
-            activityIndicatorView.widthAnchor.constraint(equalToConstant: 60.0)
+            view.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+            view.centerYAnchor.constraint(equalTo: self.view.centerYAnchor),
+            view.heightAnchor.constraint(equalToConstant: 60.0),
+            view.widthAnchor.constraint(equalToConstant: 60.0)
         ])
-        return activityIndicatorView
+        return view
     }
 
     private func findActivityIndicator() -> JAActivityIndicatorView? {
@@ -41,7 +41,7 @@ public extension ActivityIndicatorManaging where Self: UIViewController {
     }
 
     func showActivityIndicator() {
-        DispatchQueue.main.async {
+        DispatchQueue.main.async { () -> Void in
             self.createActivityIndicator()
                 .startAnimating()
 
@@ -50,12 +50,12 @@ public extension ActivityIndicatorManaging where Self: UIViewController {
     }
 
     func hideActivityIndicator() {
-        DispatchQueue.main.async {
-            guard let activityIndicatorView = self.findActivityIndicator() else {
+        DispatchQueue.main.async { () -> Void in
+            guard let view = self.findActivityIndicator() else {
                 return
             }
-            activityIndicatorView.stopAnimating()
-            activityIndicatorView.removeFromSuperview()
+            view.stopAnimating()
+            view.removeFromSuperview()
             self.view.isUserInteractionEnabled = true
         }
     }

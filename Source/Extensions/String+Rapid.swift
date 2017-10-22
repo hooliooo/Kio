@@ -15,7 +15,7 @@ public struct RapidStringDSL {
     /**
      Underlying String instance
     */
-    let string: String
+    public let string: String
 
 }
 

@@ -15,9 +15,9 @@ public struct RapidDoubleDSL {
 
     // MARK: Stored Propeties
     /**
-     Underlying Int instance
+     Underlying Double instance
     */
-    let double: Double
+    public let double: Double
 
 }
 
@@ -49,6 +49,62 @@ public extension RapidDoubleDSL {
     */
     var cgFloatValue: CGFloat {
         return CGFloat(self.double)
+    }
+
+    /**
+     Double as a UInt8
+    */
+    var uint8Value: UInt8 {
+        return UInt8(self.double)
+    }
+
+    /**
+     Double as a UInt16
+    */
+    var uint16Value: UInt16 {
+        return UInt16(self.double)
+    }
+
+    /**
+     Double as a UInt32
+    */
+    var uint32Value: UInt32 {
+        return UInt32(self.double)
+    }
+
+    /**
+     Double as a UInt64
+    */
+    var uint64Value: UInt64 {
+        return UInt64(self.double)
+    }
+
+    /**
+     Double as a UInt8
+    */
+    var int8Value: Int8 {
+        return Int8(self.double)
+    }
+
+    /**
+     Double as a UInt16
+    */
+    var int16Value: Int16 {
+        return Int16(self.double)
+    }
+
+    /**
+     Double as a UInt32
+    */
+    var int32Value: Int32 {
+        return Int32(self.double)
+    }
+
+    /**
+     Double as a UInt64
+    */
+    var int64Value: Int64 {
+        return Int64(self.double)
     }
 
 }

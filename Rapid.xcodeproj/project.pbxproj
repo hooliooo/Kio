@@ -15,6 +15,8 @@
 		145D60AA1F1F4DA600FE565B /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145D60A91F1F4DA600FE565B /* TabBarCoordinator.swift */; };
 		145D60AC1F1F4E7C00FE565B /* AnyTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145D60AB1F1F4E7C00FE565B /* AnyTabCoordinator.swift */; };
 		145D60AE1F1F4EBB00FE565B /* TabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145D60AD1F1F4EBB00FE565B /* TabCoordinator.swift */; };
+		1465458D1F9CAAF000814505 /* Float+Rapid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1465458C1F9CAAF000814505 /* Float+Rapid.swift */; };
+		1465458F1F9CAC3100814505 /* CGFloat+Rapid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1465458E1F9CAC3100814505 /* CGFloat+Rapid.swift */; };
 		147952AA1F25AB130036611A /* Double+Rapid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147952A91F25AB130036611A /* Double+Rapid.swift */; };
 		147952AC1F25AB1F0036611A /* Int+Rapid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147952AB1F25AB1F0036611A /* Int+Rapid.swift */; };
 		148BE0B31F22F31800B2C7B5 /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = 145D60A51F1F22E800FE565B /* LICENSE.md */; };
@@ -78,6 +80,8 @@
 		14615B5D1F38100800F95116 /* Rapid.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Rapid.podspec; sourceTree = "<group>"; };
 		14615B5F1F38100800F95116 /* Rapid.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Rapid.podspec; sourceTree = "<group>"; };
 		14615B611F38100800F95116 /* Rapid.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Rapid.podspec; sourceTree = "<group>"; };
+		1465458C1F9CAAF000814505 /* Float+Rapid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+Rapid.swift"; sourceTree = "<group>"; };
+		1465458E1F9CAC3100814505 /* CGFloat+Rapid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Rapid.swift"; sourceTree = "<group>"; };
 		146F9E051F432E760055A081 /* Rapid.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Rapid.podspec; sourceTree = "<group>"; };
 		146F9E071F432E760055A081 /* Rapid.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Rapid.podspec; sourceTree = "<group>"; };
 		146F9E091F4331200055A081 /* Rapid.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Rapid.podspec; sourceTree = "<group>"; };
@@ -398,6 +402,8 @@
 				14A0385C1EC862A00024E23D /* Dictionary+Rapid.swift */,
 				14A0386C1EC86CD20024E23D /* String+Rapid.swift */,
 				147952A91F25AB130036611A /* Double+Rapid.swift */,
+				1465458C1F9CAAF000814505 /* Float+Rapid.swift */,
+				1465458E1F9CAC3100814505 /* CGFloat+Rapid.swift */,
 				147952AB1F25AB1F0036611A /* Int+Rapid.swift */,
 				149C62511F2DE3D50099E1A4 /* Date+Rapid.swift */,
 			);
@@ -583,6 +589,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				145D60A81F1F35F500FE565B /* SynchronizedArray.swift in Sources */,
+				1465458D1F9CAAF000814505 /* Float+Rapid.swift in Sources */,
 				1448BEBA1F42D03000A17F12 /* ActivityIndicatorManaging.swift in Sources */,
 				14D5CE7C1EC9BAF900982047 /* Configurable.swift in Sources */,
 				145D60A21F1F0F9D00FE565B /* AbstractCoordinator.swift in Sources */,
@@ -603,6 +610,7 @@
 				14A038691EC869820024E23D /* ReadOnlyDictionary.swift in Sources */,
 				14A038771EC872E10024E23D /* TargetActionSetting.swift in Sources */,
 				14A038751EC872AC0024E23D /* NavigationItemSetting.swift in Sources */,
+				1465458F1F9CAC3100814505 /* CGFloat+Rapid.swift in Sources */,
 				14A038661EC868C20024E23D /* JAObject.swift in Sources */,
 				14D5CE821EC9BB0900982047 /* ArrayProvider.swift in Sources */,
 				14D5CE7B1EC9BAF900982047 /* DataProvider.swift in Sources */,

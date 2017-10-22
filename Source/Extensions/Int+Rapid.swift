@@ -17,7 +17,7 @@ public struct RapidIntDSL {
     /**
      Underlying Int instance
     */
-    let int: Int
+    public let int: Int
 
 }
 
@@ -49,6 +49,62 @@ public extension RapidIntDSL {
     */
     var cgFloatValue: CGFloat {
         return CGFloat(self.int)
+    }
+
+    /**
+     Integer as a UInt8
+    */
+    var uint8Value: UInt8 {
+        return UInt8(self.int)
+    }
+
+    /**
+     Integer as a UInt16
+    */
+    var uint16Value: UInt16 {
+        return UInt16(self.int)
+    }
+
+    /**
+     Integer as a UInt32
+    */
+    var uint32Value: UInt32 {
+        return UInt32(self.int)
+    }
+
+    /**
+     Integer as a UInt64
+    */
+    var uint64Value: UInt64 {
+        return UInt64(self.int)
+    }
+
+    /**
+     Integer as a UInt8
+    */
+    var int8Value: Int8 {
+        return Int8(self.int)
+    }
+
+    /**
+     Integer as a UInt16
+    */
+    var int16Value: Int16 {
+        return Int16(self.int)
+    }
+
+    /**
+     Integer as a UInt32
+    */
+    var int32Value: Int32 {
+        return Int32(self.int)
+    }
+
+    /**
+     Integer as a UInt64
+    */
+    var int64Value: Int64 {
+        return Int64(self.int)
     }
 }
 

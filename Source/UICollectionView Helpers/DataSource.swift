@@ -30,12 +30,12 @@ open class DataSource<Provider: DataProvider, Cell: UICollectionViewCell>: JAObj
     /**
      Instance constant of Provider
     */
-    fileprivate let _provider: Provider
+    private let _provider: Provider
 
     /**
      Instance constant of the collectionView
     */
-    fileprivate unowned let _collectionView: UICollectionView
+    private unowned let _collectionView: UICollectionView
 
     // MARK: Computed Properties
     /**

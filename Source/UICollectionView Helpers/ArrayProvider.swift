@@ -24,7 +24,7 @@ public final class ArrayProvider<Object>: DataProvider {
     /**
      Instance variable of objects
     */
-    fileprivate var _objects: [Object]
+    private var _objects: [Object]
 
     /**
      Array of objects. Get-only property
@@ -40,22 +40,17 @@ public final class ArrayProvider<Object>: DataProvider {
         return 1
     }
 
-    /**
-     Returns the number of objects in the objects array
-    */
     public func numberOfItems(in section: Int) -> Int {
         return self.objects.count
     }
 
-    /**
-     Returns the object at the specifided indexPath
-    */
     public func object(at indexPath: IndexPath) -> Object {
         return self.objects[indexPath.row]
     }
 
     /**
      Mutating function that adds an object to the end of the array of objects
+     - parameter object: Object to be added to the array.
     */
     public func add(object: Object) {
         self._objects.append(object)
@@ -63,6 +58,8 @@ public final class ArrayProvider<Object>: DataProvider {
 
     /**
      Mutating function that removes an object from the array of objects
+     - parameter object: Object to be removed from the array.
+     - parameter indexPath: The index of the object to be removed.
     */
     public func remove(object: Object, at indexPath: IndexPath) {
         self._objects.remove(at: indexPath.row)
@@ -70,6 +67,7 @@ public final class ArrayProvider<Object>: DataProvider {
 
     /**
      Mutating function that adds objects to the end of the array of objects
+     - parameter objects: Objects to be added to the array.
     */
     public func add(objects: [Object]) {
         objects.forEach { [unowned self] (object: Object) -> Void in
@@ -79,6 +77,8 @@ public final class ArrayProvider<Object>: DataProvider {
 
     /**
      Mutating function that removes objects from the array of objects
+     - parameter objects: Objects to be removed from the array.
+     - parameter indexPaths: The indexes of the objects to be removed.
     */
     public func remove(objects: [Object], at indexPaths: [IndexPath]) {
         zip(objects, indexPaths).forEach { [unowned self] (object: Object, indexPath: IndexPath) -> Void in
@@ -87,6 +87,7 @@ public final class ArrayProvider<Object>: DataProvider {
     }
     /**
      Mutating function that replaces the array with a new array
+     - parameter objects: Objects to become the new array.
     */
     public func set(objects: [Object]) {
         self._objects = objects
