@@ -66,12 +66,14 @@ open class JAFileManager: JAObject {
     }
 
     /**
-     Retrieves the data from a URL and save the data as a file in the Documents Directory with the specified name and format
+     Retrieves the data from a URL and save the data as a file in the Documents Directory with the specified name and format.
+     Returns the new file's URL.
+
      - parameter url: The current location of the file to be saved to the Documents Directory
      - parameter fileName: The name the data will be labelled as when saved to the Documents Directory
      - parameter pathExtension:  The specified format of the data
     */
-    public final func save(fileFrom url: URL, asFileName fileName: String, withPathExtension pathExtension: String) throws {
+    public final func save(fileFrom url: URL, asFileName fileName: String, withPathExtension pathExtension: String) throws -> URL {
 
         let fileData = try Data(contentsOf: url)
 
@@ -80,22 +82,26 @@ open class JAFileManager: JAObject {
             .appendingPathExtension(pathExtension)
 
         try fileData.write(to: newFileURL)
+
+        return newFileURL
+
     }
 
     /**
-     Saves the data as a file in the Documents Directory with the specified name and format
+     Saves the data as a file in the Documents Directory with the specified name and format.
+     Returns the new file's URL.
      - parameter data: The data to be saved to the Documents Directory
      - parameter fileName: The name the data will be labelled as when saved to the Documents Directory
      - parameter pathExtension:  The specified format of the data
     */
-    public final func save(data: Data, asFileName fileName: String, withPathExtension pathExtension: String) throws {
+    public final func save(data: Data, asFileName fileName: String, withPathExtension pathExtension: String) throws -> URL {
 
         let newFileURL: URL = self.documentsDirectoryURL
             .appendingPathComponent(fileName)
             .appendingPathExtension(pathExtension)
 
         try data.write(to: newFileURL)
-
+        return newFileURL
     }
 
     /**
