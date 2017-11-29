@@ -9,12 +9,21 @@
 import Foundation
 import SystemConfiguration
 
+/**
+ The Reachability class is responsible for detecting changes in the internet connectivity status of an application
+*/
 public final class Reachability: JAObject {
 
     // MARK: Static Properties
+    /**
+     The notification sent when the Reachability.Status changes
+    */
     public static let StatusDidChangeNotification: Notification.Name = Notification.Name("StatusDidChangeNotification")
 
     // MARK: Static Methods
+    /**
+     Creates a Reachability instance that detects the status of an internet connection in the device
+    */
     public static func networkReachabilityForInternetConnection() -> Reachability? {
         var zeroAddress: sockaddr_in = sockaddr_in()
         zeroAddress.sin_len = UInt8(MemoryLayout.size(ofValue: zeroAddress))
@@ -22,6 +31,9 @@ public final class Reachability: JAObject {
         return Reachability(hostAddress: zeroAddress)
     }
 
+    /**
+     Creates a Reachability instance that detects the status of an internet connection via WiFi in the device
+    */
     public static func networkReachabilityForLocalWifi() -> Reachability? {
         var localWifiAddress: sockaddr_in = sockaddr_in()
         localWifiAddress.sin_len = UInt8(MemoryLayout.size(ofValue: localWifiAddress))
@@ -33,13 +45,29 @@ public final class Reachability: JAObject {
     }
 
     // MARK: Enums
+    /**
+     An Enum that represents the states of having network reachability
+    */
     public enum Status {
+        /**
+         The internet is not reachable
+        */
         case notReachable
+        /**
+         The internet is reachable via WiFi
+        */
         case reachableViaWifi
-        case reachableViewWWAN
+        /**
+         The internet is reachable via WWAN
+        */
+        case reachableViaWWAN
     }
 
     // MARK: Initializer
+    /**
+     Initializer for a Reachability instance
+     - parameter hostName: Host name for the Reachability instance
+    */
     public init?(hostName: String) {
         guard
             let hostName = (hostName as NSString).utf8String,
@@ -52,6 +80,10 @@ public final class Reachability: JAObject {
         super.init()
     }
 
+    /**
+     Initializer for a Reachability instance
+     - parameter hostAddress: Address for the Reachability instance
+    */
     public init?(hostAddress: sockaddr_in) {
         var address: sockaddr_in = hostAddress
 
@@ -89,6 +121,9 @@ public final class Reachability: JAObject {
         }
     }
 
+    /**
+     Status of the Reachability instance
+    */
     public var status: Reachability.Status {
         let isConnectionOnDemandOrTraffic: Bool = self.flags.contains(SCNetworkReachabilityFlags.connectionOnDemand) == true ||
             self.flags.contains(SCNetworkReachabilityFlags.connectionOnTraffic) == true
@@ -101,7 +136,7 @@ public final class Reachability: JAObject {
 
         } else if self.flags.contains(SCNetworkReachabilityFlags.isWWAN) == true {
 
-            return Reachability.Status.reachableViewWWAN
+            return Reachability.Status.reachableViaWWAN
 
         } else if self.flags.contains(SCNetworkReachabilityFlags.connectionRequired) == false {
 
@@ -118,17 +153,23 @@ public final class Reachability: JAObject {
         }
     }
 
+    /**
+     Shows whether or not the internet is reachable
+    */
     public var isReachable: Bool {
         switch self.status {
             case .notReachable:
                 return false
 
-            case .reachableViaWifi, .reachableViewWWAN:
+            case .reachableViaWifi, .reachableViaWWAN:
                 return true
         }
     }
 
     // MARK: Instance Mehthods
+    /**
+     Reachability instance starts notifying listeners of changes in internet reachability
+    */
     public func startNotifying() -> Bool {
         guard self.isNotifying == false else {
             return false
@@ -159,6 +200,9 @@ public final class Reachability: JAObject {
         return self.isNotifying
     }
 
+    /**
+     Reachability instance stops notifying listeners of changes in internet reachability
+    */
     public func stopNotifying() {
         switch self.isNotifying {
             case true:

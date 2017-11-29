@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14182B511FCE8F6500038939 /* JAFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14182B501FCE8F6500038939 /* JAFileManager.swift */; };
 		142152711F1F944300EB421A /* Rapid.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 142152701F1F944300EB421A /* Rapid.podspec */; };
 		1448BEBA1F42D03000A17F12 /* ActivityIndicatorManaging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1448BEB91F42D03000A17F12 /* ActivityIndicatorManaging.swift */; };
 		1448BEBC1F42D46700A17F12 /* JAActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1448BEBB1F42D46700A17F12 /* JAActivityIndicatorView.swift */; };
@@ -59,6 +60,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14182B501FCE8F6500038939 /* JAFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JAFileManager.swift; sourceTree = "<group>"; };
 		142152701F1F944300EB421A /* Rapid.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Rapid.podspec; sourceTree = "<group>"; };
 		1448BEB91F42D03000A17F12 /* ActivityIndicatorManaging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorManaging.swift; sourceTree = "<group>"; };
 		1448BEBB1F42D46700A17F12 /* JAActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JAActivityIndicatorView.swift; sourceTree = "<group>"; };
@@ -419,6 +421,7 @@
 				14A038651EC868C20024E23D /* JAObject.swift */,
 				1448BEBB1F42D46700A17F12 /* JAActivityIndicatorView.swift */,
 				14C489741F668D5B0064A259 /* Reachability.swift */,
+				14182B501FCE8F6500038939 /* JAFileManager.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -435,10 +438,10 @@
 			isa = PBXGroup;
 			children = (
 				14A0386F1EC86F170024E23D /* Coordinator.swift */,
-				145D60AD1F1F4EBB00FE565B /* TabCoordinator.swift */,
 				145D60A11F1F0F9D00FE565B /* AbstractCoordinator.swift */,
 				14A038711EC86F470024E23D /* AppCoordinator.swift */,
 				145D60A91F1F4DA600FE565B /* TabBarCoordinator.swift */,
+				145D60AD1F1F4EBB00FE565B /* TabCoordinator.swift */,
 				145D60AB1F1F4E7C00FE565B /* AnyTabCoordinator.swift */,
 			);
 			path = Coordinators;
@@ -608,6 +611,7 @@
 				145D60AC1F1F4E7C00FE565B /* AnyTabCoordinator.swift in Sources */,
 				145D60AE1F1F4EBB00FE565B /* TabCoordinator.swift in Sources */,
 				14A038691EC869820024E23D /* ReadOnlyDictionary.swift in Sources */,
+				14182B511FCE8F6500038939 /* JAFileManager.swift in Sources */,
 				14A038771EC872E10024E23D /* TargetActionSetting.swift in Sources */,
 				14A038751EC872AC0024E23D /* NavigationItemSetting.swift in Sources */,
 				1465458F1F9CAC3100814505 /* CGFloat+Rapid.swift in Sources */,
