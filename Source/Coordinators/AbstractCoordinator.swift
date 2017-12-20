@@ -28,6 +28,11 @@ open class AbstractCoordinator: JAObject, Coordinator {
     */
     private var _childCoordinators: [Coordinator] = []
 
+    /**
+     Boolean to trigger a crash if start method is called multiple times in the lifetime of the instance.
+    */
+    public private(set) var hasStarted: Bool = false
+
     // MARK: Computed Properties
     public var childCoordinators: [Coordinator] {
         return self._childCoordinators
@@ -35,7 +40,18 @@ open class AbstractCoordinator: JAObject, Coordinator {
 
     // MARK: Instance Methods
     open func start() {
-        fatalError("Must override, do not call super.start() in your subclasses!")
+        switch self.hasStarted {
+            case true:
+                fatalError(
+                    """
+                    \(#function) has already been called once in the lifetime of this coordinator.
+                    \(#function) is only intended to be called once.
+                    """
+                )
+
+            case false:
+                self.hasStarted = true
+        }
     }
 
     public func add(childCoordinator coordinator: Coordinator) {

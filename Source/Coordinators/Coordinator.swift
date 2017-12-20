@@ -35,7 +35,10 @@ public protocol Coordinator: class {
     func remove(childCoordinator coordinator: Coordinator)
 
     /**
-     The start method is where the Coordinator instantiates its UIViewController instance and presents it.
+     The start method is where the Coordinator executes its setup logic to manage its UIViewController.
+     This should only be called once in the entire lifetime of the Coordinator instance.
+     Calling this more than once results in a forced fatalError.
+     Must call super.
     */
     func start()
 

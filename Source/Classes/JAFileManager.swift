@@ -1,9 +1,9 @@
 //
-//  JAFileManager.swift
 //  Rapid
+//  Copyright (c) 2017 Julio Miguel Alorro
 //
-//  Created by Julio Alorro on 11/29/17.
-//  Copyright © 2017 Some Enterprises. All rights reserved.
+//  Licensed under the MIT license. See LICENSE file.
+//
 //
 
 import Foundation
