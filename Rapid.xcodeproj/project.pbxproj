@@ -41,7 +41,7 @@
 		14A038721EC86F470024E23D /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A038711EC86F470024E23D /* AppCoordinator.swift */; };
 		14A038751EC872AC0024E23D /* NavigationItemSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A038741EC872AC0024E23D /* NavigationItemSetting.swift */; };
 		14A038771EC872E10024E23D /* TargetActionSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A038761EC872E10024E23D /* TargetActionSetting.swift */; };
-		14A746501FEA2E3A0042C193 /* JAArchiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A7464F1FEA2E3A0042C193 /* JAArchiver.swift */; };
+		14A746501FEA2E3A0042C193 /* JAArchiveManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A7464F1FEA2E3A0042C193 /* JAArchiveManager.swift */; };
 		14AB1A381FE39E8A0072B8E4 /* EnumCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AB1A371FE39E8A0072B8E4 /* EnumCollection.swift */; };
 		14C489751F668D5B0064A259 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C489741F668D5B0064A259 /* Reachability.swift */; };
 		14D5CE7B1EC9BAF900982047 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D5CE791EC9BAF900982047 /* DataProvider.swift */; };
@@ -116,7 +116,7 @@
 		14A038711EC86F470024E23D /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		14A038741EC872AC0024E23D /* NavigationItemSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationItemSetting.swift; sourceTree = "<group>"; };
 		14A038761EC872E10024E23D /* TargetActionSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetActionSetting.swift; sourceTree = "<group>"; };
-		14A7464F1FEA2E3A0042C193 /* JAArchiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JAArchiver.swift; sourceTree = "<group>"; };
+		14A7464F1FEA2E3A0042C193 /* JAArchiveManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JAArchiveManager.swift; sourceTree = "<group>"; };
 		14AB1A371FE39E8A0072B8E4 /* EnumCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumCollection.swift; sourceTree = "<group>"; };
 		14C489741F668D5B0064A259 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		14D5CE791EC9BAF900982047 /* DataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
@@ -426,7 +426,7 @@
 				1448BEBB1F42D46700A17F12 /* JAActivityIndicatorView.swift */,
 				14C489741F668D5B0064A259 /* Reachability.swift */,
 				14182B501FCE8F6500038939 /* JAFileManager.swift */,
-				14A7464F1FEA2E3A0042C193 /* JAArchiver.swift */,
+				14A7464F1FEA2E3A0042C193 /* JAArchiveManager.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -605,7 +605,7 @@
 				14A038721EC86F470024E23D /* AppCoordinator.swift in Sources */,
 				149C62521F2DE3D50099E1A4 /* Date+Rapid.swift in Sources */,
 				147952AA1F25AB130036611A /* Double+Rapid.swift in Sources */,
-				14A746501FEA2E3A0042C193 /* JAArchiver.swift in Sources */,
+				14A746501FEA2E3A0042C193 /* JAArchiveManager.swift in Sources */,
 				14C489751F668D5B0064A259 /* Reachability.swift in Sources */,
 				14A038591EC860F60024E23D /* UIView+Rapid.swift in Sources */,
 				1448BEBC1F42D46700A17F12 /* JAActivityIndicatorView.swift in Sources */,
