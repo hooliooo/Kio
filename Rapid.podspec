@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Rapid"
-  s.version      = "0.2.8"
+  s.version      = "0.2.9"
   s.summary      = "A personal toolset I use in iOS Projects"
 
   s.homepage     = "https://github.com/hooliooo/Rapid"
