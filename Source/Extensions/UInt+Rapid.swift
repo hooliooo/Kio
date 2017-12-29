@@ -52,9 +52,9 @@ public extension RapidUIntDSL {
     }
 
     /**
-     UInt as a UInt
+     UInt as a Int
     */
-    var uintValue: Int {
+    var intValue: Int {
         return Int(self.uint)
     }
 
