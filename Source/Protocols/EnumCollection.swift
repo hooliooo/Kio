@@ -18,7 +18,7 @@ public extension EnumCollection {
     /**
      Returns an array of all the enum cases
     */
-    static func cases() -> Array<Self> {
+    static func cases() -> [Self] {
         typealias Case = Self
 
         let sequence: AnySequence<Self> = AnySequence { () -> AnyIterator<Case> in

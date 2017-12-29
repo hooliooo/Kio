@@ -53,6 +53,13 @@ public extension RapidDoubleDSL {
 
     /**
      Double as a UInt8
+     */
+    var uintValue: UInt {
+        return UInt(self.double)
+    }
+
+    /**
+     Double as a UInt8
     */
     var uint8Value: UInt8 {
         return UInt8(self.double)

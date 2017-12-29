@@ -52,6 +52,13 @@ public extension RapidCGFloatDSL {
     }
 
     /**
+     CGFloat as a UInt
+     */
+    var uintValue: UInt {
+        return UInt(self.cgFloat)
+    }
+
+    /**
      CGFloat as a UInt8
     */
     var uint8Value: UInt8 {
@@ -119,5 +126,3 @@ public extension CGFloat {
     }
 
 }
-
-

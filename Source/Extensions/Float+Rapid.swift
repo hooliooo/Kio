@@ -52,6 +52,13 @@ public extension RapidFloatDSL {
     }
 
     /**
+     Float as a UInt
+     */
+    var uintValue: UInt {
+        return UInt(self.float)
+    }
+
+    /**
      Float as a UInt8
     */
     var uint8Value: UInt8 {
@@ -119,4 +126,3 @@ public extension Float {
     }
 
 }
-

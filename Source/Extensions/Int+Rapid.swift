@@ -52,6 +52,13 @@ public extension RapidIntDSL {
     }
 
     /**
+     Integer as a UInt
+     */
+    var uintValue: UInt {
+        return UInt(self.int)
+    }
+
+    /**
      Integer as a UInt8
     */
     var uint8Value: UInt8 {
