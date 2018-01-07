@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- The JAArchiveManager class is responsible for archiving/unarchiving Codable objects using NSKeyedArchiver and NSKeyedUnarchiver.
+ The JAArchiveManager archives/unarchives Codable objects from the file system.
 */
 public class JAArchiveManager: JAObject {
 
@@ -107,7 +107,7 @@ public class JAArchiveManager: JAObject {
      Throws an error if something went wrong with the unarchiving/decoding.
      - parameter fileName: The file name of the object to be unarchived.
     */
-    public func unarchive<T: Codable>(from fileName: String) throws -> T {
+    public func unarchive<T: Codable>(objectFrom fileName: String) throws -> T {
 
         let path: String = self.directoryURL.appendingPathComponent(fileName).path
 
@@ -119,9 +119,10 @@ public class JAArchiveManager: JAObject {
 
     /**
      Checks if file exist in the direcorty specified by the directoryURL. Returns a Bool.
+     - parameter name: Name of the file.
     */
-    public final func fileExists(_ fileName: String) -> Bool {
-        let path: String = self.directoryURL.appendingPathComponent(fileName).path
+    public final func fileExists(with name: String) -> Bool {
+        let path: String = self.directoryURL.appendingPathComponent(name).path
         return self.fileManager.fileExists(atPath: path)
     }
 
