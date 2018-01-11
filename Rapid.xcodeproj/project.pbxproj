@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		14182B511FCE8F6500038939 /* JAFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14182B501FCE8F6500038939 /* JAFileManager.swift */; };
+		141B62FF200799A7003F39FE /* ValidatorResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141B62FE200799A7003F39FE /* ValidatorResult.swift */; };
+		141B630120079B4C003F39FE /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141B630020079B4C003F39FE /* Validator.swift */; };
+		141B630320079F59003F39FE /* LengthValidatorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141B630220079F59003F39FE /* LengthValidatorError.swift */; };
+		141B63052007A11E003F39FE /* LengthValidators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141B63042007A11E003F39FE /* LengthValidators.swift */; };
 		142152711F1F944300EB421A /* Rapid.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 142152701F1F944300EB421A /* Rapid.podspec */; };
 		1448BEBA1F42D03000A17F12 /* ActivityIndicatorManaging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1448BEB91F42D03000A17F12 /* ActivityIndicatorManaging.swift */; };
 		1448BEBC1F42D46700A17F12 /* JAActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1448BEBB1F42D46700A17F12 /* JAActivityIndicatorView.swift */; };
@@ -24,6 +28,7 @@
 		148BE0B41F22F31800B2C7B5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 148BE0B11F22F2F200B2C7B5 /* README.md */; };
 		148BE0B71F2304E700B2C7B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 148BE0B61F2304E700B2C7B5 /* Foundation.framework */; };
 		148BE0B91F2304EF00B2C7B5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 148BE0B81F2304EF00B2C7B5 /* UIKit.framework */; };
+		1494447C2007A7F10012CB98 /* CompositeValidators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1494447B2007A7F10012CB98 /* CompositeValidators.swift */; };
 		149C62521F2DE3D50099E1A4 /* Date+Rapid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149C62511F2DE3D50099E1A4 /* Date+Rapid.swift */; };
 		14A038481EC860AD0024E23D /* Rapid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14A0383E1EC860AD0024E23D /* Rapid.framework */; };
 		14A0384D1EC860AD0024E23D /* RapidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A0384C1EC860AD0024E23D /* RapidTests.swift */; };
@@ -64,6 +69,10 @@
 
 /* Begin PBXFileReference section */
 		14182B501FCE8F6500038939 /* JAFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JAFileManager.swift; sourceTree = "<group>"; };
+		141B62FE200799A7003F39FE /* ValidatorResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorResult.swift; sourceTree = "<group>"; };
+		141B630020079B4C003F39FE /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		141B630220079F59003F39FE /* LengthValidatorError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LengthValidatorError.swift; sourceTree = "<group>"; };
+		141B63042007A11E003F39FE /* LengthValidators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LengthValidators.swift; sourceTree = "<group>"; };
 		142152701F1F944300EB421A /* Rapid.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Rapid.podspec; sourceTree = "<group>"; };
 		1448BEB91F42D03000A17F12 /* ActivityIndicatorManaging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorManaging.swift; sourceTree = "<group>"; };
 		1448BEBB1F42D46700A17F12 /* JAActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JAActivityIndicatorView.swift; sourceTree = "<group>"; };
@@ -97,6 +106,7 @@
 		148BE0B11F22F2F200B2C7B5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		148BE0B61F2304E700B2C7B5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		148BE0B81F2304EF00B2C7B5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1494447B2007A7F10012CB98 /* CompositeValidators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeValidators.swift; sourceTree = "<group>"; };
 		149C62511F2DE3D50099E1A4 /* Date+Rapid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Rapid.swift"; sourceTree = "<group>"; };
 		14A0383E1EC860AD0024E23D /* Rapid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Rapid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14A038411EC860AD0024E23D /* Rapid.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rapid.h; sourceTree = "<group>"; };
@@ -149,6 +159,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		141B62FD20079949003F39FE /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				141B62FE200799A7003F39FE /* ValidatorResult.swift */,
+				141B630020079B4C003F39FE /* Validator.swift */,
+				141B630220079F59003F39FE /* LengthValidatorError.swift */,
+				141B63042007A11E003F39FE /* LengthValidators.swift */,
+				1494447B2007A7F10012CB98 /* CompositeValidators.swift */,
+			);
+			path = Validators;
+			sourceTree = "<group>";
+		};
 		14615B491F38100800F95116 /* Rapid */ = {
 			isa = PBXGroup;
 			children = (
@@ -375,6 +397,7 @@
 			children = (
 				1491C64A1F2249AF002B468C /* UICollectionView Helpers */,
 				14A0386E1EC86EFB0024E23D /* Coordinators */,
+				141B62FD20079949003F39FE /* Validators */,
 				14A038601EC865580024E23D /* Classes */,
 				14A0385F1EC864240024E23D /* Extensions */,
 				14A038731EC871A60024E23D /* Protocols */,
@@ -606,15 +629,18 @@
 				14D5CE7C1EC9BAF900982047 /* Configurable.swift in Sources */,
 				145D60A21F1F0F9D00FE565B /* AbstractCoordinator.swift in Sources */,
 				14A038721EC86F470024E23D /* AppCoordinator.swift in Sources */,
+				141B63052007A11E003F39FE /* LengthValidators.swift in Sources */,
 				149C62521F2DE3D50099E1A4 /* Date+Rapid.swift in Sources */,
 				14DDF1AD1FF63330000997A0 /* UInt+Rapid.swift in Sources */,
 				147952AA1F25AB130036611A /* Double+Rapid.swift in Sources */,
 				14A746501FEA2E3A0042C193 /* JAArchiveManager.swift in Sources */,
+				141B630320079F59003F39FE /* LengthValidatorError.swift in Sources */,
 				14C489751F668D5B0064A259 /* Reachability.swift in Sources */,
 				14A038591EC860F60024E23D /* UIView+Rapid.swift in Sources */,
 				1448BEBC1F42D46700A17F12 /* JAActivityIndicatorView.swift in Sources */,
 				14A038621EC865750024E23D /* JAView.swift in Sources */,
 				14A038701EC86F170024E23D /* Coordinator.swift in Sources */,
+				141B630120079B4C003F39FE /* Validator.swift in Sources */,
 				14A0385B1EC862260024E23D /* UIColor+Rapid.swift in Sources */,
 				14D5CE801EC9BB0900982047 /* DataSource.swift in Sources */,
 				145D60AA1F1F4DA600FE565B /* TabBarCoordinator.swift in Sources */,
@@ -629,7 +655,9 @@
 				14A038661EC868C20024E23D /* JAObject.swift in Sources */,
 				14D5CE821EC9BB0900982047 /* ArrayProvider.swift in Sources */,
 				14AB1A381FE39E8A0072B8E4 /* EnumCollection.swift in Sources */,
+				141B62FF200799A7003F39FE /* ValidatorResult.swift in Sources */,
 				14D5CE7B1EC9BAF900982047 /* DataProvider.swift in Sources */,
+				1494447C2007A7F10012CB98 /* CompositeValidators.swift in Sources */,
 				147952AC1F25AB1F0036611A /* Int+Rapid.swift in Sources */,
 				14D5CE811EC9BB0900982047 /* ArrayDataSource.swift in Sources */,
 				14A0386B1EC86A420024E23D /* SynchronizedDictionary.swift in Sources */,

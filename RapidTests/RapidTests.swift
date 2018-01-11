@@ -23,6 +23,17 @@ class RapidTests: XCTestCase {
     }
 
     func testExample() {
+
+        let string: String = ""
+
+        let validator: OrCompositeValidator = OrCompositeValidator(
+            validators: EmptyStringValidator(), ShortStringValidator(minimumLength: 2)
+        )
+
+        print(validator.validate(string))
+
+        XCTAssert(validator.validate(string) == ValidatorResult.valid)
+
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
