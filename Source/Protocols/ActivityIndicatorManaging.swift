@@ -22,7 +22,7 @@ public extension ActivityIndicatorManaging where Self: UIViewController {
         )
         view.translatesAutoresizingMaskIntoConstraints = false
         view.hidesWhenStopped = true
-        view.backgroundColor = UIColor(red: 225, green: 225, blue: 225)
+//        view.backgroundColor = UIColor(red: 225, green: 225, blue: 225)
         view.rpd.cornerRadius(of: 5.0)
 
         self.view.addSubview(view)

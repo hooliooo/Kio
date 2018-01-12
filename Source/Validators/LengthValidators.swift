@@ -52,7 +52,7 @@ public struct ShortStringValidator: Validator {
     }
 
     public func validate(_ stringValue: String) -> ValidatorResult {
-        switch stringValue.count >= self.minimumLength.rpd.intValue {
+        switch stringValue.count < self.minimumLength.rpd.intValue {
             case true:
                 return ValidatorResult.invalid([self.error])
 
@@ -84,7 +84,7 @@ public struct LongStringValidator: Validator {
     }
 
     public func validate(_ stringValue: String) -> ValidatorResult {
-        switch stringValue.count <= self.maximumLength.rpd.intValue {
+        switch stringValue.count > self.maximumLength.rpd.intValue {
             case true:
                 return ValidatorResult.invalid([self.error])
 

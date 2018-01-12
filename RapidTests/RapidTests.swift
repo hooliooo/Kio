@@ -27,7 +27,7 @@ class RapidTests: XCTestCase {
         let string: String = ""
 
         let validator: OrCompositeValidator = OrCompositeValidator(
-            validators: EmptyStringValidator(), ShortStringValidator(minimumLength: 2)
+            validators: EmptyStringValidator(), LongStringValidator(maximumLength: 2)
         )
 
         print(validator.validate(string))

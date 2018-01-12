@@ -23,7 +23,7 @@ public struct AndCompositeValidator: Validator {
         self.validators = validators
     }
 
-    // MARK: Storedd Properties
+    // MARK: Stored Properties
     private let validators: [Validator]
 
     // MARK: Instance Methods
@@ -60,7 +60,7 @@ public struct OrCompositeValidator: Validator {
         self.validators = validators
     }
 
-    // MARK: Storedd Properties
+    // MARK: Stored Properties
     private let validators: [Validator]
 
     // MARK: Instance Methods
