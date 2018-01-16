@@ -10,8 +10,7 @@
  DataSource is the class that adopts the UICollectionViewDataSource protcol and manages the boilerplate set up for
  using UICollectionView
 */
-open class DataSource<Provider: DataProvider, Cell: UICollectionViewCell>: JAObject, UICollectionViewDataSource
-    where Cell: Configurable, Provider.Object == Cell.Object {
+open class DataSource<Provider: DataProvider, Cell: ConfigurableCell<Provider.Object>>: JAObject, UICollectionViewDataSource {
 
     // MARK: Initializers
     /**

@@ -76,14 +76,18 @@ public final class ArrayProvider<Object>: DataProvider {
     }
 
     /**
-     Mutating function that removes objects from the array of objects
+     Mutating function that removes objects from the array of objects. The objects and indexPaths are combined with
+     the zip function then sorted by biggest indexPath to prevent invalid indexes then finally each object is removed
+     from the array by its paired indexPath.
      - parameter objects: Objects to be removed from the array.
      - parameter indexPaths: The indexes of the objects to be removed.
     */
     public func remove(objects: [Object], at indexPaths: [IndexPath]) {
-        zip(objects, indexPaths).forEach { [unowned self] (object: Object, indexPath: IndexPath) -> Void in
-            self.remove(object: object, at: indexPath)
-        }
+        zip(objects, indexPaths)
+            .sorted(by: { $0.1 > $1.1 })
+            .forEach { [unowned self] (object: Object, indexPath: IndexPath) -> Void in
+                self.remove(object: object, at: indexPath)
+            }
     }
     /**
      Mutating function that replaces the array with a new array

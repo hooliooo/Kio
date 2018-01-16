@@ -9,8 +9,7 @@
 /**
  A subclass of the DataSource class that works together with the ArrayProvider class.
 */
-open class ArrayDataSource<Object, Cell: UICollectionViewCell>: DataSource<ArrayProvider<Object>, Cell>
-    where Cell: Configurable, Cell.Object == Object {
+open class ArrayDataSource<Object, Cell: ConfigurableCell<Object>>: DataSource<ArrayProvider<Object>, Cell> {
 
     /**
      Initializer for an ArrayDataSource instance
