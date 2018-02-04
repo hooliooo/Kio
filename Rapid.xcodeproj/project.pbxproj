@@ -15,6 +15,7 @@
 		142152711F1F944300EB421A /* Rapid.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 142152701F1F944300EB421A /* Rapid.podspec */; };
 		1448BEBA1F42D03000A17F12 /* ActivityIndicatorManaging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1448BEB91F42D03000A17F12 /* ActivityIndicatorManaging.swift */; };
 		1448BEBC1F42D46700A17F12 /* JAActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1448BEBB1F42D46700A17F12 /* JAActivityIndicatorView.swift */; };
+		14562E29202734200081CF4F /* CGRect+Rapid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14562E28202734200081CF4F /* CGRect+Rapid.swift */; };
 		145D60A21F1F0F9D00FE565B /* AbstractCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145D60A11F1F0F9D00FE565B /* AbstractCoordinator.swift */; };
 		145D60A81F1F35F500FE565B /* SynchronizedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145D60A71F1F35F500FE565B /* SynchronizedArray.swift */; };
 		145D60AA1F1F4DA600FE565B /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145D60A91F1F4DA600FE565B /* TabBarCoordinator.swift */; };
@@ -76,6 +77,7 @@
 		142152701F1F944300EB421A /* Rapid.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Rapid.podspec; sourceTree = "<group>"; };
 		1448BEB91F42D03000A17F12 /* ActivityIndicatorManaging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorManaging.swift; sourceTree = "<group>"; };
 		1448BEBB1F42D46700A17F12 /* JAActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JAActivityIndicatorView.swift; sourceTree = "<group>"; };
+		14562E28202734200081CF4F /* CGRect+Rapid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+Rapid.swift"; sourceTree = "<group>"; };
 		145D60A11F1F0F9D00FE565B /* AbstractCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractCoordinator.swift; sourceTree = "<group>"; };
 		145D60A51F1F22E800FE565B /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		145D60A71F1F35F500FE565B /* SynchronizedArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynchronizedArray.swift; sourceTree = "<group>"; };
@@ -438,6 +440,7 @@
 				147952AB1F25AB1F0036611A /* Int+Rapid.swift */,
 				14DDF1AC1FF63330000997A0 /* UInt+Rapid.swift */,
 				149C62511F2DE3D50099E1A4 /* Date+Rapid.swift */,
+				14562E28202734200081CF4F /* CGRect+Rapid.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -646,6 +649,7 @@
 				145D60AA1F1F4DA600FE565B /* TabBarCoordinator.swift in Sources */,
 				14A0386D1EC86CD20024E23D /* String+Rapid.swift in Sources */,
 				145D60AC1F1F4E7C00FE565B /* AnyTabCoordinator.swift in Sources */,
+				14562E29202734200081CF4F /* CGRect+Rapid.swift in Sources */,
 				145D60AE1F1F4EBB00FE565B /* TabCoordinator.swift in Sources */,
 				14A038691EC869820024E23D /* ReadOnlyDictionary.swift in Sources */,
 				14182B511FCE8F6500038939 /* JAFileManager.swift in Sources */,
