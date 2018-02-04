@@ -50,9 +50,7 @@ public extension RapidViewDSL {
      - parameter subviews: The subviews to add and prepare for AutoLayout.
     */
     func subviews(forAutoLayout subviews: [UIView]) {
-        subviews.forEach { (subview: UIView) -> Void in
-            self.subview(forAutoLayout: subview)
-        }
+        subviews.forEach(self.subview)
     }
 
     /**
