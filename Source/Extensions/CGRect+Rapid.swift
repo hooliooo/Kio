@@ -94,3 +94,13 @@ public extension RapidCGRectDSL {
     }
 
 }
+
+public extension CGRect {
+
+    /**
+     RapidCGRectDSL instance to access custom methods
+     */
+    var rpd: RapidCGRectDSL {
+        return RapidCGRectDSL(rect: self)
+    }
+}
