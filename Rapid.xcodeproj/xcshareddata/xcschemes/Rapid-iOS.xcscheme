@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "14A0383D1EC860AD0024E23D"
-               BuildableName = "Rapid.framework"
-               BlueprintName = "Rapid"
+               BuildableName = "Rapid-iOS.framework"
+               BlueprintName = "Rapid-iOS"
                ReferencedContainer = "container:Rapid.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -44,8 +44,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "14A0383D1EC860AD0024E23D"
-            BuildableName = "Rapid.framework"
-            BlueprintName = "Rapid"
+            BuildableName = "Rapid-iOS.framework"
+            BlueprintName = "Rapid-iOS"
             ReferencedContainer = "container:Rapid.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -67,8 +67,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "14A0383D1EC860AD0024E23D"
-            BuildableName = "Rapid.framework"
-            BlueprintName = "Rapid"
+            BuildableName = "Rapid-iOS.framework"
+            BlueprintName = "Rapid-iOS"
             ReferencedContainer = "container:Rapid.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -85,8 +85,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "14A0383D1EC860AD0024E23D"
-            BuildableName = "Rapid.framework"
-            BlueprintName = "Rapid"
+            BuildableName = "Rapid-iOS.framework"
+            BlueprintName = "Rapid-iOS"
             ReferencedContainer = "container:Rapid.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

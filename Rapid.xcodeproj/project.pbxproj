@@ -506,9 +506,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		14A0383D1EC860AD0024E23D /* Rapid */ = {
+		14A0383D1EC860AD0024E23D /* Rapid-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 14A038521EC860AD0024E23D /* Build configuration list for PBXNativeTarget "Rapid" */;
+			buildConfigurationList = 14A038521EC860AD0024E23D /* Build configuration list for PBXNativeTarget "Rapid-iOS" */;
 			buildPhases = (
 				14A038391EC860AD0024E23D /* Sources */,
 				14A0383A1EC860AD0024E23D /* Frameworks */,
@@ -520,7 +520,7 @@
 			);
 			dependencies = (
 			);
-			name = Rapid;
+			name = "Rapid-iOS";
 			productName = JAShorthand;
 			productReference = 14A0383E1EC860AD0024E23D /* Rapid.framework */;
 			productType = "com.apple.product-type.framework";
@@ -579,7 +579,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				14A0383D1EC860AD0024E23D /* Rapid */,
+				14A0383D1EC860AD0024E23D /* Rapid-iOS */,
 				14A038461EC860AD0024E23D /* RapidTests */,
 			);
 		};
@@ -683,7 +683,7 @@
 /* Begin PBXTargetDependency section */
 		14A0384A1EC860AD0024E23D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 14A0383D1EC860AD0024E23D /* Rapid */;
+			target = 14A0383D1EC860AD0024E23D /* Rapid-iOS */;
 			targetProxy = 14A038491EC860AD0024E23D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -737,9 +737,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = Rapid;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -791,8 +792,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Rapid;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -817,7 +819,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.someenterprises.Rapid;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Rapid;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
@@ -840,7 +842,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.someenterprises.Rapid;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Rapid;
 				SKIP_INSTALL = YES;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
@@ -887,7 +889,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		14A038521EC860AD0024E23D /* Build configuration list for PBXNativeTarget "Rapid" */ = {
+		14A038521EC860AD0024E23D /* Build configuration list for PBXNativeTarget "Rapid-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				14A038531EC860AD0024E23D /* Debug */,

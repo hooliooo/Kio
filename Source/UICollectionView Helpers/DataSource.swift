@@ -10,7 +10,7 @@
  DataSource is the class that adopts the UICollectionViewDataSource protcol and manages the boilerplate set up for
  using UICollectionView
 */
-open class DataSource<Provider: DataProvider, Cell: ConfigurableCell<Provider.Object>>: JAObject, UICollectionViewDataSource {
+open class DataSource<Provider: DataProvider, Cell: ConfigurableCell<Provider.Element>>: JAObject, UICollectionViewDataSource {
 
     // MARK: Initializers
     /**
@@ -73,7 +73,7 @@ open class DataSource<Provider: DataProvider, Cell: ConfigurableCell<Provider.Ob
     open func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         // swiftlint:disable:next force_cast
         let cell: Cell = collectionView.dequeueReusableCell(withReuseIdentifier: Cell.identifier, for: indexPath) as! Cell
-        let object: Provider.Object = self._provider.object(at: indexPath)
+        let object: Provider.Element = self._provider.object(at: indexPath)
         cell.configure(with: object)
         return cell
     }

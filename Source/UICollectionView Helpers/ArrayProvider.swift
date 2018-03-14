@@ -10,27 +10,27 @@
  An implementation of the DataProviding protocol that manages a one dimensional array, 
  meaning that it is suitable for collectionViews with a single section.
 */
-public final class ArrayProvider<Object>: DataProvider {
+public final class ArrayProvider<Element>: DataProvider {
 
     /**
      Initializer for an ArrayProvider instance
      - parameter objects: Array of Type to be managed
     */
-    public init(objects: [Object]) {
-        self._objects = objects
+    public init(elements: [Element]) {
+        self._elements = elements
     }
 
     // MARK: - Stored Properties
     /**
      Instance variable of objects
     */
-    private var _objects: [Object]
+    private var _elements: [Element]
 
     /**
      Array of objects. Get-only property
     */
-    public var objects: [Object] {
-        return self._objects
+    public var elements: [Element] {
+        return self._elements
     }
 
     /**
@@ -41,19 +41,19 @@ public final class ArrayProvider<Object>: DataProvider {
     }
 
     public func numberOfItems(in section: Int) -> Int {
-        return self.objects.count
+        return self.elements.count
     }
 
-    public func object(at indexPath: IndexPath) -> Object {
-        return self.objects[indexPath.row]
+    public func object(at indexPath: IndexPath) -> Element {
+        return self.elements[indexPath.row]
     }
 
     /**
      Mutating function that adds an object to the end of the array of objects
      - parameter object: Object to be added to the array.
     */
-    public func add(object: Object) {
-        self._objects.append(object)
+    public func add(element: Element) {
+        self._elements.append(element)
     }
 
     /**
@@ -61,17 +61,17 @@ public final class ArrayProvider<Object>: DataProvider {
      - parameter object: Object to be removed from the array.
      - parameter indexPath: The index of the object to be removed.
     */
-    public func remove(object: Object, at indexPath: IndexPath) {
-        self._objects.remove(at: indexPath.row)
+    public func remove(element: Element, at indexPath: IndexPath) {
+        self._elements.remove(at: indexPath.row)
     }
 
     /**
      Mutating function that adds objects to the end of the array of objects
      - parameter objects: Objects to be added to the array.
     */
-    public func add(objects: [Object]) {
-        objects.forEach { [unowned self] (object: Object) -> Void in
-            self.add(object: object)
+    public func add(elements: [Element]) {
+        elements.forEach { [unowned self] (element: Element) -> Void in
+            self.add(element: element)
         }
     }
 
@@ -82,18 +82,18 @@ public final class ArrayProvider<Object>: DataProvider {
      - parameter objects: Objects to be removed from the array.
      - parameter indexPaths: The indexes of the objects to be removed.
     */
-    public func remove(objects: [Object], at indexPaths: [IndexPath]) {
-        zip(objects, indexPaths)
+    public func remove(elements: [Element], at indexPaths: [IndexPath]) {
+        zip(elements, indexPaths)
             .sorted(by: { $0.1 > $1.1 })
-            .forEach { [unowned self] (object: Object, indexPath: IndexPath) -> Void in
-                self.remove(object: object, at: indexPath)
+            .forEach { [unowned self] (element: Element, indexPath: IndexPath) -> Void in
+                self.remove(element: element, at: indexPath)
             }
     }
     /**
      Mutating function that replaces the array with a new array
      - parameter objects: Objects to become the new array.
     */
-    public func set(objects: [Object]) {
-        self._objects = objects
+    public func set(elements: [Element]) {
+        self._elements = elements
     }
 }

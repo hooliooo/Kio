@@ -15,7 +15,7 @@ public protocol DataProvider {
     /**
      Object is a placeholder type that will be used in the array managed by the DataProviding instance
     */
-    associatedtype Object
+    associatedtype Element
 
     /**
      Number of sections to be shown in UICollectionView
@@ -32,6 +32,6 @@ public protocol DataProvider {
      The object at the specific indexPath of the UICollectionView
      - parameter indexPath: IndexPath of the object to be shown
     */
-    func object(at indexPath: IndexPath) -> Object
+    func object(at indexPath: IndexPath) -> Element
 
 }

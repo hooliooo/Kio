@@ -17,19 +17,19 @@ public protocol Configurable: class {
     /**
      Object is a placeholder type that will be used to for data binding to the UICollectionViewCell instance
     */
-    associatedtype Object
+    associatedtype ViewModel
 
     /**
      The method that will read the Object instance and display the necessary info to the UI as well any other logic.
      - paramater _: Parameter name is customized. The object used for UICollectionViewCell UI configuration
     */
-    func configure(with _: Object)
+    func configure(with _: ViewModel)
 }
 
 /**
  A UICollectionViewCell implementation of the Configurable protocol
 */
-open class ConfigurableCell<Object>: UICollectionViewCell, Configurable {
+open class ConfigurableCell<ViewModel>: UICollectionViewCell, Configurable {
 
     /**
      The String identifier used by the ConfigurableCell to register to a UICollectionView instance
@@ -38,7 +38,7 @@ open class ConfigurableCell<Object>: UICollectionViewCell, Configurable {
         fatalError("Override this")
     }
 
-    open func configure(with _: Object) {
+    open func configure(with _: ViewModel) {
         fatalError("Override this")
     }
 
