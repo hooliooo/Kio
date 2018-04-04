@@ -87,9 +87,7 @@
 //    public init?(hostAddress: sockaddr_in) {
 //        var address: sockaddr_in = hostAddress
 //
-//        // swiftlint:disable:next line_length
 //        guard let defaultRouteReachability = withUnsafePointer(to: &address, { (pointeeOne: UnsafePointer<sockaddr_in>) -> SCNetworkReachability? in
-//            // swiftlint:disable:next line_length
 //            pointeeOne.withMemoryRebound(to: sockaddr.self, capacity: 1) { (pointeeTwo: UnsafePointer<sockaddr>) -> SCNetworkReachability? in
 //                return SCNetworkReachabilityCreateWithAddress(kCFAllocatorDefault, pointeeTwo)
 //            }
@@ -113,7 +111,7 @@
 //    private var flags: SCNetworkReachabilityFlags {
 //        var flags: SCNetworkReachabilityFlags = SCNetworkReachabilityFlags(rawValue: 0)
 //
-//        // swiftlint:disable:next line_length
+
 //        if withUnsafeMutablePointer(to: &flags, { SCNetworkReachabilityGetFlags(self.networkReachability, UnsafeMutablePointer<SCNetworkReachabilityFlags>($0))}) == true {
 //            return flags
 //        } else {
@@ -177,7 +175,7 @@
 //
 //        var context: SCNetworkReachabilityContext = SCNetworkReachabilityContext()
 //        context.info = UnsafeMutableRawPointer(Unmanaged.passUnretained(self).toOpaque())
-//        // swiftlint:disable:next unused_closure_parameter  line_length
+
 //        guard SCNetworkReachabilitySetCallback(self.networkReachability, { (target: SCNetworkReachability, _: SCNetworkReachabilityFlags, info: UnsafeMutableRawPointer?) -> Void in
 //            if let currentInfo = info {
 //                let infoObject: AnyObject = Unmanaged<AnyObject>.fromOpaque(currentInfo).takeUnretainedValue()
@@ -217,4 +215,3 @@
 //    }
 //
 //}
-

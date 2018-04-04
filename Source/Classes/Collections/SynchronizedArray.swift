@@ -148,7 +148,7 @@ public extension SynchronizedArray {
     func flatMap<ElementOfResult>(_ transform: (Element) throws -> ElementOfResult?) rethrows -> [ElementOfResult] {
         var result: [ElementOfResult] = []
         try self._queue.sync {
-            result = try self.elements.flatMap(transform)
+            result = try self.elements.compactMap(transform)
         }
         return result
     }

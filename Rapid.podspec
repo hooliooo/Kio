@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Rapid"
-  s.version      = "0.4.1"
+  s.version      = "0.4.2"
   s.summary      = "A personal toolset I use in iOS Projects"
 
   s.homepage     = "https://github.com/hooliooo/Rapid"
@@ -93,6 +93,6 @@ Pod::Spec.new do |s|
   #  you can include multiple dependencies to ensure it works.
 
   s.requires_arc = true
-  s.swift_version = '4.0'
+  s.swift_version = '4.1'
 
 end

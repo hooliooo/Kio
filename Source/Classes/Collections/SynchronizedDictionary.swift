@@ -160,7 +160,7 @@ public extension SynchronizedDictionary {
         try self._queue.sync {
             do {
 
-                result = try self.dict.flatMap(transform)
+                result = try self.dict.compactMap(transform)
 
             } catch let error {
 
