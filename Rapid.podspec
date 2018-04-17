@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Rapid"
-  s.version      = "0.4.4"
+  s.version      = "0.4.5"
   s.summary      = "A personal toolset I use in iOS Projects"
 
   s.homepage     = "https://github.com/hooliooo/Rapid"
@@ -50,12 +50,12 @@ Pod::Spec.new do |s|
   #
 
   s.platform     = :ios, "9.3"
-  s.platform     = :watchos, "4.0"
+  s.platform     = :watchos, "2.0"
 
   #  When using multiple platforms
   s.ios.deployment_target = "9.3"
   # s.osx.deployment_target = "10.7"
-  s.watchos.deployment_target = "4.0"
+  s.watchos.deployment_target = "2.0"
   # s.tvos.deployment_target = "9.0"
 
 
