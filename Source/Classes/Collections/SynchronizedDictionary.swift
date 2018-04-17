@@ -6,6 +6,8 @@
 //
 //
 
+import Foundation
+
 public class SynchronizedDictionary<Key: Hashable, Value> {
     /**
      The initializer

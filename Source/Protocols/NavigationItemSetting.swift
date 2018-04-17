@@ -6,6 +6,8 @@
 //
 //
 
+import UIKit
+
 public protocol NavigationItemSetting: class {
 
     /**

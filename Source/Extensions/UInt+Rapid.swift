@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CoreGraphics
 
 /**
  A DSL for UInt to access custom methods

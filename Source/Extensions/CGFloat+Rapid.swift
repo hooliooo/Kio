@@ -6,7 +6,8 @@
 //
 //
 
-import UIKit
+import Foundation
+import CoreGraphics
 
 /**
  A DSL for Float to access custom methods

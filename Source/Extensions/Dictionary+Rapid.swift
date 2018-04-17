@@ -6,6 +6,8 @@
 //
 //
 
+import Foundation
+
 public extension Dictionary {
     /**
      Mutating method that combines the dictionary with another dictionary.

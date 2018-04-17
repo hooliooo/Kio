@@ -6,7 +6,7 @@
 //  Copyright © 2018 Some Enterprises. All rights reserved.
 //
 
-import Foundation
+import CoreGraphics
 
 /**
  A DSL for CGRect to access custom methods

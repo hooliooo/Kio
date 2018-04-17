@@ -6,6 +6,8 @@
 //
 //
 
+import UIKit
+
 public protocol TargetActionSetting: class {
     /**
      Convenience method that assigns a selector method to a UIControl instance

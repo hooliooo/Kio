@@ -6,6 +6,8 @@
 //
 //
 
+import UIKit
+
 /**
  A subclass of the DataSource class that works together with the ArrayProvider class.
 */

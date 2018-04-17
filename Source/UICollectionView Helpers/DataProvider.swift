@@ -6,6 +6,8 @@
 //
 //
 
+import Foundation
+
 /**
  The DataProvider protcol defines the interface of the type that will manage an array of objects
  that will be shown in a UICollectionView instance

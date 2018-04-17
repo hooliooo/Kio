@@ -6,6 +6,8 @@
 //
 //
 
+import UIKit
+
 /**
  A DSL for UIView to access custom methods
 */

@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Rapid"
-  s.version      = "0.4.2"
+  s.version      = "0.4.3"
   s.summary      = "A personal toolset I use in iOS Projects"
 
   s.homepage     = "https://github.com/hooliooo/Rapid"
@@ -50,11 +50,12 @@ Pod::Spec.new do |s|
   #
 
   s.platform     = :ios, "9.3"
+  s.platform     = :watchos, "4.0"
 
   #  When using multiple platforms
   s.ios.deployment_target = "9.3"
   # s.osx.deployment_target = "10.7"
-  # s.watchos.deployment_target = "4.0"
+  s.watchos.deployment_target = "4.0"
   # s.tvos.deployment_target = "9.0"
 
 
@@ -65,6 +66,12 @@ Pod::Spec.new do |s|
   #
 
   s.source       = { :git => "https://github.com/hooliooo/Rapid.git", :tag => s.version.to_s }
+
+  s.watchos.exclude_files = "Source/UICollectionView Helpers/*.swift", "Source/Coordinators/*.swift",
+                            "Source/Classes/JAView.swift", "Source/Classes/JAViewController.swift",
+                            "Source/Classes/JAActivityIndicatorView.swift", "Source/Extensions/UIView+Rapid.swift",
+                            "Source/Protocols/NavigationItemSetting.swift", "Source/Protocols/TargetActionSetting.swift",
+                            "Source/Protocols/ActivityIndicatorManaging.swift", "Source/Protocols/AppNetworkActivityIndicatorInjected.swift"
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -83,7 +90,7 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-  s.frameworks = "UIKit", "Foundation"
+  s.frameworks = "UIKit", "Foundation", "CoreGraphics"
 
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

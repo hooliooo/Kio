@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CoreGraphics
 
 /**
  A DSL for Int to access custom methods

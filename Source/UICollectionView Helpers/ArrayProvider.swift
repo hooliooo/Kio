@@ -6,6 +6,8 @@
 //
 //
 
+import Foundation
+
 /**
  An implementation of the DataProviding protocol that manages a one dimensional array, 
  meaning that it is suitable for collectionViews with a single section.

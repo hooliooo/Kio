@@ -6,6 +6,8 @@
 //
 //
 
+import UIKit
+
 /**
  DataSource is the class that adopts the UICollectionViewDataSource protcol and manages the boilerplate set up for
  using UICollectionView

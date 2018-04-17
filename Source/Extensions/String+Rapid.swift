@@ -6,6 +6,8 @@
 //
 //
 
+import Foundation
+
 /**
  A DSL for String to access custom methods
 */
