@@ -8,6 +8,9 @@
 
 import UIKit
 
+/**
+ A TabBarCoordinator is a type of Coordinator that manages a UITabBarController.
+*/
 public protocol TabBarCoordinator: Coordinator {
 
     /**
@@ -17,6 +20,7 @@ public protocol TabBarCoordinator: Coordinator {
 
     /**
      Type erasing method for TabCoordinator
+     - parameter coordinator: The TabCoordinator instance to be type erased.
     */
     func degenericize<T: TabCoordinator>(_ coordinator: T) -> AnyTabCoordinator
 }
