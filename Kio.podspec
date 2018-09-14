@@ -70,7 +70,7 @@ Pod::Spec.new do |s|
   s.watchos.exclude_files = "Source/UICollectionView Helpers/*.swift", "Source/Coordinators/*.swift",
                             "Source/Classes/JAView.swift", "Source/Classes/JAViewController.swift",
                             "Source/Classes/JAActivityIndicatorView.swift", "Source/Extensions/UIView+Kio.swift",
-                            "Source/Extensions/UIViewController+Kio.swift"
+                            "Source/Extensions/UIViewController+Kio.swift",
                             "Source/Protocols/NavigationItemSetting.swift", "Source/Protocols/TargetActionSetting.swift",
                             "Source/Protocols/ActivityIndicatorManaging.swift", "Source/Protocols/AppNetworkActivityIndicatorInjected.swift",
 
