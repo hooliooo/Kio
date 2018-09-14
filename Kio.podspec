@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Kio"
-  s.version      = "1.1.0"
+  s.version      = "1.1.1"
   s.summary      = "A personal toolset I use in iOS Projects"
 
   s.homepage     = "https://github.com/hooliooo/Rapid"
@@ -69,9 +69,10 @@ Pod::Spec.new do |s|
 
   s.watchos.exclude_files = "Source/UICollectionView Helpers/*.swift", "Source/Coordinators/*.swift",
                             "Source/Classes/JAView.swift", "Source/Classes/JAViewController.swift",
-                            "Source/Classes/JAActivityIndicatorView.swift", "Source/Extensions/UIView+Rapid.swift",
+                            "Source/Classes/JAActivityIndicatorView.swift", "Source/Extensions/UIView+Kio.swift",
+                            "Source/Extensions/UIViewController+Kio.swift"
                             "Source/Protocols/NavigationItemSetting.swift", "Source/Protocols/TargetActionSetting.swift",
-                            "Source/Protocols/ActivityIndicatorManaging.swift", "Source/Protocols/AppNetworkActivityIndicatorInjected.swift"
+                            "Source/Protocols/ActivityIndicatorManaging.swift", "Source/Protocols/AppNetworkActivityIndicatorInjected.swift",
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
