@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Kio"
-  s.version      = "1.1.2"
+  s.version      = "1.1.3"
   s.summary      = "A personal toolset I use in iOS Projects"
 
   s.homepage     = "https://github.com/hooliooo/Rapid"
@@ -72,7 +72,7 @@ Pod::Spec.new do |s|
                             "Source/Classes/JAActivityIndicatorView.swift", "Source/Extensions/UIView+Kio.swift",
                             "Source/Extensions/UIViewController+Kio.swift",
                             "Source/Protocols/NavigationItemSetting.swift", "Source/Protocols/TargetActionSetting.swift",
-                            "Source/Protocols/ActivityIndicatorManaging.swift", "Source/Protocols/AppNetworkActivityIndicatorInjected.swift",
+                            "Source/Protocols/ActivityIndicatorManaging.swift", "Source/Protocols/AppNetworkActivityIndicatorInjected.swift"
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
