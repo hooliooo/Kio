@@ -44,6 +44,6 @@ public extension UIViewController {
      RapidViewDSL instance to access custom methods
      */
     var rpd: RapidViewControllerDSL {
-        return RapidViewControllerDSL(view: self)
+        return RapidViewControllerDSL(viewController: self)
     }
 }
