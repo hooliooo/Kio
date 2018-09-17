@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint Rapid.podspec' to ensure this is a
+#  Be sure to run `pod spec lint Kio.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.version      = "1.1.4"
   s.summary      = "A personal toolset I use in iOS Projects"
 
-  s.homepage     = "https://github.com/hooliooo/Rapid"
+  s.homepage     = "https://github.com/hooliooo/Kio"
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -65,7 +65,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/hooliooo/Rapid.git", :tag => s.version.to_s }
+  s.source       = { :git => "https://github.com/hooliooo/Kio.git", :tag => s.version.to_s }
 
   s.watchos.exclude_files = "Source/UICollectionView Helpers/*.swift", "Source/Coordinators/*.swift",
                             "Source/Classes/JAView.swift", "Source/Classes/JAViewController.swift",
