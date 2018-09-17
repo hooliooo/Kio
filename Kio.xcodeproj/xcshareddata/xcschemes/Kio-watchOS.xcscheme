@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "143A6BB22085DFEE007A0E98"
-               BuildableName = "Kio.framework"
+               BuildableName = "Kio.temp_caseinsensitive_rename.framework"
                BlueprintName = "Kio-watchOS"
                ReferencedContainer = "container:Kio.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "143A6BB22085DFEE007A0E98"
-            BuildableName = "Kio.framework"
+            BuildableName = "Kio.temp_caseinsensitive_rename.framework"
             BlueprintName = "Kio-watchOS"
             ReferencedContainer = "container:Kio.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "143A6BB22085DFEE007A0E98"
-            BuildableName = "Kio.framework"
+            BuildableName = "Kio.temp_caseinsensitive_rename.framework"
             BlueprintName = "Kio-watchOS"
             ReferencedContainer = "container:Kio.xcodeproj">
          </BuildableReference>
