@@ -24,16 +24,16 @@ public struct RapidViewControllerDSL {
 public extension RapidViewControllerDSL {
 
     func add(child childViewController: UIViewController) {
-        self.viewController.addChildViewController(childViewController)
-        childViewController.didMove(toParentViewController: self.viewController)
+        self.viewController.addChild(childViewController)
+        childViewController.didMove(toParent: self.viewController)
         self.viewController.view.addSubview(childViewController.view)
     }
 
     func remove(child childViewController: UIViewController) {
         guard childViewController.parent === self.viewController else { return }
 
-        childViewController.willMove(toParentViewController: nil)
-        childViewController.removeFromParentViewController()
+        childViewController.willMove(toParent: nil)
+        childViewController.removeFromParent()
         childViewController.view.removeFromSuperview()
     }
 

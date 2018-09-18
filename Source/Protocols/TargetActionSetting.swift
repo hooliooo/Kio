@@ -22,15 +22,15 @@ public extension TargetActionSetting where Self: UIViewController {
 
         for (control, action) in dict {
 
-            let controlEvent: UIControlEvents
+            let controlEvent: UIControl.Event
 
             switch control {
 
                 case is UISegmentedControl, is UIDatePicker, is UIRefreshControl, is UISwitch:
-                    controlEvent = UIControlEvents.valueChanged
+                    controlEvent = UIControl.Event.valueChanged
 
                 default:
-                    controlEvent = UIControlEvents.touchUpInside
+                    controlEvent = UIControl.Event.touchUpInside
             }
 
             control.addTarget(self, action: action, for: controlEvent)

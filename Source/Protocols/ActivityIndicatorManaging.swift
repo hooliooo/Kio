@@ -19,9 +19,8 @@ public protocol ActivityIndicatorManaging: class {
 public extension ActivityIndicatorManaging where Self: UIViewController {
 
     private func createActivityIndicator() -> JAActivityIndicatorView {
-        let view: JAActivityIndicatorView = JAActivityIndicatorView(
-            activityIndicatorStyle: UIActivityIndicatorViewStyle.gray
-        )
+        let view: JAActivityIndicatorView = JAActivityIndicatorView()
+        view.style = UIActivityIndicatorView.Style.gray
         view.translatesAutoresizingMaskIntoConstraints = false
         view.hidesWhenStopped = true
 //        view.backgroundColor = UIColor(red: 225, green: 225, blue: 225)

@@ -27,10 +27,10 @@ open class AnyTabCoordinator {
     /**
      UIViewController instance being managed
      */
-    open let viewController: UIViewController
+    public let viewController: UIViewController
 
     /**
      UITabBarItem for the UIViewController
      */
-    open let tabBarItem: UITabBarItem
+    public let tabBarItem: UITabBarItem
 }

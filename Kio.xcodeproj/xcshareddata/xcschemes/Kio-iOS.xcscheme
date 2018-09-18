@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "14A0383D1EC860AD0024E23D"
-               BuildableName = "Kio.temp_caseinsensitive_rename.framework"
+               BuildableName = "Kio.framework"
                BlueprintName = "Kio-iOS"
                ReferencedContainer = "container:Kio.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "14A0383D1EC860AD0024E23D"
-            BuildableName = "Kio.temp_caseinsensitive_rename.framework"
+            BuildableName = "Kio.framework"
             BlueprintName = "Kio-iOS"
             ReferencedContainer = "container:Kio.xcodeproj">
          </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "14A0383D1EC860AD0024E23D"
-            BuildableName = "Kio.temp_caseinsensitive_rename.framework"
+            BuildableName = "Kio.framework"
             BlueprintName = "Kio-iOS"
             ReferencedContainer = "container:Kio.xcodeproj">
          </BuildableReference>
@@ -83,7 +83,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "14A0383D1EC860AD0024E23D"
-            BuildableName = "Kio.temp_caseinsensitive_rename.framework"
+            BuildableName = "Kio.framework"
             BlueprintName = "Kio-iOS"
             ReferencedContainer = "container:Kio.xcodeproj">
          </BuildableReference>

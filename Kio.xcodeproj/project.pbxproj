@@ -113,7 +113,7 @@
 		1431D893214BBCA6004761A3 /* UIViewController+Kio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Kio.swift"; sourceTree = "<group>"; };
 		143434622058D52F00A356BF /* AppNetworkActivityIndicatorInjected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNetworkActivityIndicatorInjected.swift; sourceTree = "<group>"; };
 		143434642058D55900A356BF /* DecodingErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodingErrorHandler.swift; sourceTree = "<group>"; };
-		143A6BEC2085DFEE007A0E98 /* Kio.temp_caseinsensitive_rename.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kio.temp_caseinsensitive_rename.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		143A6BEC2085DFEE007A0E98 /* Kio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		143A6BEE2085E43C007A0E98 /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.3.sdk/System/Library/Frameworks/WatchKit.framework; sourceTree = DEVELOPER_DIR; };
 		143A6BF02085E471007A0E98 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		143A6BF22085E581007A0E98 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -266,7 +266,7 @@
 			children = (
 				14A0383E1EC860AD0024E23D /* Kio.framework */,
 				14A038471EC860AD0024E23D /* KioTests.xctest */,
-				143A6BEC2085DFEE007A0E98 /* Kio.temp_caseinsensitive_rename.framework */,
+				143A6BEC2085DFEE007A0E98 /* Kio.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -410,7 +410,7 @@
 			);
 			name = "Kio-watchOS";
 			productName = JAShorthand;
-			productReference = 143A6BEC2085DFEE007A0E98 /* Kio.temp_caseinsensitive_rename.framework */;
+			productReference = 143A6BEC2085DFEE007A0E98 /* Kio.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		14A0383D1EC860AD0024E23D /* Kio-iOS */ = {
@@ -462,6 +462,7 @@
 				TargetAttributes = {
 					143A6BB22085DFEE007A0E98 = {
 						DevelopmentTeam = S886WPSL95;
+						LastSwiftMigration = 1000;
 					};
 					14A0383D1EC860AD0024E23D = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -678,8 +679,7 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -703,8 +703,7 @@
 				PRODUCT_NAME = Kio;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -767,6 +766,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -822,6 +822,7 @@
 				PRODUCT_NAME = Kio;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -848,7 +849,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -870,7 +871,7 @@
 				PRODUCT_NAME = Kio;
 				SKIP_INSTALL = YES;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
