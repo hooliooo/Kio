@@ -33,7 +33,6 @@
 		143A6BD12085DFEE007A0E98 /* CGFloat+Kio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1465458E1F9CAC3100814505 /* CGFloat+Kio.swift */; };
 		143A6BD22085DFEE007A0E98 /* JAObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A038651EC868C20024E23D /* JAObject.swift */; };
 		143A6BD32085DFEE007A0E98 /* ArrayProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D5CE7F1EC9BB0900982047 /* ArrayProvider.swift */; };
-		143A6BD42085DFEE007A0E98 /* EnumCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AB1A371FE39E8A0072B8E4 /* EnumCollection.swift */; };
 		143A6BD52085DFEE007A0E98 /* ValidatorResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141B62FE200799A7003F39FE /* ValidatorResult.swift */; };
 		143A6BD62085DFEE007A0E98 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D5CE791EC9BAF900982047 /* DataProvider.swift */; };
 		143A6BD72085DFEE007A0E98 /* CompositeValidators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1494447B2007A7F10012CB98 /* CompositeValidators.swift */; };
@@ -83,7 +82,6 @@
 		14A038751EC872AC0024E23D /* NavigationItemSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A038741EC872AC0024E23D /* NavigationItemSetting.swift */; };
 		14A038771EC872E10024E23D /* TargetActionSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A038761EC872E10024E23D /* TargetActionSetting.swift */; };
 		14A746501FEA2E3A0042C193 /* JAArchiveManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A7464F1FEA2E3A0042C193 /* JAArchiveManager.swift */; };
-		14AB1A381FE39E8A0072B8E4 /* EnumCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AB1A371FE39E8A0072B8E4 /* EnumCollection.swift */; };
 		14C489751F668D5B0064A259 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C489741F668D5B0064A259 /* Reachability.swift */; };
 		14D5CE7B1EC9BAF900982047 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D5CE791EC9BAF900982047 /* DataProvider.swift */; };
 		14D5CE7C1EC9BAF900982047 /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D5CE7A1EC9BAF900982047 /* Configurable.swift */; };
@@ -155,7 +153,6 @@
 		14A038741EC872AC0024E23D /* NavigationItemSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationItemSetting.swift; sourceTree = "<group>"; };
 		14A038761EC872E10024E23D /* TargetActionSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetActionSetting.swift; sourceTree = "<group>"; };
 		14A7464F1FEA2E3A0042C193 /* JAArchiveManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JAArchiveManager.swift; sourceTree = "<group>"; };
-		14AB1A371FE39E8A0072B8E4 /* EnumCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumCollection.swift; sourceTree = "<group>"; };
 		14C489741F668D5B0064A259 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		14D5CE791EC9BAF900982047 /* DataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		14D5CE7A1EC9BAF900982047 /* Configurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
@@ -365,7 +362,6 @@
 				14A038741EC872AC0024E23D /* NavigationItemSetting.swift */,
 				14A038761EC872E10024E23D /* TargetActionSetting.swift */,
 				1448BEB91F42D03000A17F12 /* ActivityIndicatorManaging.swift */,
-				14AB1A371FE39E8A0072B8E4 /* EnumCollection.swift */,
 				143434622058D52F00A356BF /* AppNetworkActivityIndicatorInjected.swift */,
 				143434642058D55900A356BF /* DecodingErrorHandler.swift */,
 			);
@@ -579,7 +575,6 @@
 				143A6BD12085DFEE007A0E98 /* CGFloat+Kio.swift in Sources */,
 				143A6BD22085DFEE007A0E98 /* JAObject.swift in Sources */,
 				143A6BD32085DFEE007A0E98 /* ArrayProvider.swift in Sources */,
-				143A6BD42085DFEE007A0E98 /* EnumCollection.swift in Sources */,
 				143A6BD52085DFEE007A0E98 /* ValidatorResult.swift in Sources */,
 				143A6BD62085DFEE007A0E98 /* DataProvider.swift in Sources */,
 				143A6BD72085DFEE007A0E98 /* CompositeValidators.swift in Sources */,
@@ -627,7 +622,6 @@
 				1465458F1F9CAC3100814505 /* CGFloat+Kio.swift in Sources */,
 				14A038661EC868C20024E23D /* JAObject.swift in Sources */,
 				14D5CE821EC9BB0900982047 /* ArrayProvider.swift in Sources */,
-				14AB1A381FE39E8A0072B8E4 /* EnumCollection.swift in Sources */,
 				141B62FF200799A7003F39FE /* ValidatorResult.swift in Sources */,
 				14D5CE7B1EC9BAF900982047 /* DataProvider.swift in Sources */,
 				1494447C2007A7F10012CB98 /* CompositeValidators.swift in Sources */,
