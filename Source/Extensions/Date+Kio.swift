@@ -1,5 +1,5 @@
 //
-//  Rapid
+//  Kio
 //  Copyright (c) 2017-2018 Julio Miguel Alorro
 //
 //  Licensed under the MIT license. See LICENSE file.
@@ -10,7 +10,7 @@ import Foundation
 /**
  A DSL for Date to access custom methods
 */
-public struct RapidDateDSL {
+public struct KioDateDSL {
 
     // MARK: Static Properties
     /**
@@ -28,7 +28,7 @@ public struct RapidDateDSL {
     public static let calendar: Calendar = {
         var calendar: Calendar = Calendar.autoupdatingCurrent
         calendar.firstWeekday = 1
-        calendar.timeZone = RapidDateDSL.timeZone
+        calendar.timeZone = KioDateDSL.timeZone
         return calendar
     }()
 
@@ -72,12 +72,12 @@ public struct RapidDateDSL {
 
 }
 
-public extension RapidDateDSL {
+public extension KioDateDSL {
     /**
      Returns the 0:00 Date of the underlying Date. In UTC TimeZone.
     */
     var startOfDay: Date {
-        return RapidDateDSL.calendar.startOfDay(for: self.date)
+        return KioDateDSL.calendar.startOfDay(for: self.date)
     }
 
     /**
@@ -87,7 +87,7 @@ public extension RapidDateDSL {
         var components = DateComponents()
         components.day = 1
         components.second = -1
-        return RapidDateDSL.calendar.date(byAdding: components, to: self.startOfDay)!
+        return KioDateDSL.calendar.date(byAdding: components, to: self.startOfDay)!
     }
 
     /**
@@ -95,10 +95,10 @@ public extension RapidDateDSL {
      same date is returned with a midnight time.
      - parameter weekday: The weekday of the date that will be returned
     */
-    func date(ofPastWeekday weekday: RapidDateDSL.Weekdays) -> Date {
+    func date(ofPastWeekday weekday: KioDateDSL.Weekdays) -> Date {
         var calendar: Calendar = Calendar.autoupdatingCurrent
         calendar.firstWeekday = weekday.rawValue
-        calendar.timeZone = RapidDateDSL.timeZone
+        calendar.timeZone = KioDateDSL.timeZone
 
         let currentDateComponents: DateComponents = calendar.dateComponents(
             [Calendar.Component.yearForWeekOfYear, Calendar.Component.weekOfYear],
@@ -111,9 +111,9 @@ public extension RapidDateDSL {
 
 public extension Date {
     /**
-     RapidDateDSL instance to access custom methods
+     KioDateDSL instance to access custom methods
     */
-    var rpd: RapidDateDSL {
-        return RapidDateDSL(date: self)
+    var kio: KioDateDSL {
+        return KioDateDSL(date: self)
     }
 }

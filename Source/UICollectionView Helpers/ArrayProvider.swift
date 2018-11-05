@@ -1,5 +1,5 @@
 //
-//  Rapid
+//  Kio
 //  Copyright (c) 2017-2018 Julio Miguel Alorro
 //
 //  Licensed under the MIT license. See LICENSE file.
@@ -9,8 +9,8 @@
 import Foundation
 
 /**
- An implementation of the DataProviding protocol that manages a one dimensional array, 
- meaning that it is suitable for collectionViews with a single section.
+ An implementation of the DataProviding protocol that manages a one dimensional array of a single type,
+ meaning that it is suitable for collectionViews with a single section and uses one type of model.
 */
 public final class ArrayProvider<Element>: DataProvider {
 
@@ -72,9 +72,7 @@ public final class ArrayProvider<Element>: DataProvider {
      - parameter objects: Objects to be added to the array.
     */
     public func add(elements: [Element]) {
-        elements.forEach { [unowned self] (element: Element) -> Void in
-            self.add(element: element)
-        }
+        elements.forEach(self.add)
     }
 
     /**

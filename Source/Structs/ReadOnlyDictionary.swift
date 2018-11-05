@@ -1,5 +1,5 @@
 //
-//  Rapid
+//  Kio
 //  Copyright (c) 2017-2018 Julio Miguel Alorro
 //
 //  Licensed under the MIT license. See LICENSE file.

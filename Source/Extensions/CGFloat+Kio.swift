@@ -1,5 +1,5 @@
 //
-//  Rapid
+//  Kio
 //  Copyright (c) 2017-2018 Julio Miguel Alorro
 //
 //  Licensed under the MIT license. See LICENSE file.
@@ -12,7 +12,7 @@ import CoreGraphics
 /**
  A DSL for Float to access custom methods
  */
-public struct RapidCGFloatDSL {
+public struct KioCGFloatDSL {
 
     // MARK: Stored Propeties
     /**
@@ -22,7 +22,7 @@ public struct RapidCGFloatDSL {
 
 }
 
-public extension RapidCGFloatDSL {
+public extension KioCGFloatDSL {
 
     /**
      CGFloat as a String
@@ -120,10 +120,10 @@ public extension RapidCGFloatDSL {
 public extension CGFloat {
 
     /**
-     RapidCGFloatDSL instance to access custom methods
+     KioCGFloatDSL instance to access custom methods
     */
-    var rpd: RapidCGFloatDSL {
-        return RapidCGFloatDSL(cgFloat: self)
+    var kio: KioCGFloatDSL {
+        return KioCGFloatDSL(cgFloat: self)
     }
 
 }

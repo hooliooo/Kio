@@ -1,5 +1,5 @@
 //
-//  Rapid
+//  Kio
 //  Copyright (c) 2017-2018 Julio Miguel Alorro
 //
 //  Licensed under the MIT license. See LICENSE file.
@@ -12,7 +12,7 @@ import UIKit
  DataSource is the class that adopts the UICollectionViewDataSource protcol and manages the boilerplate set up for
  using UICollectionView
 */
-open class DataSource<Provider: DataProvider, Cell: ConfigurableCell<Provider.Element>>: JAObject, UICollectionViewDataSource {
+open class DataSource<Provider: DataProvider, Cell: ConfigurableCell<Provider.Element>>: KioObject, UICollectionViewDataSource {
 
     // MARK: Initializers
     /**

@@ -1,5 +1,5 @@
 //
-//  Rapid
+//  Kio
 //  Copyright (c) 2017-2018 Julio Miguel Alorro
 //
 //  Licensed under the MIT license. See LICENSE file.
@@ -11,7 +11,7 @@ import UIKit
 /**
  A DSL for UIView to access custom methods
 */
-public struct RapidViewDSL {
+public struct KioViewDSL {
 
     // MARK: Stored Propeties
     /**
@@ -21,7 +21,7 @@ public struct RapidViewDSL {
 
 }
 
-public extension RapidViewDSL {
+public extension KioViewDSL {
 
     /**
      Adds subview and sets translatesAutoresizingMaskIntoConstraints to false.
@@ -70,9 +70,9 @@ public extension RapidViewDSL {
 
 public extension UIView {
     /**
-     RapidViewDSL instance to access custom methods
+     KioViewDSL instance to access custom methods
     */
-    var rpd: RapidViewDSL {
-        return RapidViewDSL(view: self)
+    var kio: KioViewDSL {
+        return KioViewDSL(view: self)
     }
 }

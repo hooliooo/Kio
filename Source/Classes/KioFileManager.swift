@@ -1,5 +1,5 @@
 //
-//  Rapid
+//  Kio
 //  Copyright (c) 2017-2018 Julio Miguel Alorro
 //
 //  Licensed under the MIT license. See LICENSE file.
@@ -9,14 +9,14 @@
 import Foundation
 
 /**
- The JAFileManager class is responsible for simple CRUD operations on files saved to the
+ The KioFileManager class is responsible for simple CRUD operations on files saved to the
  Documents Directory.
 */
-open class JAFileManager: JAObject {
+open class KioFileManager: KioObject {
 
     // MARK: Stored Properties
     /**
-     The FileManager instance.
+     The FileManager instance. Uses the FileManager default singleton.
     */
     private unowned let fileManager: FileManager = FileManager.default
 

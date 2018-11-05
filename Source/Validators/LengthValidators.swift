@@ -1,5 +1,5 @@
 //
-//  Rapid
+//  Kio
 //  Copyright (c) 2018 Julio Miguel Alorro
 //
 //  Licensed under the MIT license. See LICENSE file.
@@ -11,7 +11,7 @@ import Foundation
 /**
  An implementation of Validator that checks if a string is empty or not
 */
-public struct EmptyStringValidator: Validator {
+public struct EmptyStringInvalidator: Validator {
 
     // MARK: Intializer
     public init() {}
@@ -34,7 +34,7 @@ public struct EmptyStringValidator: Validator {
 /**
  An implementation of Validator that checks if a string is at least a specified number of characters in length
 */
-public struct ShortStringValidator: Validator {
+public struct ShortStringInvalidator: Validator {
 
     // MARK: Intializer
     public init(minimumLength: UInt) {
@@ -52,7 +52,7 @@ public struct ShortStringValidator: Validator {
     }
 
     public func validate(_ stringValue: String) -> ValidatorResult {
-        switch stringValue.count < self.minimumLength.rpd.intValue {
+        switch stringValue.count < self.minimumLength.kio.intValue {
             case true:
                 return ValidatorResult.invalid([self.error])
 
@@ -66,7 +66,7 @@ public struct ShortStringValidator: Validator {
 /**
  An implementation of Validator that check if a string is less than a specified number of characters in length
  */
-public struct LongStringValidator: Validator {
+public struct LongStringInvalidator: Validator {
 
     // MARK: Intializer
     public init(maximumLength: UInt) {
@@ -84,7 +84,7 @@ public struct LongStringValidator: Validator {
     }
 
     public func validate(_ stringValue: String) -> ValidatorResult {
-        switch stringValue.count > self.maximumLength.rpd.intValue {
+        switch stringValue.count > self.maximumLength.kio.intValue {
             case true:
                 return ValidatorResult.invalid([self.error])
 

@@ -1,5 +1,5 @@
 //
-//  Rapid
+//  Kio
 //  Copyright (c) 2017-2018 Julio Miguel Alorro
 //
 //  Licensed under the MIT license. See LICENSE file.
@@ -11,7 +11,7 @@ import Foundation
 /**
  A DSL for String to access custom methods
 */
-public struct RapidStringDSL {
+public struct KioStringDSL {
 
     // MARK: Stored Propeties
     /**
@@ -21,7 +21,7 @@ public struct RapidStringDSL {
 
 }
 
-public extension RapidStringDSL {
+public extension KioStringDSL {
     /**
      Checks if string contains a number
     */
@@ -121,9 +121,9 @@ public extension RapidStringDSL {
 public extension String {
 
     /**
-     RapidDoubleDSL instance to access custom methods
+     KioDoubleDSL instance to access custom methods
     */
-    var rpd: RapidStringDSL {
-        return RapidStringDSL(string: self)
+    var kio: KioStringDSL {
+        return KioStringDSL(string: self)
     }
 }

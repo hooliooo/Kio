@@ -1,5 +1,5 @@
 //
-//  Rapid
+//  Kio
 //  Copyright (c) 2017-2018 Julio Miguel Alorro
 //
 //  Licensed under the MIT license. See LICENSE file.
@@ -12,7 +12,7 @@ import CoreGraphics
 /**
  A DSL for Double to access custom methods
 */
-public struct RapidDoubleDSL {
+public struct KioDoubleDSL {
 
     // MARK: Stored Propeties
     /**
@@ -22,7 +22,7 @@ public struct RapidDoubleDSL {
 
 }
 
-public extension RapidDoubleDSL {
+public extension KioDoubleDSL {
 
     /**
      Double as a String
@@ -120,10 +120,10 @@ public extension RapidDoubleDSL {
 public extension Double {
 
     /**
-     RapidDoubleDSL instance to access custom methods
+     KioDoubleDSL instance to access custom methods
     */
-    var rpd: RapidDoubleDSL {
-        return RapidDoubleDSL(double: self)
+    var kio: KioDoubleDSL {
+        return KioDoubleDSL(double: self)
     }
 
 }

@@ -1,5 +1,5 @@
 //
-//  Rapid
+//  Kio
 //  Copyright (c) 2018 Julio Miguel Alorro
 //
 //  Licensed under the MIT license. See LICENSE file.
@@ -27,18 +27,18 @@ public struct AndCompositeValidator: Validator {
     private let validators: [Validator]
 
     // MARK: Instance Methods
-    public func validate(_ stringValue: String) -> ValidatorResult {
-        return self.validators.reduce(into: .valid) { (validatorResult: inout ValidatorResult, validator: Validator) -> Void in
+    public func validate(_ stringValue: String) -> ValidatorResult { // swiftlint:disable:next line_length
+        return self.validators.reduce(into: ValidatorResult.valid) { (result: inout ValidatorResult, validator: Validator) -> Void in
             switch validator.validate(stringValue) {
                 case .valid:
                     break
 
                 case .invalid(let validatorErrors):
-                    switch validatorResult {
+                    switch result {
                         case .valid:
-                            validatorResult = .invalid(validatorErrors)
+                            result = .invalid(validatorErrors)
                         case .invalid(let validatorResultErrors):
-                            validatorResult = .invalid( validatorResultErrors + validatorErrors)
+                            result = .invalid(validatorResultErrors + validatorErrors)
                     }
             }
         }

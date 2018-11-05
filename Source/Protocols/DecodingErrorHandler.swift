@@ -1,6 +1,6 @@
 //
 //  DecodingErrorHandler.swift
-//  Rapid-iOS
+//  Kio-iOS
 //
 //  Created by Julio Miguel Alorro on 3/14/18.
 //  Copyright © 2018 Some Enterprises. All rights reserved.

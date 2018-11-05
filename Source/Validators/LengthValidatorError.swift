@@ -1,5 +1,5 @@
 //
-//  Rapid
+//  Kio
 //  Copyright (c) 2018 Julio Miguel Alorro
 //
 //  Licensed under the MIT license. See LICENSE file.
@@ -11,7 +11,7 @@ import Foundation
 /**
  An Enum that represents errors associated with a string's length
 */
-public enum LengthValidatorError: Error {
+public enum LengthValidatorError: Swift.Error {
 
     /**
      An indication that the string is expected to have at least one character, but is contains no character
@@ -29,5 +29,20 @@ public enum LengthValidatorError: Error {
      specified value
     */
     case long(UInt)
+
+}
+
+extension LengthValidatorError: Equatable {
+
+    public static func == (lhs: LengthValidatorError, rhs: LengthValidatorError) -> Bool {
+
+        switch (lhs, rhs) {
+            case (.empty, .empty): return true
+            case (.short(let lhsLength), .short(let rhsLength)): return lhsLength == rhsLength
+            case (.long(let lhsLength), .long(let rhsLength)): return lhsLength == rhsLength
+            default: return false
+        }
+
+    }
 
 }

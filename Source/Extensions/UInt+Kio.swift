@@ -1,5 +1,5 @@
 //
-//  Rapid
+//  Kio
 //  Copyright (c) 2017-2018 Julio Miguel Alorro
 //
 //  Licensed under the MIT license. See LICENSE file.
@@ -12,7 +12,7 @@ import CoreGraphics
 /**
  A DSL for UInt to access custom methods
  */
-public struct RapidUIntDSL {
+public struct KioUIntDSL {
 
     // MARK: Stored Propeties
     /**
@@ -22,7 +22,7 @@ public struct RapidUIntDSL {
 
 }
 
-public extension RapidUIntDSL {
+public extension KioUIntDSL {
 
     /**
      UInt as a String
@@ -119,9 +119,9 @@ public extension RapidUIntDSL {
 public extension UInt {
 
     /**
-     RapidUIntDSL instance to access custom methods
+     KioUIntDSL instance to access custom methods
     */
-    var rpd: RapidUIntDSL {
-        return RapidUIntDSL(uint: self)
+    var kio: KioUIntDSL {
+        return KioUIntDSL(uint: self)
     }
 }

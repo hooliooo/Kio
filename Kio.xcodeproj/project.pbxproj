@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		14182B511FCE8F6500038939 /* JAFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14182B501FCE8F6500038939 /* JAFileManager.swift */; };
+		14182B511FCE8F6500038939 /* KioFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14182B501FCE8F6500038939 /* KioFileManager.swift */; };
 		141B62FF200799A7003F39FE /* ValidatorResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141B62FE200799A7003F39FE /* ValidatorResult.swift */; };
 		141B630120079B4C003F39FE /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141B630020079B4C003F39FE /* Validator.swift */; };
 		141B630320079F59003F39FE /* LengthValidatorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141B630220079F59003F39FE /* LengthValidatorError.swift */; };
 		141B63052007A11E003F39FE /* LengthValidators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141B63042007A11E003F39FE /* LengthValidators.swift */; };
 		142152711F1F944300EB421A /* Kio.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 142152701F1F944300EB421A /* Kio.podspec */; };
+		142BF50B216C926300CFC920 /* Sequence+Kio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BF50A216C926300CFC920 /* Sequence+Kio.swift */; };
+		142BF50C216C926300CFC920 /* Sequence+Kio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BF50A216C926300CFC920 /* Sequence+Kio.swift */; };
 		1431D894214BBCA6004761A3 /* UIViewController+Kio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1431D893214BBCA6004761A3 /* UIViewController+Kio.swift */; };
 		143434632058D52F00A356BF /* AppNetworkActivityIndicatorInjected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143434622058D52F00A356BF /* AppNetworkActivityIndicatorInjected.swift */; };
 		143434652058D55900A356BF /* DecodingErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143434642058D55900A356BF /* DecodingErrorHandler.swift */; };
@@ -22,16 +24,15 @@
 		143A6BBB2085DFEE007A0E98 /* Date+Kio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149C62511F2DE3D50099E1A4 /* Date+Kio.swift */; };
 		143A6BBC2085DFEE007A0E98 /* UInt+Kio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DDF1AC1FF63330000997A0 /* UInt+Kio.swift */; };
 		143A6BBD2085DFEE007A0E98 /* Double+Kio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147952A91F25AB130036611A /* Double+Kio.swift */; };
-		143A6BBE2085DFEE007A0E98 /* JAArchiveManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A7464F1FEA2E3A0042C193 /* JAArchiveManager.swift */; };
+		143A6BBE2085DFEE007A0E98 /* KioArchiveManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A7464F1FEA2E3A0042C193 /* KioArchiveManager.swift */; };
 		143A6BBF2085DFEE007A0E98 /* LengthValidatorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141B630220079F59003F39FE /* LengthValidatorError.swift */; };
-		143A6BC02085DFEE007A0E98 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C489741F668D5B0064A259 /* Reachability.swift */; };
 		143A6BC52085DFEE007A0E98 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141B630020079B4C003F39FE /* Validator.swift */; };
 		143A6BC62085DFEE007A0E98 /* UIColor+Kio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A0385A1EC862260024E23D /* UIColor+Kio.swift */; };
 		143A6BC92085DFEE007A0E98 /* String+Kio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A0386C1EC86CD20024E23D /* String+Kio.swift */; };
 		143A6BCD2085DFEE007A0E98 /* ReadOnlyDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A038681EC869820024E23D /* ReadOnlyDictionary.swift */; };
-		143A6BCE2085DFEE007A0E98 /* JAFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14182B501FCE8F6500038939 /* JAFileManager.swift */; };
+		143A6BCE2085DFEE007A0E98 /* KioFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14182B501FCE8F6500038939 /* KioFileManager.swift */; };
 		143A6BD12085DFEE007A0E98 /* CGFloat+Kio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1465458E1F9CAC3100814505 /* CGFloat+Kio.swift */; };
-		143A6BD22085DFEE007A0E98 /* JAObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A038651EC868C20024E23D /* JAObject.swift */; };
+		143A6BD22085DFEE007A0E98 /* KioObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A038651EC868C20024E23D /* KioObject.swift */; };
 		143A6BD32085DFEE007A0E98 /* ArrayProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D5CE7F1EC9BB0900982047 /* ArrayProvider.swift */; };
 		143A6BD52085DFEE007A0E98 /* ValidatorResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141B62FE200799A7003F39FE /* ValidatorResult.swift */; };
 		143A6BD62085DFEE007A0E98 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D5CE791EC9BAF900982047 /* DataProvider.swift */; };
@@ -47,8 +48,7 @@
 		143A6BF12085E471007A0E98 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 143A6BF02085E471007A0E98 /* Foundation.framework */; };
 		143A6BF32085E581007A0E98 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 143A6BF22085E581007A0E98 /* UIKit.framework */; };
 		143A6BF52085E86A007A0E98 /* CGRect+Kio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14562E28202734200081CF4F /* CGRect+Kio.swift */; };
-		1448BEBA1F42D03000A17F12 /* ActivityIndicatorManaging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1448BEB91F42D03000A17F12 /* ActivityIndicatorManaging.swift */; };
-		1448BEBC1F42D46700A17F12 /* JAActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1448BEBB1F42D46700A17F12 /* JAActivityIndicatorView.swift */; };
+		1448BEBC1F42D46700A17F12 /* KioActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1448BEBB1F42D46700A17F12 /* KioActivityIndicatorView.swift */; };
 		14562E29202734200081CF4F /* CGRect+Kio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14562E28202734200081CF4F /* CGRect+Kio.swift */; };
 		145D60A21F1F0F9D00FE565B /* AbstractCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145D60A11F1F0F9D00FE565B /* AbstractCoordinator.swift */; };
 		145D60A81F1F35F500FE565B /* SynchronizedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145D60A71F1F35F500FE565B /* SynchronizedArray.swift */; };
@@ -57,6 +57,8 @@
 		145D60AE1F1F4EBB00FE565B /* TabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145D60AD1F1F4EBB00FE565B /* TabCoordinator.swift */; };
 		1465458D1F9CAAF000814505 /* Float+Kio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1465458C1F9CAAF000814505 /* Float+Kio.swift */; };
 		1465458F1F9CAC3100814505 /* CGFloat+Kio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1465458E1F9CAC3100814505 /* CGFloat+Kio.swift */; };
+		14774DD221834BE900EC9A43 /* ValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14774DD121834BE900EC9A43 /* ValidatorTests.swift */; };
+		14774DD421834BE900EC9A43 /* Kio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14A0383E1EC860AD0024E23D /* Kio.framework */; };
 		147952AA1F25AB130036611A /* Double+Kio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147952A91F25AB130036611A /* Double+Kio.swift */; };
 		147952AC1F25AB1F0036611A /* Int+Kio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147952AB1F25AB1F0036611A /* Int+Kio.swift */; };
 		148BE0B31F22F31800B2C7B5 /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = 145D60A51F1F22E800FE565B /* LICENSE.md */; };
@@ -65,49 +67,47 @@
 		148BE0B91F2304EF00B2C7B5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 148BE0B81F2304EF00B2C7B5 /* UIKit.framework */; };
 		1494447C2007A7F10012CB98 /* CompositeValidators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1494447B2007A7F10012CB98 /* CompositeValidators.swift */; };
 		149C62521F2DE3D50099E1A4 /* Date+Kio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149C62511F2DE3D50099E1A4 /* Date+Kio.swift */; };
-		14A038481EC860AD0024E23D /* Kio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14A0383E1EC860AD0024E23D /* Kio.framework */; };
-		14A0384D1EC860AD0024E23D /* KioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A0384C1EC860AD0024E23D /* KioTests.swift */; };
 		14A0384F1EC860AD0024E23D /* Kio.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A038411EC860AD0024E23D /* Kio.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		14A038591EC860F60024E23D /* UIView+Kio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A038581EC860F60024E23D /* UIView+Kio.swift */; };
 		14A0385B1EC862260024E23D /* UIColor+Kio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A0385A1EC862260024E23D /* UIColor+Kio.swift */; };
 		14A0385D1EC862A00024E23D /* Dictionary+Kio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A0385C1EC862A00024E23D /* Dictionary+Kio.swift */; };
-		14A038621EC865750024E23D /* JAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A038611EC865750024E23D /* JAView.swift */; };
-		14A038641EC8671B0024E23D /* JAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A038631EC8671B0024E23D /* JAViewController.swift */; };
-		14A038661EC868C20024E23D /* JAObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A038651EC868C20024E23D /* JAObject.swift */; };
+		14A038621EC865750024E23D /* KioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A038611EC865750024E23D /* KioView.swift */; };
+		14A038641EC8671B0024E23D /* KioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A038631EC8671B0024E23D /* KioViewController.swift */; };
+		14A038661EC868C20024E23D /* KioObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A038651EC868C20024E23D /* KioObject.swift */; };
 		14A038691EC869820024E23D /* ReadOnlyDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A038681EC869820024E23D /* ReadOnlyDictionary.swift */; };
 		14A0386B1EC86A420024E23D /* SynchronizedDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A0386A1EC86A420024E23D /* SynchronizedDictionary.swift */; };
 		14A0386D1EC86CD20024E23D /* String+Kio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A0386C1EC86CD20024E23D /* String+Kio.swift */; };
 		14A038701EC86F170024E23D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A0386F1EC86F170024E23D /* Coordinator.swift */; };
 		14A038721EC86F470024E23D /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A038711EC86F470024E23D /* AppCoordinator.swift */; };
-		14A038751EC872AC0024E23D /* NavigationItemSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A038741EC872AC0024E23D /* NavigationItemSetting.swift */; };
-		14A038771EC872E10024E23D /* TargetActionSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A038761EC872E10024E23D /* TargetActionSetting.swift */; };
-		14A746501FEA2E3A0042C193 /* JAArchiveManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A7464F1FEA2E3A0042C193 /* JAArchiveManager.swift */; };
-		14C489751F668D5B0064A259 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C489741F668D5B0064A259 /* Reachability.swift */; };
+		14A746501FEA2E3A0042C193 /* KioArchiveManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A7464F1FEA2E3A0042C193 /* KioArchiveManager.swift */; };
 		14D5CE7B1EC9BAF900982047 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D5CE791EC9BAF900982047 /* DataProvider.swift */; };
 		14D5CE7C1EC9BAF900982047 /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D5CE7A1EC9BAF900982047 /* Configurable.swift */; };
 		14D5CE801EC9BB0900982047 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D5CE7D1EC9BB0900982047 /* DataSource.swift */; };
 		14D5CE811EC9BB0900982047 /* ArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D5CE7E1EC9BB0900982047 /* ArrayDataSource.swift */; };
 		14D5CE821EC9BB0900982047 /* ArrayProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D5CE7F1EC9BB0900982047 /* ArrayProvider.swift */; };
 		14DDF1AD1FF63330000997A0 /* UInt+Kio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DDF1AC1FF63330000997A0 /* UInt+Kio.swift */; };
+		14F4E24621820FC00068B96A /* KioDebuggable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F4E24521820FC00068B96A /* KioDebuggable.swift */; };
+		14F4E24721820FC00068B96A /* KioDebuggable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F4E24521820FC00068B96A /* KioDebuggable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		14A038491EC860AD0024E23D /* PBXContainerItemProxy */ = {
+		14774DD521834BE900EC9A43 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 14A038351EC860AD0024E23D /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 14A0383D1EC860AD0024E23D;
-			remoteInfo = JAShorthand;
+			remoteInfo = "Kio-iOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		14182B501FCE8F6500038939 /* JAFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JAFileManager.swift; sourceTree = "<group>"; };
+		14182B501FCE8F6500038939 /* KioFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KioFileManager.swift; sourceTree = "<group>"; };
 		141B62FE200799A7003F39FE /* ValidatorResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorResult.swift; sourceTree = "<group>"; };
 		141B630020079B4C003F39FE /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		141B630220079F59003F39FE /* LengthValidatorError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LengthValidatorError.swift; sourceTree = "<group>"; };
 		141B63042007A11E003F39FE /* LengthValidators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LengthValidators.swift; sourceTree = "<group>"; };
 		142152701F1F944300EB421A /* Kio.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kio.podspec; sourceTree = "<group>"; };
+		142BF50A216C926300CFC920 /* Sequence+Kio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Kio.swift"; sourceTree = "<group>"; };
 		1431D893214BBCA6004761A3 /* UIViewController+Kio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Kio.swift"; sourceTree = "<group>"; };
 		143434622058D52F00A356BF /* AppNetworkActivityIndicatorInjected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNetworkActivityIndicatorInjected.swift; sourceTree = "<group>"; };
 		143434642058D55900A356BF /* DecodingErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodingErrorHandler.swift; sourceTree = "<group>"; };
@@ -115,8 +115,7 @@
 		143A6BEE2085E43C007A0E98 /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.3.sdk/System/Library/Frameworks/WatchKit.framework; sourceTree = DEVELOPER_DIR; };
 		143A6BF02085E471007A0E98 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		143A6BF22085E581007A0E98 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		1448BEB91F42D03000A17F12 /* ActivityIndicatorManaging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorManaging.swift; sourceTree = "<group>"; };
-		1448BEBB1F42D46700A17F12 /* JAActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JAActivityIndicatorView.swift; sourceTree = "<group>"; };
+		1448BEBB1F42D46700A17F12 /* KioActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KioActivityIndicatorView.swift; sourceTree = "<group>"; };
 		14562E28202734200081CF4F /* CGRect+Kio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+Kio.swift"; sourceTree = "<group>"; };
 		145D60A11F1F0F9D00FE565B /* AbstractCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractCoordinator.swift; sourceTree = "<group>"; };
 		145D60A51F1F22E800FE565B /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
@@ -126,6 +125,9 @@
 		145D60AD1F1F4EBB00FE565B /* TabCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabCoordinator.swift; sourceTree = "<group>"; };
 		1465458C1F9CAAF000814505 /* Float+Kio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+Kio.swift"; sourceTree = "<group>"; };
 		1465458E1F9CAC3100814505 /* CGFloat+Kio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Kio.swift"; sourceTree = "<group>"; };
+		14774DCF21834BE800EC9A43 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		14774DD121834BE900EC9A43 /* ValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorTests.swift; sourceTree = "<group>"; };
+		14774DD321834BE900EC9A43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		147952A91F25AB130036611A /* Double+Kio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Kio.swift"; sourceTree = "<group>"; };
 		147952AB1F25AB1F0036611A /* Int+Kio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Kio.swift"; sourceTree = "<group>"; };
 		148BE0B11F22F2F200B2C7B5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -136,30 +138,25 @@
 		14A0383E1EC860AD0024E23D /* Kio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14A038411EC860AD0024E23D /* Kio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kio.h; sourceTree = "<group>"; };
 		14A038421EC860AD0024E23D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		14A038471EC860AD0024E23D /* KioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		14A0384C1EC860AD0024E23D /* KioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KioTests.swift; sourceTree = "<group>"; };
-		14A0384E1EC860AD0024E23D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14A038581EC860F60024E23D /* UIView+Kio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Kio.swift"; sourceTree = "<group>"; };
 		14A0385A1EC862260024E23D /* UIColor+Kio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Kio.swift"; sourceTree = "<group>"; };
 		14A0385C1EC862A00024E23D /* Dictionary+Kio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Kio.swift"; sourceTree = "<group>"; };
-		14A038611EC865750024E23D /* JAView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JAView.swift; sourceTree = "<group>"; };
-		14A038631EC8671B0024E23D /* JAViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JAViewController.swift; sourceTree = "<group>"; };
-		14A038651EC868C20024E23D /* JAObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JAObject.swift; sourceTree = "<group>"; };
+		14A038611EC865750024E23D /* KioView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KioView.swift; sourceTree = "<group>"; };
+		14A038631EC8671B0024E23D /* KioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KioViewController.swift; sourceTree = "<group>"; };
+		14A038651EC868C20024E23D /* KioObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KioObject.swift; sourceTree = "<group>"; };
 		14A038681EC869820024E23D /* ReadOnlyDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadOnlyDictionary.swift; sourceTree = "<group>"; };
 		14A0386A1EC86A420024E23D /* SynchronizedDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynchronizedDictionary.swift; sourceTree = "<group>"; };
 		14A0386C1EC86CD20024E23D /* String+Kio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Kio.swift"; sourceTree = "<group>"; };
 		14A0386F1EC86F170024E23D /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		14A038711EC86F470024E23D /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		14A038741EC872AC0024E23D /* NavigationItemSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationItemSetting.swift; sourceTree = "<group>"; };
-		14A038761EC872E10024E23D /* TargetActionSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetActionSetting.swift; sourceTree = "<group>"; };
-		14A7464F1FEA2E3A0042C193 /* JAArchiveManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JAArchiveManager.swift; sourceTree = "<group>"; };
-		14C489741F668D5B0064A259 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		14A7464F1FEA2E3A0042C193 /* KioArchiveManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KioArchiveManager.swift; sourceTree = "<group>"; };
 		14D5CE791EC9BAF900982047 /* DataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		14D5CE7A1EC9BAF900982047 /* Configurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
 		14D5CE7D1EC9BB0900982047 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		14D5CE7E1EC9BB0900982047 /* ArrayDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayDataSource.swift; sourceTree = "<group>"; };
 		14D5CE7F1EC9BB0900982047 /* ArrayProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayProvider.swift; sourceTree = "<group>"; };
 		14DDF1AC1FF63330000997A0 /* UInt+Kio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UInt+Kio.swift"; sourceTree = "<group>"; };
+		14F4E24521820FC00068B96A /* KioDebuggable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KioDebuggable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,20 +169,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		14774DCC21834BE800EC9A43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14774DD421834BE900EC9A43 /* Kio.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		14A0383A1EC860AD0024E23D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				148BE0B91F2304EF00B2C7B5 /* UIKit.framework in Frameworks */,
 				148BE0B71F2304E700B2C7B5 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		14A038441EC860AD0024E23D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				14A038481EC860AD0024E23D /* Kio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +209,15 @@
 				148BE0B11F22F2F200B2C7B5 /* README.md */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		14774DD021834BE900EC9A43 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				14774DD121834BE900EC9A43 /* ValidatorTests.swift */,
+				14774DD321834BE900EC9A43 /* Info.plist */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		148BE0B51F2304E700B2C7B5 /* Frameworks */ = {
@@ -252,7 +258,7 @@
 			children = (
 				14615B621F38101700F95116 /* Podspec Metadata */,
 				14A038401EC860AD0024E23D /* Source */,
-				14A0384B1EC860AD0024E23D /* KioTests */,
+				14774DD021834BE900EC9A43 /* Tests */,
 				14A0383F1EC860AD0024E23D /* Products */,
 				148BE0B51F2304E700B2C7B5 /* Frameworks */,
 			);
@@ -262,8 +268,8 @@
 			isa = PBXGroup;
 			children = (
 				14A0383E1EC860AD0024E23D /* Kio.framework */,
-				14A038471EC860AD0024E23D /* KioTests.xctest */,
 				143A6BEC2085DFEE007A0E98 /* Kio.framework */,
+				14774DCF21834BE800EC9A43 /* Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -281,15 +287,6 @@
 				14A0385E1EC863FC0024E23D /* Support */,
 			);
 			path = Source;
-			sourceTree = "<group>";
-		};
-		14A0384B1EC860AD0024E23D /* KioTests */ = {
-			isa = PBXGroup;
-			children = (
-				14A0384C1EC860AD0024E23D /* KioTests.swift */,
-				14A0384E1EC860AD0024E23D /* Info.plist */,
-			);
-			path = KioTests;
 			sourceTree = "<group>";
 		};
 		14A0385E1EC863FC0024E23D /* Support */ = {
@@ -316,6 +313,7 @@
 				14DDF1AC1FF63330000997A0 /* UInt+Kio.swift */,
 				149C62511F2DE3D50099E1A4 /* Date+Kio.swift */,
 				14562E28202734200081CF4F /* CGRect+Kio.swift */,
+				142BF50A216C926300CFC920 /* Sequence+Kio.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -324,13 +322,12 @@
 			isa = PBXGroup;
 			children = (
 				1491C6491F224997002B468C /* Collections */,
-				14A038611EC865750024E23D /* JAView.swift */,
-				14A038631EC8671B0024E23D /* JAViewController.swift */,
-				14A038651EC868C20024E23D /* JAObject.swift */,
-				1448BEBB1F42D46700A17F12 /* JAActivityIndicatorView.swift */,
-				14C489741F668D5B0064A259 /* Reachability.swift */,
-				14182B501FCE8F6500038939 /* JAFileManager.swift */,
-				14A7464F1FEA2E3A0042C193 /* JAArchiveManager.swift */,
+				14A038611EC865750024E23D /* KioView.swift */,
+				14A038631EC8671B0024E23D /* KioViewController.swift */,
+				14A038651EC868C20024E23D /* KioObject.swift */,
+				1448BEBB1F42D46700A17F12 /* KioActivityIndicatorView.swift */,
+				14182B501FCE8F6500038939 /* KioFileManager.swift */,
+				14A7464F1FEA2E3A0042C193 /* KioArchiveManager.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -359,11 +356,9 @@
 		14A038731EC871A60024E23D /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				14A038741EC872AC0024E23D /* NavigationItemSetting.swift */,
-				14A038761EC872E10024E23D /* TargetActionSetting.swift */,
-				1448BEB91F42D03000A17F12 /* ActivityIndicatorManaging.swift */,
 				143434622058D52F00A356BF /* AppNetworkActivityIndicatorInjected.swift */,
 				143434642058D55900A356BF /* DecodingErrorHandler.swift */,
+				14F4E24521820FC00068B96A /* KioDebuggable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -409,6 +404,24 @@
 			productReference = 143A6BEC2085DFEE007A0E98 /* Kio.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		14774DCE21834BE800EC9A43 /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14774DD721834BE900EC9A43 /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				14774DCB21834BE800EC9A43 /* Sources */,
+				14774DCC21834BE800EC9A43 /* Frameworks */,
+				14774DCD21834BE800EC9A43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14774DD621834BE900EC9A43 /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = 14774DCF21834BE800EC9A43 /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		14A0383D1EC860AD0024E23D /* Kio-iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 14A038521EC860AD0024E23D /* Build configuration list for PBXNativeTarget "Kio-iOS" */;
@@ -428,31 +441,13 @@
 			productReference = 14A0383E1EC860AD0024E23D /* Kio.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		14A038461EC860AD0024E23D /* KioTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 14A038551EC860AD0024E23D /* Build configuration list for PBXNativeTarget "KioTests" */;
-			buildPhases = (
-				14A038431EC860AD0024E23D /* Sources */,
-				14A038441EC860AD0024E23D /* Frameworks */,
-				14A038451EC860AD0024E23D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				14A0384A1EC860AD0024E23D /* PBXTargetDependency */,
-			);
-			name = KioTests;
-			productName = JAShorthandTests;
-			productReference = 14A038471EC860AD0024E23D /* KioTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		14A038351EC860AD0024E23D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
+				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Some Enterprises";
 				TargetAttributes = {
@@ -460,13 +455,12 @@
 						DevelopmentTeam = S886WPSL95;
 						LastSwiftMigration = 1000;
 					};
-					14A0383D1EC860AD0024E23D = {
-						CreatedOnToolsVersion = 8.3.2;
+					14774DCE21834BE800EC9A43 = {
+						CreatedOnToolsVersion = 10.0;
 						DevelopmentTeam = S886WPSL95;
-						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
-					14A038461EC860AD0024E23D = {
+					14A0383D1EC860AD0024E23D = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = S886WPSL95;
 						LastSwiftMigration = 0900;
@@ -488,7 +482,7 @@
 			targets = (
 				14A0383D1EC860AD0024E23D /* Kio-iOS */,
 				143A6BB22085DFEE007A0E98 /* Kio-watchOS */,
-				14A038461EC860AD0024E23D /* KioTests */,
+				14774DCE21834BE800EC9A43 /* Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -504,6 +498,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		14774DCD21834BE800EC9A43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		14A0383C1EC860AD0024E23D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -511,13 +512,6 @@
 				148BE0B31F22F31800B2C7B5 /* LICENSE.md in Resources */,
 				148BE0B41F22F31800B2C7B5 /* README.md in Resources */,
 				142152711F1F944300EB421A /* Kio.podspec in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		14A038451EC860AD0024E23D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -564,16 +558,15 @@
 				143A6BF52085E86A007A0E98 /* CGRect+Kio.swift in Sources */,
 				143A6BBC2085DFEE007A0E98 /* UInt+Kio.swift in Sources */,
 				143A6BBD2085DFEE007A0E98 /* Double+Kio.swift in Sources */,
-				143A6BBE2085DFEE007A0E98 /* JAArchiveManager.swift in Sources */,
+				143A6BBE2085DFEE007A0E98 /* KioArchiveManager.swift in Sources */,
 				143A6BBF2085DFEE007A0E98 /* LengthValidatorError.swift in Sources */,
-				143A6BC02085DFEE007A0E98 /* Reachability.swift in Sources */,
 				143A6BC52085DFEE007A0E98 /* Validator.swift in Sources */,
 				143A6BC62085DFEE007A0E98 /* UIColor+Kio.swift in Sources */,
 				143A6BC92085DFEE007A0E98 /* String+Kio.swift in Sources */,
 				143A6BCD2085DFEE007A0E98 /* ReadOnlyDictionary.swift in Sources */,
-				143A6BCE2085DFEE007A0E98 /* JAFileManager.swift in Sources */,
+				143A6BCE2085DFEE007A0E98 /* KioFileManager.swift in Sources */,
 				143A6BD12085DFEE007A0E98 /* CGFloat+Kio.swift in Sources */,
-				143A6BD22085DFEE007A0E98 /* JAObject.swift in Sources */,
+				143A6BD22085DFEE007A0E98 /* KioObject.swift in Sources */,
 				143A6BD32085DFEE007A0E98 /* ArrayProvider.swift in Sources */,
 				143A6BD52085DFEE007A0E98 /* ValidatorResult.swift in Sources */,
 				143A6BD62085DFEE007A0E98 /* DataProvider.swift in Sources */,
@@ -581,7 +574,17 @@
 				143A6BD82085DFEE007A0E98 /* Int+Kio.swift in Sources */,
 				143A6BDB2085DFEE007A0E98 /* SynchronizedDictionary.swift in Sources */,
 				143A6BDC2085DFEE007A0E98 /* DecodingErrorHandler.swift in Sources */,
+				142BF50C216C926300CFC920 /* Sequence+Kio.swift in Sources */,
 				143A6BDD2085DFEE007A0E98 /* Dictionary+Kio.swift in Sources */,
+				14F4E24721820FC00068B96A /* KioDebuggable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14774DCB21834BE800EC9A43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14774DD221834BE900EC9A43 /* ValidatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -591,7 +594,6 @@
 			files = (
 				145D60A81F1F35F500FE565B /* SynchronizedArray.swift in Sources */,
 				1465458D1F9CAAF000814505 /* Float+Kio.swift in Sources */,
-				1448BEBA1F42D03000A17F12 /* ActivityIndicatorManaging.swift in Sources */,
 				14D5CE7C1EC9BAF900982047 /* Configurable.swift in Sources */,
 				145D60A21F1F0F9D00FE565B /* AbstractCoordinator.swift in Sources */,
 				14A038721EC86F470024E23D /* AppCoordinator.swift in Sources */,
@@ -599,28 +601,27 @@
 				149C62521F2DE3D50099E1A4 /* Date+Kio.swift in Sources */,
 				14DDF1AD1FF63330000997A0 /* UInt+Kio.swift in Sources */,
 				147952AA1F25AB130036611A /* Double+Kio.swift in Sources */,
-				14A746501FEA2E3A0042C193 /* JAArchiveManager.swift in Sources */,
+				14A746501FEA2E3A0042C193 /* KioArchiveManager.swift in Sources */,
 				141B630320079F59003F39FE /* LengthValidatorError.swift in Sources */,
-				14C489751F668D5B0064A259 /* Reachability.swift in Sources */,
 				14A038591EC860F60024E23D /* UIView+Kio.swift in Sources */,
-				1448BEBC1F42D46700A17F12 /* JAActivityIndicatorView.swift in Sources */,
-				14A038621EC865750024E23D /* JAView.swift in Sources */,
+				1448BEBC1F42D46700A17F12 /* KioActivityIndicatorView.swift in Sources */,
+				14A038621EC865750024E23D /* KioView.swift in Sources */,
 				14A038701EC86F170024E23D /* Coordinator.swift in Sources */,
 				141B630120079B4C003F39FE /* Validator.swift in Sources */,
 				14A0385B1EC862260024E23D /* UIColor+Kio.swift in Sources */,
+				14F4E24621820FC00068B96A /* KioDebuggable.swift in Sources */,
 				14D5CE801EC9BB0900982047 /* DataSource.swift in Sources */,
 				1431D894214BBCA6004761A3 /* UIViewController+Kio.swift in Sources */,
 				145D60AA1F1F4DA600FE565B /* TabBarCoordinator.swift in Sources */,
+				142BF50B216C926300CFC920 /* Sequence+Kio.swift in Sources */,
 				14A0386D1EC86CD20024E23D /* String+Kio.swift in Sources */,
 				145D60AC1F1F4E7C00FE565B /* AnyTabCoordinator.swift in Sources */,
 				14562E29202734200081CF4F /* CGRect+Kio.swift in Sources */,
 				145D60AE1F1F4EBB00FE565B /* TabCoordinator.swift in Sources */,
 				14A038691EC869820024E23D /* ReadOnlyDictionary.swift in Sources */,
-				14182B511FCE8F6500038939 /* JAFileManager.swift in Sources */,
-				14A038771EC872E10024E23D /* TargetActionSetting.swift in Sources */,
-				14A038751EC872AC0024E23D /* NavigationItemSetting.swift in Sources */,
+				14182B511FCE8F6500038939 /* KioFileManager.swift in Sources */,
 				1465458F1F9CAC3100814505 /* CGFloat+Kio.swift in Sources */,
-				14A038661EC868C20024E23D /* JAObject.swift in Sources */,
+				14A038661EC868C20024E23D /* KioObject.swift in Sources */,
 				14D5CE821EC9BB0900982047 /* ArrayProvider.swift in Sources */,
 				141B62FF200799A7003F39FE /* ValidatorResult.swift in Sources */,
 				14D5CE7B1EC9BAF900982047 /* DataProvider.swift in Sources */,
@@ -631,25 +632,17 @@
 				14A0386B1EC86A420024E23D /* SynchronizedDictionary.swift in Sources */,
 				143434652058D55900A356BF /* DecodingErrorHandler.swift in Sources */,
 				14A0385D1EC862A00024E23D /* Dictionary+Kio.swift in Sources */,
-				14A038641EC8671B0024E23D /* JAViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		14A038431EC860AD0024E23D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				14A0384D1EC860AD0024E23D /* KioTests.swift in Sources */,
+				14A038641EC8671B0024E23D /* KioViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		14A0384A1EC860AD0024E23D /* PBXTargetDependency */ = {
+		14774DD621834BE900EC9A43 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 14A0383D1EC860AD0024E23D /* Kio-iOS */;
-			targetProxy = 14A038491EC860AD0024E23D /* PBXContainerItemProxy */;
+			targetProxy = 14774DD521834BE900EC9A43 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -700,6 +693,49 @@
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		14774DD821834BE900EC9A43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S886WPSL95;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.julioalorro.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		14774DD921834BE900EC9A43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S886WPSL95;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.julioalorro.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -869,34 +905,6 @@
 			};
 			name = Release;
 		};
-		14A038561EC860AD0024E23D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = S886WPSL95;
-				INFOPLIST_FILE = RapidTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.someenterprises.RapidTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
-			};
-			name = Debug;
-		};
-		14A038571EC860AD0024E23D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = S886WPSL95;
-				INFOPLIST_FILE = RapidTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.someenterprises.RapidTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -905,6 +913,15 @@
 			buildConfigurations = (
 				143A6BEA2085DFEE007A0E98 /* Debug */,
 				143A6BEB2085DFEE007A0E98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14774DD721834BE900EC9A43 /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14774DD821834BE900EC9A43 /* Debug */,
+				14774DD921834BE900EC9A43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -923,15 +940,6 @@
 			buildConfigurations = (
 				14A038531EC860AD0024E23D /* Debug */,
 				14A038541EC860AD0024E23D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		14A038551EC860AD0024E23D /* Build configuration list for PBXNativeTarget "KioTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				14A038561EC860AD0024E23D /* Debug */,
-				14A038571EC860AD0024E23D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

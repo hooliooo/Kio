@@ -1,5 +1,5 @@
 //
-//  Rapid
+//  Kio
 //  Copyright (c) 2017-2018 Julio Miguel Alorro
 //
 //  Licensed under the MIT license. See LICENSE file.
@@ -12,7 +12,7 @@ import Foundation
  The AbstractCoordinator is an abstract class instantiates and defines all the variables and methods that are common in all
  of its subclasses. Not intended to be instantiated directly.
 */
-open class AbstractCoordinator: JAObject, Coordinator {
+open class AbstractCoordinator: KioObject, Coordinator {
     override public init() {
         guard type(of: self) != AbstractCoordinator.self else {
             fatalError(

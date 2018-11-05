@@ -1,5 +1,5 @@
 //
-//  Rapid
+//  Kio
 //  Copyright (c) 2017-2018 Julio Miguel Alorro
 //
 //  Licensed under the MIT license. See LICENSE file.
@@ -12,7 +12,7 @@ import CoreGraphics
 /**
  A DSL for Int to access custom methods
 */
-public struct RapidIntDSL {
+public struct KioIntDSL {
 
     // MARK: Stored Propeties
     /**
@@ -22,7 +22,7 @@ public struct RapidIntDSL {
 
 }
 
-public extension RapidIntDSL {
+public extension KioIntDSL {
 
     /**
      Integer as a String
@@ -119,9 +119,9 @@ public extension RapidIntDSL {
 public extension Int {
 
     /**
-     RapidIntDSL instance to access custom methods
+     KioIntDSL instance to access custom methods
     */
-    var rpd: RapidIntDSL {
-        return RapidIntDSL(int: self)
+    var kio: KioIntDSL {
+        return KioIntDSL(int: self)
     }
 }

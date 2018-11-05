@@ -1,5 +1,5 @@
 //
-//  Rapid
+//  Kio
 //  Copyright (c) 2017-2018 Julio Miguel Alorro
 //
 //  Licensed under the MIT license. See LICENSE file.
@@ -23,11 +23,21 @@ public protocol TabBarCoordinator: Coordinator {
      - parameter coordinator: The TabCoordinator instance to be type erased.
     */
     func degenericize<T: TabCoordinator>(_ coordinator: T) -> AnyTabCoordinator
+
+    /**
+     Type erasing method for an array of TabCoordinators
+     - parameter coordinators: The TabCoordinator instances to be type erased.
+    */
+    func degenericize<T: TabCoordinator>(_ coordinators: [T]) -> [AnyTabCoordinator]
 }
 
 public extension TabBarCoordinator {
 
-    public func degenericize<T: TabCoordinator>(_ coordinator: T) -> AnyTabCoordinator {
+    func degenericize<T: TabCoordinator>(_ coordinator: T) -> AnyTabCoordinator {
         return AnyTabCoordinator(coordinator)
+    }
+
+    func degenericize<T: TabCoordinator>(_ coordinators: [T]) -> [AnyTabCoordinator] {
+        return coordinators.map(AnyTabCoordinator.init)
     }
 }

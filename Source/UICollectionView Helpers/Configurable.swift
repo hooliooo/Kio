@@ -1,5 +1,5 @@
 //
-//  Rapid
+//  Kio
 //  Copyright (c) 2017-2018 Julio Miguel Alorro
 //
 //  Licensed under the MIT license. See LICENSE file.
@@ -35,7 +35,7 @@ open class ConfigurableCell<ViewModel>: UICollectionViewCell, Configurable {
      The String identifier used by the ConfigurableCell to register to a UICollectionView instance
     */
     open class var identifier: String {
-        fatalError("Override this")
+        return String(describing: Mirror(reflecting: self).subjectType)
     }
 
     open func configure(with _: ViewModel) {

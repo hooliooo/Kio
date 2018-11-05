@@ -1,9 +1,9 @@
 //
-//  CGRect+Rapid.swift
-//  Rapid
+//  Kio
+//  Copyright (c) 2017-2018 Julio Miguel Alorro
 //
-//  Created by Julio Alorro on 2/4/18.
-//  Copyright © 2018 Some Enterprises. All rights reserved.
+//  Licensed under the MIT license. See LICENSE file.
+//
 //
 
 import CoreGraphics
@@ -11,7 +11,7 @@ import CoreGraphics
 /**
  A DSL for CGRect to access custom methods
  */
-public struct RapidCGRectDSL {
+public struct KioCGRectDSL {
 
     // MARK: Stored Propeties
     /**
@@ -21,7 +21,7 @@ public struct RapidCGRectDSL {
 
 }
 
-public extension RapidCGRectDSL {
+public extension KioCGRectDSL {
 
     /**
      The coordinate of the left bottom point of the CGRect
@@ -98,9 +98,9 @@ public extension RapidCGRectDSL {
 public extension CGRect {
 
     /**
-     RapidCGRectDSL instance to access custom methods
+     KioCGRectDSL instance to access custom methods
      */
-    var rpd: RapidCGRectDSL {
-        return RapidCGRectDSL(rect: self)
+    var kio: KioCGRectDSL {
+        return KioCGRectDSL(rect: self)
     }
 }

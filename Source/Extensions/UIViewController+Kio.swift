@@ -11,7 +11,7 @@ import UIKit
 /**
  A DSL for UIViewController to access custom methods
 */
-public struct RapidViewControllerDSL {
+public struct KioViewControllerDSL {
 
     // MARK: Stored Propeties
     /**
@@ -21,7 +21,7 @@ public struct RapidViewControllerDSL {
 
 }
 
-public extension RapidViewControllerDSL {
+public extension KioViewControllerDSL {
 
     func add(child childViewController: UIViewController) {
         self.viewController.addChild(childViewController)
@@ -37,13 +37,84 @@ public extension RapidViewControllerDSL {
         childViewController.view.removeFromSuperview()
     }
 
+    /**
+     Accesses the UIViewController's UINavigationItem instance to manipulate inside a closure.
+     - parameter callback: The closure that captures the UINavigationItem instance to be manipulated
+     */
+    func setUpNavigationItem(_ callback: (UINavigationItem) -> Void) {
+        callback(self.viewController.navigationItem)
+    }
+
+    /**
+     Convenience method that assigns a selector method to a UIControl instance
+     - parameter dict: The dictionary containing the UIControl and Selector pairing
+     */
+    func setUpTargetActions(with dict: [UIControl: Selector]) {
+
+        for (control, action) in dict {
+
+            let controlEvent: UIControl.Event
+
+            switch control {
+                case is UISegmentedControl, is UIDatePicker, is UIRefreshControl, is UISwitch:
+                    controlEvent = UIControl.Event.valueChanged
+
+                default:
+                    controlEvent = UIControl.Event.touchUpInside
+            }
+
+            control.addTarget(self, action: action, for: controlEvent)
+        }
+    }
+
+    private func createActivityIndicator() -> KioActivityIndicatorView {
+        let view: KioActivityIndicatorView = KioActivityIndicatorView()
+        view.style = UIActivityIndicatorView.Style.gray
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.hidesWhenStopped = true
+        view.kio.cornerRadius(of: 5.0)
+
+        self.viewController.view.addSubview(view)
+        NSLayoutConstraint.activate([
+            view.centerXAnchor.constraint(equalTo: self.viewController.view.centerXAnchor),
+            view.centerYAnchor.constraint(equalTo: self.viewController.view.centerYAnchor),
+            view.heightAnchor.constraint(equalToConstant: 60.0),
+            view.widthAnchor.constraint(equalToConstant: 60.0)
+        ])
+        return view
+    }
+
+    private func findActivityIndicator() -> KioActivityIndicatorView? {
+        return self.viewController.view.subviews.reversed()
+            .filter({ (view: UIView) -> Bool in view is KioActivityIndicatorView}).first as? KioActivityIndicatorView
+    }
+
+    func showActivityIndicator() {
+        DispatchQueue.main.async { () -> Void in
+            self.createActivityIndicator()
+                .startAnimating()
+
+            self.viewController.view.isUserInteractionEnabled = false
+        }
+    }
+
+    func hideActivityIndicator() {
+        DispatchQueue.main.async { () -> Void in
+            guard let view = self.findActivityIndicator() else { return }
+
+            view.stopAnimating()
+            view.removeFromSuperview()
+            self.viewController.view.isUserInteractionEnabled = true
+        }
+    }
+
 }
 
 public extension UIViewController {
     /**
-     RapidViewDSL instance to access custom methods
-     */
-    var rpd: RapidViewControllerDSL {
-        return RapidViewControllerDSL(viewController: self)
+     KioViewControllerDSL instance to access custom methods
+    */
+    var kio: KioViewControllerDSL {
+        return KioViewControllerDSL(viewController: self)
     }
 }

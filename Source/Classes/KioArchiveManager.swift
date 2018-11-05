@@ -1,5 +1,5 @@
 //
-//  Rapid
+//  Kio
 //  Copyright (c) 2017-2018 Julio Miguel Alorro
 //
 //  Licensed under the MIT license. See LICENSE file.
@@ -9,9 +9,9 @@
 import Foundation
 
 /**
- The JAArchiveManager archives/unarchives Codable objects from the file system.
+ The KioArchiveManager archives/unarchives Codable objects from the file system.
 */
-public class JAArchiveManager: JAObject {
+public class KioArchiveManager: KioObject {
 
     // MARK: Enums
     /**

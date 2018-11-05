@@ -32,9 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "14A038461EC860AD0024E23D"
-               BuildableName = "KioTests.xctest"
-               BlueprintName = "KioTests"
+               BlueprintIdentifier = "14774DCE21834BE800EC9A43"
+               BuildableName = "Tests.xctest"
+               BlueprintName = "Tests"
                ReferencedContainer = "container:Kio.xcodeproj">
             </BuildableReference>
          </TestableReference>
