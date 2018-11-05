@@ -15,27 +15,3 @@ public protocol KioDebuggable: class {
     */
     func debugLogMessage()
 }
-
-public extension KioDebuggable where Self: UIViewController {
-
-    func debugLogMessage() {
-        print("\(type(of: self)) was deallocated")
-    }
-
-}
-
-public extension KioDebuggable where Self: UIView {
-
-    func debugLogMessage() {
-        print("\(type(of: self)) was deallocated")
-    }
-
-}
-
-public extension KioDebuggable where Self: NSObject {
-
-    func debugLogMessage() {
-        print("\(type(of: self)) was deallocated")
-    }
-
-}

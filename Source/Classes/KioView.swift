@@ -16,3 +16,11 @@ open class KioView: UIView, KioDebuggable {
         self.debugLogMessage()
     }
 }
+
+public extension KioDebuggable where Self: UIView {
+
+    func debugLogMessage() {
+        print("\(type(of: self)) was deallocated")
+    }
+
+}

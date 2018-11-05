@@ -68,11 +68,9 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/hooliooo/Kio.git", :tag => s.version.to_s }
 
   s.watchos.exclude_files = "Source/UICollectionView Helpers/*.swift", "Source/Coordinators/*.swift",
-                            "Source/Classes/JAView.swift", "Source/Classes/JAViewController.swift",
-                            "Source/Classes/JAActivityIndicatorView.swift", "Source/Extensions/UIView+Kio.swift",
-                            "Source/Extensions/UIViewController+Kio.swift",
-                            "Source/Protocols/NavigationItemSetting.swift", "Source/Protocols/TargetActionSetting.swift",
-                            "Source/Protocols/ActivityIndicatorManaging.swift", "Source/Protocols/AppNetworkActivityIndicatorInjected.swift"
+                            "Source/Classes/KioView.swift", "Source/Classes/KioViewController.swift",
+                            "Source/Classes/KioActivityIndicatorView.swift", "Source/Extensions/UIView+Kio.swift",
+                            "Source/Extensions/UIViewController+Kio.swift", "Source/Protocols/AppNetworkActivityIndicatorInjected.swift"
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
