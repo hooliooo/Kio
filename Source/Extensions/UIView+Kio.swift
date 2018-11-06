@@ -57,13 +57,16 @@ public extension KioViewDSL {
 
     /**
      Helper function that sets the UIView's cornerRadius to a
-     specific value and sets clipsToBounds property to true.
+     specific value and sets that UIView's layer to the same backgroundColor
+
+     More performant than setting maskToBounds to true when dealing with many subviews
+     with rounded corners such as UICollectionView/UITableView oriented screens
 
      - parameter value: The value used to set the UIView's cornerRadius.
     */
     func cornerRadius(of value: CGFloat) {
         self.view.layer.cornerRadius = value
-        self.view.clipsToBounds = true
+        self.view.layer.backgroundColor = self.view.backgroundColor?.cgColor
     }
 
 }

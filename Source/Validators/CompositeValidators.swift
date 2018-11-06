@@ -10,7 +10,7 @@ import Foundation
 
 /**
  An AndCompositeValidator is a Validator that composes a ValidatorResult based on other Validators it is initlialized with.
- Its validate(_:) method will only return a .valid ValidatorResult if all of its Validators all return a .valid ValidatorResult
+ Its validate(_:) method will only return a .valid ValidatorResult if all of its Validators return a .valid ValidatorResult
 */
 public struct AndCompositeValidator: Validator {
 
@@ -33,12 +33,13 @@ public struct AndCompositeValidator: Validator {
                 case .valid:
                     break
 
-                case .invalid(let validatorErrors):
+                case .invalid(let currentErrors):
                     switch result {
                         case .valid:
-                            result = .invalid(validatorErrors)
-                        case .invalid(let validatorResultErrors):
-                            result = .invalid(validatorResultErrors + validatorErrors)
+                            result = .invalid(currentErrors)
+
+                        case .invalid(let newErrors):
+                            result = .invalid(currentErrors + newErrors)
                     }
             }
         }
@@ -66,7 +67,7 @@ public struct OrCompositeValidator: Validator {
     // MARK: Instance Methods
     public func validate(_ stringValue: String) -> ValidatorResult {
 
-        var errors: [Swift.Error] = []
+        var currentErrors: [Swift.Error] = []
 
         for validator in self.validators {
             switch validator.validate(stringValue) {
@@ -74,11 +75,11 @@ public struct OrCompositeValidator: Validator {
                     return ValidatorResult.valid
 
                 case .invalid(let newErrors):
-                    errors.append(contentsOf: newErrors)
+                    currentErrors.append(contentsOf: newErrors)
             }
         }
 
-        return ValidatorResult.invalid(errors)
+        return ValidatorResult.invalid(currentErrors)
 
     }
 }

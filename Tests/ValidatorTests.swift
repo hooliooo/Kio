@@ -100,9 +100,25 @@ class ValidatorTests: XCTestCase {
         let result: ValidatorResult = validator.validate(sampleText)
         let errors: [LengthValidatorError] = self.unwrapInvalidResults(result)
 
-        XCTAssertFalse(errors.contains(LengthValidatorError.empty))
+        XCTAssertTrue(errors.contains(LengthValidatorError.empty))
         XCTAssertTrue(errors.contains(LengthValidatorError.short(8)))
-        XCTAssertTrue(errors.count == 1)
+        XCTAssertTrue(errors.count == 2)
+    }
+
+    func testOrCompositeValidator() {
+
+        let sampleText: String = "A"
+
+        let validator: OrCompositeValidator = OrCompositeValidator(validators:
+            EmptyStringInvalidator(),
+            ShortStringInvalidator(minimumLength: 3),
+            LongStringInvalidator(maximumLength: 10)
+        )
+
+        let result: ValidatorResult = validator.validate(sampleText)
+
+        XCTAssertTrue(result == .valid)
+
     }
 
 }
