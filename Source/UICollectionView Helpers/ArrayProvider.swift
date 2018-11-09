@@ -16,7 +16,7 @@ public final class ArrayProvider<Element>: DataProvider {
 
     /**
      Initializer for an ArrayProvider instance
-     - parameter objects: Array of Type to be managed
+     - parameter elements: Array of Type to be managed
     */
     public init(elements: [Element]) {
         self._elements = elements
@@ -24,12 +24,12 @@ public final class ArrayProvider<Element>: DataProvider {
 
     // MARK: - Stored Properties
     /**
-     Instance variable of objects
+     Instance variable of elements
     */
     private var _elements: [Element]
 
     /**
-     Array of objects. Get-only property
+     Array of elements. Get-only property
     */
     public var elements: [Element] {
         return self._elements
@@ -46,41 +46,49 @@ public final class ArrayProvider<Element>: DataProvider {
         return self.elements.count
     }
 
-    public func object(at indexPath: IndexPath) -> Element {
+    public func element(at indexPath: IndexPath) -> Element {
         return self.elements[indexPath.row]
     }
 
     /**
-     Mutating function that adds an object to the end of the array of objects
-     - parameter object: Object to be added to the array.
+     Mutating function that adds an element to the end of the array of elements
+     - parameter element: Element to be added to the array.
     */
     public func add(element: Element) {
         self._elements.append(element)
     }
 
     /**
-     Mutating function that removes an object from the array of objects
-     - parameter object: Object to be removed from the array.
-     - parameter indexPath: The index of the object to be removed.
+     Mutating function that removes an element from the array of elements
+     - parameter element: Element to be removed from the array.
+     - parameter indexPath: The index of the element to be removed.
     */
     public func remove(element: Element, at indexPath: IndexPath) {
-        self._elements.remove(at: indexPath.row)
+        self._elements.remove(at: indexPath.item)
     }
 
     /**
-     Mutating function that adds objects to the end of the array of objects
-     - parameter objects: Objects to be added to the array.
+     Mutating function that adds elements to the end of the array of elements
+     - parameter elements: Elements to be added to the array.
     */
     public func add(elements: [Element]) {
-        elements.forEach(self.add)
+        self._elements.append(contentsOf: elements)
     }
 
     /**
-     Mutating function that removes objects from the array of objects. The objects and indexPaths are combined with
-     the zip function then sorted by biggest indexPath to prevent invalid indexes then finally each object is removed
+     Mutating function that inserts an ojbect at the specified indexPath
+     - parameter element: Element to be inserted in the array.
+    */
+    public func insert(element: Element, at indexPath: IndexPath) {
+        self._elements.insert(element, at: indexPath.item)
+    }
+
+    /**
+     Mutating function that removes elements from the array of elements. The elements and indexPaths are combined with
+     the zip function then sorted by biggest indexPath to prevent invalid indexes then finally each element is removed
      from the array by its paired indexPath.
-     - parameter objects: Objects to be removed from the array.
-     - parameter indexPaths: The indexes of the objects to be removed.
+     - parameter elements: Elements to be removed from the array.
+     - parameter indexPaths: The indexes of the elements to be removed.
     */
     public func remove(elements: [Element], at indexPaths: [IndexPath]) {
         zip(elements, indexPaths)
@@ -91,7 +99,7 @@ public final class ArrayProvider<Element>: DataProvider {
     }
     /**
      Mutating function that replaces the array with a new array
-     - parameter objects: Objects to become the new array.
+     - parameter elements: Elements to become the new array.
     */
     public func set(elements: [Element]) {
         self._elements = elements

@@ -40,7 +40,6 @@
 		143A6BD82085DFEE007A0E98 /* Int+Kio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147952AB1F25AB1F0036611A /* Int+Kio.swift */; };
 		143A6BDB2085DFEE007A0E98 /* SynchronizedDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A0386A1EC86A420024E23D /* SynchronizedDictionary.swift */; };
 		143A6BDC2085DFEE007A0E98 /* DecodingErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143434642058D55900A356BF /* DecodingErrorHandler.swift */; };
-		143A6BDD2085DFEE007A0E98 /* Dictionary+Kio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A0385C1EC862A00024E23D /* Dictionary+Kio.swift */; };
 		143A6BE32085DFEE007A0E98 /* Kio.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A038411EC860AD0024E23D /* Kio.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		143A6BE52085DFEE007A0E98 /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = 145D60A51F1F22E800FE565B /* LICENSE.md */; };
 		143A6BE62085DFEE007A0E98 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 148BE0B11F22F2F200B2C7B5 /* README.md */; };
@@ -70,7 +69,6 @@
 		14A0384F1EC860AD0024E23D /* Kio.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A038411EC860AD0024E23D /* Kio.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		14A038591EC860F60024E23D /* UIView+Kio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A038581EC860F60024E23D /* UIView+Kio.swift */; };
 		14A0385B1EC862260024E23D /* UIColor+Kio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A0385A1EC862260024E23D /* UIColor+Kio.swift */; };
-		14A0385D1EC862A00024E23D /* Dictionary+Kio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A0385C1EC862A00024E23D /* Dictionary+Kio.swift */; };
 		14A038621EC865750024E23D /* KioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A038611EC865750024E23D /* KioView.swift */; };
 		14A038641EC8671B0024E23D /* KioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A038631EC8671B0024E23D /* KioViewController.swift */; };
 		14A038661EC868C20024E23D /* KioObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A038651EC868C20024E23D /* KioObject.swift */; };
@@ -140,7 +138,6 @@
 		14A038421EC860AD0024E23D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14A038581EC860F60024E23D /* UIView+Kio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Kio.swift"; sourceTree = "<group>"; };
 		14A0385A1EC862260024E23D /* UIColor+Kio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Kio.swift"; sourceTree = "<group>"; };
-		14A0385C1EC862A00024E23D /* Dictionary+Kio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Kio.swift"; sourceTree = "<group>"; };
 		14A038611EC865750024E23D /* KioView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KioView.swift; sourceTree = "<group>"; };
 		14A038631EC8671B0024E23D /* KioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KioViewController.swift; sourceTree = "<group>"; };
 		14A038651EC868C20024E23D /* KioObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KioObject.swift; sourceTree = "<group>"; };
@@ -304,7 +301,6 @@
 				14A038581EC860F60024E23D /* UIView+Kio.swift */,
 				1431D893214BBCA6004761A3 /* UIViewController+Kio.swift */,
 				14A0385A1EC862260024E23D /* UIColor+Kio.swift */,
-				14A0385C1EC862A00024E23D /* Dictionary+Kio.swift */,
 				14A0386C1EC86CD20024E23D /* String+Kio.swift */,
 				147952A91F25AB130036611A /* Double+Kio.swift */,
 				1465458C1F9CAAF000814505 /* Float+Kio.swift */,
@@ -575,7 +571,6 @@
 				143A6BDB2085DFEE007A0E98 /* SynchronizedDictionary.swift in Sources */,
 				143A6BDC2085DFEE007A0E98 /* DecodingErrorHandler.swift in Sources */,
 				142BF50C216C926300CFC920 /* Sequence+Kio.swift in Sources */,
-				143A6BDD2085DFEE007A0E98 /* Dictionary+Kio.swift in Sources */,
 				14F4E24721820FC00068B96A /* KioDebuggable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -631,7 +626,6 @@
 				143434632058D52F00A356BF /* AppNetworkActivityIndicatorInjected.swift in Sources */,
 				14A0386B1EC86A420024E23D /* SynchronizedDictionary.swift in Sources */,
 				143434652058D55900A356BF /* DecodingErrorHandler.swift in Sources */,
-				14A0385D1EC862A00024E23D /* Dictionary+Kio.swift in Sources */,
 				14A038641EC8671B0024E23D /* KioViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

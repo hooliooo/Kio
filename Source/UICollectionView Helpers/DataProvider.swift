@@ -9,8 +9,7 @@
 import Foundation
 
 /**
- The DataProvider protcol defines the interface of the type that will manage an array of objects
- that will be shown in a UICollectionView instance
+ The DataProvider manages an array of objects that will be shown in a UICollectionView instance
 */
 public protocol DataProvider {
 
@@ -31,9 +30,9 @@ public protocol DataProvider {
     func numberOfItems(in section: Int) -> Int
 
     /**
-     The object at the specific indexPath of the UICollectionView
+     The element at the specific indexPath of the UICollectionView
      - parameter indexPath: IndexPath of the object to be shown
     */
-    func object(at indexPath: IndexPath) -> Element
+    func element(at indexPath: IndexPath) -> Element
 
 }
