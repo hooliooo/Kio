@@ -75,7 +75,7 @@ open class DataSource<Provider: DataProvider, Cell: ConfigurableCell<Provider.El
     open func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         // swiftlint:disable:next force_cast
         let cell: Cell = collectionView.dequeueReusableCell(withReuseIdentifier: Cell.identifier, for: indexPath) as! Cell
-        let object: Provider.Element = self._provider.object(at: indexPath)
+        let object: Provider.Element = self._provider.element(at: indexPath)
         cell.configure(with: object)
         return cell
     }
