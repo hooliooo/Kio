@@ -26,11 +26,11 @@ open class AnyTabCoordinator {
     // MARK: Stored Properties
     /**
      UIViewController instance being managed
-     */
+    */
     public let viewController: UIViewController
 
     /**
      UITabBarItem for the UIViewController
-     */
+    */
     public let tabBarItem: UITabBarItem
 }

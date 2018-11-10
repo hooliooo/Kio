@@ -33,6 +33,6 @@ public protocol DataProvider {
      The element at the specific indexPath of the UICollectionView
      - parameter indexPath: IndexPath of the object to be shown
     */
-    func element(at indexPath: IndexPath) -> Element
+    func element(at indexPath: IndexPath) -> Element?
 
 }

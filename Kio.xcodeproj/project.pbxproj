@@ -64,6 +64,7 @@
 		148BE0B41F22F31800B2C7B5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 148BE0B11F22F2F200B2C7B5 /* README.md */; };
 		148BE0B71F2304E700B2C7B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 148BE0B61F2304E700B2C7B5 /* Foundation.framework */; };
 		148BE0B91F2304EF00B2C7B5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 148BE0B81F2304EF00B2C7B5 /* UIKit.framework */; };
+		1492A6CE2196BF9A006DBE61 /* ArrayProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1492A6CD2196BF9A006DBE61 /* ArrayProviderTests.swift */; };
 		1494447C2007A7F10012CB98 /* CompositeValidators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1494447B2007A7F10012CB98 /* CompositeValidators.swift */; };
 		149C62521F2DE3D50099E1A4 /* Date+Kio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149C62511F2DE3D50099E1A4 /* Date+Kio.swift */; };
 		14A0384F1EC860AD0024E23D /* Kio.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A038411EC860AD0024E23D /* Kio.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -131,6 +132,7 @@
 		148BE0B11F22F2F200B2C7B5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		148BE0B61F2304E700B2C7B5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		148BE0B81F2304EF00B2C7B5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1492A6CD2196BF9A006DBE61 /* ArrayProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayProviderTests.swift; sourceTree = "<group>"; };
 		1494447B2007A7F10012CB98 /* CompositeValidators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeValidators.swift; sourceTree = "<group>"; };
 		149C62511F2DE3D50099E1A4 /* Date+Kio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Kio.swift"; sourceTree = "<group>"; };
 		14A0383E1EC860AD0024E23D /* Kio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -211,6 +213,7 @@
 		14774DD021834BE900EC9A43 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				1492A6CD2196BF9A006DBE61 /* ArrayProviderTests.swift */,
 				14774DD121834BE900EC9A43 /* ValidatorTests.swift */,
 				14774DD321834BE900EC9A43 /* Info.plist */,
 			);
@@ -579,6 +582,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1492A6CE2196BF9A006DBE61 /* ArrayProviderTests.swift in Sources */,
 				14774DD221834BE900EC9A43 /* ValidatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

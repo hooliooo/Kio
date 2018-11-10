@@ -9,10 +9,10 @@
 import Foundation
 
 /**
- An implementation of the DataProviding protocol that manages a one dimensional array of a single type,
- meaning that it is suitable for collectionViews with a single section and uses one type of model.
+ ArrayProvider manages a one dimensional array of a single type,meaning that it is
+ suitable for collectionViews with a single section and uses one type of model.
 */
-public final class ArrayProvider<Element>: DataProvider {
+public final class ArrayProvider<Element: Equatable>: DataProvider {
 
     /**
      Initializer for an ArrayProvider instance
@@ -46,8 +46,9 @@ public final class ArrayProvider<Element>: DataProvider {
         return self.elements.count
     }
 
-    public func element(at indexPath: IndexPath) -> Element {
-        return self.elements[indexPath.row]
+    public func element(at indexPath: IndexPath) -> Element? {
+        guard indexPath.item < self.elements.count else { return nil }
+        return self.elements[indexPath.item]
     }
 
     /**
@@ -60,11 +61,22 @@ public final class ArrayProvider<Element>: DataProvider {
 
     /**
      Mutating function that removes an element from the array of elements
-     - parameter element: Element to be removed from the array.
-     - parameter indexPath: The index of the element to be removed.
+     - parameters:
+        - element: Element to be removed from the array.
+        - indexPath: The index of the element to be removed.
+     - Returns: Element at the specified indexPath or nil.
     */
-    public func remove(element: Element, at indexPath: IndexPath) {
-        self._elements.remove(at: indexPath.item)
+    @discardableResult
+    public func remove(element: Element, at indexPath: IndexPath) -> Element? {
+        guard
+            let idx = self.elements.index(of: element),
+            idx == indexPath.item
+        else {
+            return nil
+        }
+
+        return self._elements.remove(at: idx)
+
     }
 
     /**
@@ -87,21 +99,34 @@ public final class ArrayProvider<Element>: DataProvider {
      Mutating function that removes elements from the array of elements. The elements and indexPaths are combined with
      the zip function then sorted by biggest indexPath to prevent invalid indexes then finally each element is removed
      from the array by its paired indexPath.
-     - parameter elements: Elements to be removed from the array.
-     - parameter indexPaths: The indexes of the elements to be removed.
+     - parameters:
+        - elements: Elements to be removed from the array.
+        - indexPaths: The indexes of the elements to be removed.
+     - Returns: An array of type (Element, IndexPath).
     */
-    public func remove(elements: [Element], at indexPaths: [IndexPath]) {
-        zip(elements, indexPaths)
-            .sorted(by: { $0.1 > $1.1 })
-            .forEach { [unowned self] (element: Element, indexPath: IndexPath) -> Void in
-                self.remove(element: element, at: indexPath)
+    public func remove(elements: [Element], at indexPaths: [IndexPath]) -> [(Element, IndexPath)] {
+        return zip(elements, indexPaths).lazy // swiftlint:disable:next line_length
+            .sorted(by: { (lhs: (element: Element, indexPath: IndexPath), rhs: (element: Element, indexPath: IndexPath)) -> Bool in
+                return lhs.indexPath > rhs.indexPath
+            })
+            .compactMap { (element: Element, indexPath: IndexPath) -> (Element, IndexPath)? in
+                guard let element = self.remove(element: element, at: indexPath) else { return nil }
+                return (element, indexPath)
             }
     }
+
     /**
      Mutating function that replaces the array with a new array
      - parameter elements: Elements to become the new array.
     */
     public func set(elements: [Element]) {
         self._elements = elements
+    }
+
+    /**
+     Mutating function that removes all elements in the array
+    */
+    public func removeAll() {
+        self._elements.removeAll()
     }
 }

@@ -30,7 +30,8 @@ extension ValidatorResult: Equatable {
         switch (lhs, rhs) {
             case (.valid, .valid): return true
             case (.invalid, .invalid): return true
-            default: return false
+            case (.valid, .invalid): return false
+            case (.invalid, .valid): return false
         }
     }
 }
