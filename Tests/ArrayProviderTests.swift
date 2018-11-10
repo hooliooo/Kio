@@ -1,9 +1,9 @@
 //
-//  ArrayProviderTests.swift
-//  Tests
+//  Kio
+//  Copyright (c) 2017-2018 Julio Miguel Alorro
 //
-//  Created by Julio Miguel Alorro on 11/10/18.
-//  Copyright © 2018 Some Enterprises. All rights reserved.
+//  Licensed under the MIT license. See LICENSE file.
+//
 //
 
 import XCTest
