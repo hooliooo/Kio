@@ -6,8 +6,7 @@
 //
 //
 
-import Foundation
-import CoreGraphics
+import struct CoreGraphics.CGFloat
 
 /**
  A DSL for Int to access custom methods

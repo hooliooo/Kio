@@ -6,7 +6,9 @@
 //
 //
 
-import Foundation
+import class Foundation.FileManager
+import struct Foundation.URL
+import struct Foundation.Data
 
 /**
  The KioFileManager class is responsible for simple CRUD operations on files saved to the

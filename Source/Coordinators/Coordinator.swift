@@ -6,8 +6,6 @@
 //
 //
 
-import Foundation
-
 /**
  The Coordinator is a controller object that manages the navigation flow of an application by calling
  its UIViewController's methods and properties related to navigation instead of the UIViewController calling

@@ -6,7 +6,10 @@
 //
 //
 
-import UIKit
+import class UIKit.UIColor
+import struct CoreGraphics.CGFloat
+import class Foundation.Scanner
+import struct Foundation.CharacterSet
 
 /**
  A DSL for UIColor to access custom methods

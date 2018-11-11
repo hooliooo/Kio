@@ -6,8 +6,6 @@
 //
 //
 
-import Foundation
-
 /**
  A Validator is an object that evaluates a String instance and returns a ValidatorResult based on some condition(s)
 */

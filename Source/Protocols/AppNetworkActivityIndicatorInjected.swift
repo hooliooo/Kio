@@ -6,7 +6,8 @@
 //  Copyright © 2018 Some Enterprises. All rights reserved.
 //
 
-import UIKit
+import class Foundation.DispatchQueue
+import class UIKit.UIApplication
 
 public protocol AppNetworkActivityIndicatorInjected: class {}
 

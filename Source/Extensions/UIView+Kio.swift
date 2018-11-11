@@ -6,7 +6,8 @@
 //
 //
 
-import UIKit
+import class UIKit.UIView
+import struct CoreGraphics.CGFloat
 
 /**
  A DSL for UIView to access custom methods

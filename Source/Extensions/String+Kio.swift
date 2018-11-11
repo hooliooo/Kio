@@ -6,7 +6,11 @@
 //
 //
 
-import Foundation
+import class Foundation.NSString
+import class Foundation.NSRegularExpression
+import struct Foundation.Data
+import class Foundation.NSData
+import struct Foundation.NSRange
 
 /**
  A DSL for String to access custom methods

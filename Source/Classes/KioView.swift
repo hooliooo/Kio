@@ -6,7 +6,7 @@
 //
 //
 
-import UIKit
+import class UIKit.UIView
 
 /**
  A subclass of UIView that implements a print statement when deinitialized

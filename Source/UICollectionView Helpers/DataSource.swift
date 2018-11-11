@@ -6,7 +6,10 @@
 //
 //
 
-import UIKit
+import struct Foundation.IndexPath
+import class UIKit.UICollectionView
+import protocol UIKit.UICollectionViewDataSource
+import class UIKit.UICollectionViewCell
 
 /**
  DataSource is the class that adopts the UICollectionViewDataSource protcol and manages the boilerplate set up for

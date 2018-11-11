@@ -6,8 +6,6 @@
 //
 //
 
-import Foundation
-
 /**
  A DSL for Sequence to access custom methods
  */

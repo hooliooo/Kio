@@ -6,7 +6,7 @@
 //
 //
 
-import Foundation
+import struct Foundation.IndexPath
 
 /**
  The DataProvider manages an array of objects that will be shown in a UICollectionView instance

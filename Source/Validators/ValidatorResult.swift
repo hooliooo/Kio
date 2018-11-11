@@ -6,8 +6,6 @@
 //
 //
 
-import Foundation
-
 /**
  Result that occurs when a Validator evaluates a string
 */

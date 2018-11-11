@@ -6,7 +6,7 @@
 //
 //
 
-import UIKit
+import class UIKit.UICollectionViewCell
 
 /**
  The Configurable protocol defines the interface of the UICollectionViewCell type that 

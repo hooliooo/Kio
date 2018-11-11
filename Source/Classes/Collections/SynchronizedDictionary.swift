@@ -6,7 +6,8 @@
 //
 //
 
-import Foundation
+import class Foundation.DispatchQueue
+import struct Foundation.DispatchWorkItemFlags
 
 public class SynchronizedDictionary<Key: Hashable, Value> {
     /**

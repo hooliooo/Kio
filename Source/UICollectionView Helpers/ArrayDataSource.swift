@@ -6,7 +6,8 @@
 //
 //
 
-import UIKit
+import class UIKit.UICollectionView
+import struct Foundation.IndexPath
 
 /**
  A subclass of the DataSource class that works together with the ArrayProvider class.

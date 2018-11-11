@@ -6,7 +6,13 @@
 //
 //
 
-import Foundation
+import class Foundation.FileManager
+import struct Foundation.URL
+import struct Foundation.Data
+import class Foundation.JSONEncoder
+import class Foundation.JSONDecoder
+import class Foundation.NSKeyedUnarchiver
+import class Foundation.NSKeyedArchiver
 
 /**
  The KioArchiveManager archives/unarchives Codable objects from the file system.

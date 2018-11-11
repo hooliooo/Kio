@@ -6,7 +6,8 @@
 //
 //
 
-import UIKit
+import class UIKit.UIWindow
+import class UIKit.UIViewController
 
 /**
  The AppCoordinator is the highest Coordinator within an application whose primary purpose is to set up the window instance from

@@ -6,8 +6,6 @@
 //  Copyright © 2018 Some Enterprises. All rights reserved.
 //
 
-import Foundation
-
 public protocol KioDebuggable: class {
 
     /**

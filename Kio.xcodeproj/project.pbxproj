@@ -44,8 +44,6 @@
 		143A6BE52085DFEE007A0E98 /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = 145D60A51F1F22E800FE565B /* LICENSE.md */; };
 		143A6BE62085DFEE007A0E98 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 148BE0B11F22F2F200B2C7B5 /* README.md */; };
 		143A6BE72085DFEE007A0E98 /* Kio.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 142152701F1F944300EB421A /* Kio.podspec */; };
-		143A6BF12085E471007A0E98 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 143A6BF02085E471007A0E98 /* Foundation.framework */; };
-		143A6BF32085E581007A0E98 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 143A6BF22085E581007A0E98 /* UIKit.framework */; };
 		143A6BF52085E86A007A0E98 /* CGRect+Kio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14562E28202734200081CF4F /* CGRect+Kio.swift */; };
 		1448BEBC1F42D46700A17F12 /* KioActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1448BEBB1F42D46700A17F12 /* KioActivityIndicatorView.swift */; };
 		14562E29202734200081CF4F /* CGRect+Kio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14562E28202734200081CF4F /* CGRect+Kio.swift */; };
@@ -62,8 +60,6 @@
 		147952AC1F25AB1F0036611A /* Int+Kio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147952AB1F25AB1F0036611A /* Int+Kio.swift */; };
 		148BE0B31F22F31800B2C7B5 /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = 145D60A51F1F22E800FE565B /* LICENSE.md */; };
 		148BE0B41F22F31800B2C7B5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 148BE0B11F22F2F200B2C7B5 /* README.md */; };
-		148BE0B71F2304E700B2C7B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 148BE0B61F2304E700B2C7B5 /* Foundation.framework */; };
-		148BE0B91F2304EF00B2C7B5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 148BE0B81F2304EF00B2C7B5 /* UIKit.framework */; };
 		1492A6CE2196BF9A006DBE61 /* ArrayProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1492A6CD2196BF9A006DBE61 /* ArrayProviderTests.swift */; };
 		1492A6D02196DB3B006DBE61 /* CoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1492A6CF2196DB3B006DBE61 /* CoordinatorTests.swift */; };
 		1494447C2007A7F10012CB98 /* CompositeValidators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1494447B2007A7F10012CB98 /* CompositeValidators.swift */; };
@@ -112,9 +108,6 @@
 		143434622058D52F00A356BF /* AppNetworkActivityIndicatorInjected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNetworkActivityIndicatorInjected.swift; sourceTree = "<group>"; };
 		143434642058D55900A356BF /* DecodingErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodingErrorHandler.swift; sourceTree = "<group>"; };
 		143A6BEC2085DFEE007A0E98 /* Kio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		143A6BEE2085E43C007A0E98 /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.3.sdk/System/Library/Frameworks/WatchKit.framework; sourceTree = DEVELOPER_DIR; };
-		143A6BF02085E471007A0E98 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		143A6BF22085E581007A0E98 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		1448BEBB1F42D46700A17F12 /* KioActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KioActivityIndicatorView.swift; sourceTree = "<group>"; };
 		14562E28202734200081CF4F /* CGRect+Kio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+Kio.swift"; sourceTree = "<group>"; };
 		145D60A11F1F0F9D00FE565B /* AbstractCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractCoordinator.swift; sourceTree = "<group>"; };
@@ -131,8 +124,6 @@
 		147952A91F25AB130036611A /* Double+Kio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Kio.swift"; sourceTree = "<group>"; };
 		147952AB1F25AB1F0036611A /* Int+Kio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Kio.swift"; sourceTree = "<group>"; };
 		148BE0B11F22F2F200B2C7B5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		148BE0B61F2304E700B2C7B5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		148BE0B81F2304EF00B2C7B5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1492A6CD2196BF9A006DBE61 /* ArrayProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayProviderTests.swift; sourceTree = "<group>"; };
 		1492A6CF2196DB3B006DBE61 /* CoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorTests.swift; sourceTree = "<group>"; };
 		1494447B2007A7F10012CB98 /* CompositeValidators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeValidators.swift; sourceTree = "<group>"; };
@@ -165,8 +156,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				143A6BF32085E581007A0E98 /* UIKit.framework in Frameworks */,
-				143A6BF12085E471007A0E98 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,8 +171,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				148BE0B91F2304EF00B2C7B5 /* UIKit.framework in Frameworks */,
-				148BE0B71F2304E700B2C7B5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,11 +213,6 @@
 		148BE0B51F2304E700B2C7B5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				143A6BF22085E581007A0E98 /* UIKit.framework */,
-				143A6BF02085E471007A0E98 /* Foundation.framework */,
-				143A6BEE2085E43C007A0E98 /* WatchKit.framework */,
-				148BE0B81F2304EF00B2C7B5 /* UIKit.framework */,
-				148BE0B61F2304E700B2C7B5 /* Foundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -531,7 +513,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 		143A6BE82085DFEE007A0E98 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -797,6 +779,7 @@
 				PRODUCT_NAME = Kio;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -879,6 +862,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.someenterprises.Kio;
 				PRODUCT_NAME = Kio;
 				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.2;

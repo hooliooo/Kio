@@ -6,7 +6,8 @@
 //
 //
 
-import Foundation
+import protocol Swift.Equatable
+import struct Foundation.IndexPath
 
 /**
  ArrayProvider manages a one dimensional array of a single type,meaning that it is

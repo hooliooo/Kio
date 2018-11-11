@@ -6,7 +6,7 @@
 //
 //
 
-import UIKit
+import class UIKit.UIActivityIndicatorView
 
 /**
  A subclass of UIActivityIndicatorView that implements a print statement when deinitialized

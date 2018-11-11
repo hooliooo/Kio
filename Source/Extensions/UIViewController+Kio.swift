@@ -6,7 +6,18 @@
 //  Copyright © 2018 Some Enterprises. All rights reserved.
 //
 
-import UIKit
+import class UIKit.UIView
+import class UIKit.UIViewController
+import class UIKit.UIActivityIndicatorView
+import class UIKit.UINavigationItem
+import class UIKit.UIControl
+import class UIKit.UISegmentedControl
+import class UIKit.UIDatePicker
+import class UIKit.UIRefreshControl
+import class UIKit.UISwitch
+import struct UIKit.Selector
+import class UIKit.NSLayoutConstraint
+import class Foundation.DispatchQueue
 
 /**
  A DSL for UIViewController to access custom methods

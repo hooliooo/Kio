@@ -6,7 +6,7 @@
 //
 //
 
-import Foundation
+import class Foundation.NSObject
 
 /**
  A subclass of NSObject that implements a print statement when deinitialized

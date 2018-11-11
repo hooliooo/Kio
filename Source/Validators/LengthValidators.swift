@@ -6,8 +6,6 @@
 //
 //
 
-import Foundation
-
 /**
  An implementation of Validator that checks if a string is empty or not
 */

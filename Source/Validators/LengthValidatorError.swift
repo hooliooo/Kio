@@ -6,8 +6,6 @@
 //
 //
 
-import Foundation
-
 /**
  An Enum that represents errors associated with a string's length
 */

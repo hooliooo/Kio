@@ -6,8 +6,6 @@
 //
 //
 
-import UIKit
-
 /**
  A TabBarCoordinator is a type of Coordinator that manages a UITabBarController.
 */

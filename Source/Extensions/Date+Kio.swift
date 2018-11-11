@@ -5,7 +5,10 @@
 //  Licensed under the MIT license. See LICENSE file.
 //
 //
-import Foundation
+import struct Foundation.TimeZone
+import struct Foundation.Calendar
+import struct Foundation.Date
+import struct Foundation.DateComponents
 
 /**
  A DSL for Date to access custom methods

@@ -6,7 +6,8 @@
 //
 //
 
-import UIKit
+import class UIKit.UIViewController
+import class UIKit.UITabBarItem
 
 /**
  AnyTabCoordinator is a class for type erasure on a TabCoordinator instance

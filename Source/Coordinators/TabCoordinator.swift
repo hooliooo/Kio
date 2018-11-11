@@ -6,7 +6,8 @@
 //
 //
 
-import UIKit
+import class UIKit.UIViewController
+import class UIKit.UITabBarItem
 
 public protocol TabCoordinator: Coordinator {
 

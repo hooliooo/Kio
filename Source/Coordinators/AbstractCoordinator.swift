@@ -6,8 +6,6 @@
 //
 //
 
-import Foundation
-
 /**
  The AbstractCoordinator is an abstract class instantiates and defines all the variables and methods that are common in all
  of its subclasses. Not intended to be instantiated directly.

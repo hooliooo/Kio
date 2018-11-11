@@ -6,7 +6,7 @@
 //
 //
 
-import UIKit
+import class UIKit.UIViewController
 
 /**
  A subclass of UIViewController that implements a print statement when deinitialized. 

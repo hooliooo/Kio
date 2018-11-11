@@ -6,13 +6,13 @@
 // 
 //
 
-#import <UIKit/UIKit.h>
+//#import <UIKit/UIKit.h>
 
 //! Project version number for Kio.
-FOUNDATION_EXPORT double KioVersionNumber;
+//FOUNDATION_EXPORT double KioVersionNumber;
 
 //! Project version string for Kio.
-FOUNDATION_EXPORT const unsigned char KioVersionString[];
+//FOUNDATION_EXPORT const unsigned char KioVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <Kio/PublicHeader.h>
 

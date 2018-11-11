@@ -6,8 +6,6 @@
 //
 //
 
-import Foundation
-
 /**
  An AndCompositeValidator is a Validator that composes a ValidatorResult based on other Validators it is initlialized with.
  Its validate(_:) method will only return a .valid ValidatorResult if all of its Validators return a .valid ValidatorResult
