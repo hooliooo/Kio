@@ -82,6 +82,8 @@
 		14D5CE811EC9BB0900982047 /* ArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D5CE7E1EC9BB0900982047 /* ArrayDataSource.swift */; };
 		14D5CE821EC9BB0900982047 /* ArrayProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D5CE7F1EC9BB0900982047 /* ArrayProvider.swift */; };
 		14DDF1AD1FF63330000997A0 /* UInt+Kio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DDF1AC1FF63330000997A0 /* UInt+Kio.swift */; };
+		14E6922D219C85E600C65E06 /* MetaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E6922C219C85E600C65E06 /* MetaType.swift */; };
+		14E6922F219C8C6900C65E06 /* Sequence+KioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E6922E219C8C6900C65E06 /* Sequence+KioTests.swift */; };
 		14F4E24621820FC00068B96A /* KioDebuggable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F4E24521820FC00068B96A /* KioDebuggable.swift */; };
 		14F4E24721820FC00068B96A /* KioDebuggable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F4E24521820FC00068B96A /* KioDebuggable.swift */; };
 /* End PBXBuildFile section */
@@ -148,6 +150,8 @@
 		14D5CE7E1EC9BB0900982047 /* ArrayDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayDataSource.swift; sourceTree = "<group>"; };
 		14D5CE7F1EC9BB0900982047 /* ArrayProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayProvider.swift; sourceTree = "<group>"; };
 		14DDF1AC1FF63330000997A0 /* UInt+Kio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UInt+Kio.swift"; sourceTree = "<group>"; };
+		14E6922C219C85E600C65E06 /* MetaType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaType.swift; sourceTree = "<group>"; };
+		14E6922E219C8C6900C65E06 /* Sequence+KioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+KioTests.swift"; sourceTree = "<group>"; };
 		14F4E24521820FC00068B96A /* KioDebuggable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KioDebuggable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -205,6 +209,7 @@
 				1492A6CD2196BF9A006DBE61 /* ArrayProviderTests.swift */,
 				1492A6CF2196DB3B006DBE61 /* CoordinatorTests.swift */,
 				14774DD121834BE900EC9A43 /* ValidatorTests.swift */,
+				14E6922E219C8C6900C65E06 /* Sequence+KioTests.swift */,
 				14774DD321834BE900EC9A43 /* Info.plist */,
 			);
 			path = Tests;
@@ -320,6 +325,7 @@
 			isa = PBXGroup;
 			children = (
 				14A038681EC869820024E23D /* ReadOnlyDictionary.swift */,
+				14E6922C219C85E600C65E06 /* MetaType.swift */,
 			);
 			path = Structs;
 			sourceTree = "<group>";
@@ -567,6 +573,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14E6922F219C8C6900C65E06 /* Sequence+KioTests.swift in Sources */,
 				1492A6CE2196BF9A006DBE61 /* ArrayProviderTests.swift in Sources */,
 				14774DD221834BE900EC9A43 /* ValidatorTests.swift in Sources */,
 				1492A6D02196DB3B006DBE61 /* CoordinatorTests.swift in Sources */,
@@ -582,6 +589,7 @@
 				14D5CE7C1EC9BAF900982047 /* Configurable.swift in Sources */,
 				145D60A21F1F0F9D00FE565B /* AbstractCoordinator.swift in Sources */,
 				14A038721EC86F470024E23D /* AppCoordinator.swift in Sources */,
+				14E6922D219C85E600C65E06 /* MetaType.swift in Sources */,
 				141B63052007A11E003F39FE /* LengthValidators.swift in Sources */,
 				149C62521F2DE3D50099E1A4 /* Date+Kio.swift in Sources */,
 				14DDF1AD1FF63330000997A0 /* UInt+Kio.swift in Sources */,
