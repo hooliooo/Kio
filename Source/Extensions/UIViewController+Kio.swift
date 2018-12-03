@@ -74,7 +74,7 @@ public extension KioViewControllerDSL {
                     controlEvent = UIControl.Event.touchUpInside
             }
 
-            control.addTarget(self, action: action, for: controlEvent)
+            control.addTarget(self.viewController, action: action, for: controlEvent)
         }
     }
 
