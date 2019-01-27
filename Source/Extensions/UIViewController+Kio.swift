@@ -17,6 +17,7 @@ import class UIKit.UIRefreshControl
 import class UIKit.UISwitch
 import struct UIKit.Selector
 import class UIKit.NSLayoutConstraint
+import struct CoreGraphics.CGSize
 import class Foundation.DispatchQueue
 
 /**
@@ -74,11 +75,11 @@ public extension KioViewControllerDSL {
                     controlEvent = UIControl.Event.touchUpInside
             }
 
-            control.addTarget(self, action: action, for: controlEvent)
+            control.addTarget(self.viewController, action: action, for: controlEvent)
         }
     }
 
-    private func createActivityIndicator() -> KioActivityIndicatorView {
+    private func createActivityIndicator(with size: CGSize) -> KioActivityIndicatorView {
         let view: KioActivityIndicatorView = KioActivityIndicatorView()
         view.style = UIActivityIndicatorView.Style.gray
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -89,20 +90,20 @@ public extension KioViewControllerDSL {
         NSLayoutConstraint.activate([
             view.centerXAnchor.constraint(equalTo: self.viewController.view.centerXAnchor),
             view.centerYAnchor.constraint(equalTo: self.viewController.view.centerYAnchor),
-            view.heightAnchor.constraint(equalToConstant: 60.0),
-            view.widthAnchor.constraint(equalToConstant: 60.0)
+            view.heightAnchor.constraint(equalToConstant: size.height),
+            view.widthAnchor.constraint(equalToConstant: size.width)
         ])
         return view
     }
 
     private func findActivityIndicator() -> KioActivityIndicatorView? {
         return self.viewController.view.subviews.reversed()
-            .filter({ (view: UIView) -> Bool in view is KioActivityIndicatorView}).first as? KioActivityIndicatorView
+            .first(where: { (view: UIView) -> Bool in view is KioActivityIndicatorView}) as? KioActivityIndicatorView
     }
 
-    func showActivityIndicator() {
+    func showActivityIndicator(with size: CGSize = CGSize(width: 60.0, height: 60.0)) {
         DispatchQueue.main.async { () -> Void in
-            self.createActivityIndicator()
+            self.createActivityIndicator(with: size)
                 .startAnimating()
 
             self.viewController.view.isUserInteractionEnabled = false

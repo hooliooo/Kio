@@ -17,10 +17,9 @@ public struct MetaType<T>: Hashable {
     public let base: T.Type
 
     // MARK: Hashable Protocol
-    public var hashValue: Int {
-        return ObjectIdentifier(base).hashValue
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(ObjectIdentifier(self.base))
     }
-
     public static func == (lhs: MetaType, rhs: MetaType) -> Bool {
         return lhs.base == rhs.base
     }

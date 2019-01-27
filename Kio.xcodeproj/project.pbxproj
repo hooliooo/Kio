@@ -84,6 +84,10 @@
 		14DDF1AD1FF63330000997A0 /* UInt+Kio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DDF1AC1FF63330000997A0 /* UInt+Kio.swift */; };
 		14E6922D219C85E600C65E06 /* MetaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E6922C219C85E600C65E06 /* MetaType.swift */; };
 		14E6922F219C8C6900C65E06 /* Sequence+KioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E6922E219C8C6900C65E06 /* Sequence+KioTests.swift */; };
+		14F252F421FC6781009FEAC3 /* BaseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F252F321FC6781009FEAC3 /* BaseItem.swift */; };
+		14F252F621FC681D009FEAC3 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F252F521FC681D009FEAC3 /* State.swift */; };
+		14F252F821FC68CF009FEAC3 /* AnyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F252F721FC68CF009FEAC3 /* AnyItem.swift */; };
+		14F252FA21FDC027009FEAC3 /* MetaTypeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F252F921FDC027009FEAC3 /* MetaTypeTest.swift */; };
 		14F4E24621820FC00068B96A /* KioDebuggable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F4E24521820FC00068B96A /* KioDebuggable.swift */; };
 		14F4E24721820FC00068B96A /* KioDebuggable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F4E24521820FC00068B96A /* KioDebuggable.swift */; };
 /* End PBXBuildFile section */
@@ -152,6 +156,10 @@
 		14DDF1AC1FF63330000997A0 /* UInt+Kio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UInt+Kio.swift"; sourceTree = "<group>"; };
 		14E6922C219C85E600C65E06 /* MetaType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaType.swift; sourceTree = "<group>"; };
 		14E6922E219C8C6900C65E06 /* Sequence+KioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+KioTests.swift"; sourceTree = "<group>"; };
+		14F252F321FC6781009FEAC3 /* BaseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseItem.swift; sourceTree = "<group>"; };
+		14F252F521FC681D009FEAC3 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		14F252F721FC68CF009FEAC3 /* AnyItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyItem.swift; sourceTree = "<group>"; };
+		14F252F921FDC027009FEAC3 /* MetaTypeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaTypeTest.swift; sourceTree = "<group>"; };
 		14F4E24521820FC00068B96A /* KioDebuggable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KioDebuggable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -208,8 +216,9 @@
 			children = (
 				1492A6CD2196BF9A006DBE61 /* ArrayProviderTests.swift */,
 				1492A6CF2196DB3B006DBE61 /* CoordinatorTests.swift */,
-				14774DD121834BE900EC9A43 /* ValidatorTests.swift */,
+				14F252F921FDC027009FEAC3 /* MetaTypeTest.swift */,
 				14E6922E219C8C6900C65E06 /* Sequence+KioTests.swift */,
+				14774DD121834BE900EC9A43 /* ValidatorTests.swift */,
 				14774DD321834BE900EC9A43 /* Info.plist */,
 			);
 			path = Tests;
@@ -267,6 +276,7 @@
 		14A038401EC860AD0024E23D /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				14F252F221FC6759009FEAC3 /* Items */,
 				1491C64A1F2249AF002B468C /* UICollectionView Helpers */,
 				14A0386E1EC86EFB0024E23D /* Coordinators */,
 				141B62FD20079949003F39FE /* Validators */,
@@ -351,6 +361,16 @@
 				14F4E24521820FC00068B96A /* KioDebuggable.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		14F252F221FC6759009FEAC3 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				14F252F321FC6781009FEAC3 /* BaseItem.swift */,
+				14F252F521FC681D009FEAC3 /* State.swift */,
+				14F252F721FC68CF009FEAC3 /* AnyItem.swift */,
+			);
+			path = Items;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -574,6 +594,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14E6922F219C8C6900C65E06 /* Sequence+KioTests.swift in Sources */,
+				14F252FA21FDC027009FEAC3 /* MetaTypeTest.swift in Sources */,
 				1492A6CE2196BF9A006DBE61 /* ArrayProviderTests.swift in Sources */,
 				14774DD221834BE900EC9A43 /* ValidatorTests.swift in Sources */,
 				1492A6D02196DB3B006DBE61 /* CoordinatorTests.swift in Sources */,
@@ -599,6 +620,7 @@
 				14A038591EC860F60024E23D /* UIView+Kio.swift in Sources */,
 				1448BEBC1F42D46700A17F12 /* KioActivityIndicatorView.swift in Sources */,
 				14A038621EC865750024E23D /* KioView.swift in Sources */,
+				14F252F821FC68CF009FEAC3 /* AnyItem.swift in Sources */,
 				14A038701EC86F170024E23D /* Coordinator.swift in Sources */,
 				141B630120079B4C003F39FE /* Validator.swift in Sources */,
 				14A0385B1EC862260024E23D /* UIColor+Kio.swift in Sources */,
@@ -620,7 +642,9 @@
 				14D5CE7B1EC9BAF900982047 /* DataProvider.swift in Sources */,
 				1494447C2007A7F10012CB98 /* CompositeValidators.swift in Sources */,
 				147952AC1F25AB1F0036611A /* Int+Kio.swift in Sources */,
+				14F252F621FC681D009FEAC3 /* State.swift in Sources */,
 				14D5CE811EC9BB0900982047 /* ArrayDataSource.swift in Sources */,
+				14F252F421FC6781009FEAC3 /* BaseItem.swift in Sources */,
 				143434632058D52F00A356BF /* AppNetworkActivityIndicatorInjected.swift in Sources */,
 				14A0386B1EC86A420024E23D /* SynchronizedDictionary.swift in Sources */,
 				143434652058D55900A356BF /* DecodingErrorHandler.swift in Sources */,
