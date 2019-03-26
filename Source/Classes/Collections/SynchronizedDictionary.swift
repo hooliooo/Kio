@@ -1,6 +1,6 @@
 //
 //  Kio
-//  Copyright (c) 2017-2018 Julio Miguel Alorro
+//  Copyright (c) Julio Miguel Alorro
 //
 //  Licensed under the MIT license. See LICENSE file.
 //
@@ -212,14 +212,14 @@ public extension SynchronizedDictionary {
     }
 
     /**
-     Synchronous read of the dictionary's index method.
+     Synchronous read of the dictionary's firstIndex method.
     */
-    func index(where predicate: (Key, Value) throws -> Bool) rethrows -> DictionaryIndex<Key, Value>? {
+    func firstIndex(where predicate: (Key, Value) throws -> Bool) rethrows -> DictionaryIndex<Key, Value>? {
         var index: DictionaryIndex<Key, Value>?
         try self._queue.sync {
             do {
 
-                index = try self.dict.index(where: predicate)
+                index = try self.dict.firstIndex(where: predicate)
 
             } catch let error {
 

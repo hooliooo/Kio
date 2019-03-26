@@ -1,6 +1,6 @@
 //
 //  Kio
-//  Copyright (c) 2017-2018 Julio Miguel Alorro
+//  Copyright (c) Julio Miguel Alorro
 //
 //  Licensed under the MIT license. See LICENSE file.
 //
@@ -164,12 +164,12 @@ public extension SynchronizedArray {
     }
 
     /**
-     Synchronous read of the array's index method
+     Synchronous read of the array's firstIndex method
     */
-    func index(where predicate: (Element) -> Bool) -> Int? {
+    func firstIndex(where predicate: (Element) -> Bool) -> Int? {
         var index: Int?
         self._queue.sync {
-            index = self.elements.index(where: predicate)
+            index = self.elements.firstIndex(where: predicate)
         }
         return index
     }
@@ -252,7 +252,7 @@ public extension SynchronizedArray {
     */
     func remove(where predicate: @escaping (Element) -> Bool, callback: ((Element) -> Void)? = nil) {
         self._queue.async(flags: DispatchWorkItemFlags.barrier) {
-            guard let index = self.elements.index(where: predicate) else { return }
+            guard let index = self.elements.firstIndex(where: predicate) else { return }
 
             let element = self.elements.remove(at: index)
 

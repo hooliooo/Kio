@@ -1,6 +1,6 @@
 //
 //  Kio
-//  Copyright (c) 2017-2018 Julio Miguel Alorro
+//  Copyright (c) Julio Miguel Alorro
 //
 //  Licensed under the MIT license. See LICENSE file.
 //
@@ -96,7 +96,7 @@ public extension KioStringDSL {
 
         do {
 
-            let regex: NSRegularExpression = try NSRegularExpression( //swiftlint:disable:this force_try
+            let regex: NSRegularExpression = try NSRegularExpression(
                 pattern: regexPattern,
                 options: NSRegularExpression.Options.caseInsensitive
             )

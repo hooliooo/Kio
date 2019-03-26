@@ -1,9 +1,9 @@
 //
-//  DecodingErrorHandler.swift
-//  Kio-iOS
+//  Kio
+//  Copyright (c) Julio Miguel Alorro
 //
-//  Created by Julio Miguel Alorro on 3/14/18.
-//  Copyright © 2018 Some Enterprises. All rights reserved.
+//  Licensed under the MIT license. See LICENSE file.
+//
 //
 
 public protocol DecodingErrorHandler {
@@ -27,6 +27,8 @@ public extension DecodingErrorHandler {
 
             case .valueNotFound(let type, let context):
                 fatalError("Value not found: \(type) \(context.debugDescription)")
+            @unknown default:
+                fatalError("Unknown Error")
         }
 
         print(error)

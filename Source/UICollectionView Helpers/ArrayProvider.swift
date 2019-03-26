@@ -1,6 +1,6 @@
 //
 //  Kio
-//  Copyright (c) 2017-2018 Julio Miguel Alorro
+//  Copyright (c) Julio Miguel Alorro
 //
 //  Licensed under the MIT license. See LICENSE file.
 //
@@ -70,7 +70,7 @@ public final class ArrayProvider<Element: Equatable>: DataProvider {
     @discardableResult
     public func remove(element: Element, at indexPath: IndexPath) -> Element? {
         guard
-            let idx = self.elements.index(of: element),
+            let idx = self.elements.firstIndex(of: element),
             idx == indexPath.item
         else {
             return nil

@@ -1,6 +1,6 @@
 //
 //  Kio
-//  Copyright (c) 2017-2018 Julio Miguel Alorro
+//  Copyright (c) Julio Miguel Alorro
 //
 //  Licensed under the MIT license. See LICENSE file.
 //
@@ -103,7 +103,7 @@ class ArrayProviderTests: XCTestCase {
 
         XCTAssert(self.provider.elements.count == currentCount + 1)
         XCTAssert(self.provider.elements.contains(apple))
-        XCTAssert(self.provider.elements.index(of: apple)! == 1)
+        XCTAssert(self.provider.elements.firstIndex(of: apple)! == 1)
     }
 
     func testSetElements() {

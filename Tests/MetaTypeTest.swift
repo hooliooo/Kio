@@ -1,9 +1,9 @@
 //
-//  MetaTypeTest.swift
-//  Tests
+//  Kio
+//  Copyright (c) Julio Miguel Alorro
 //
-//  Created by Julio Miguel Alorro on 1/27/19.
-//  Copyright © 2019 Some Enterprises. All rights reserved.
+//  Licensed under the MIT license. See LICENSE file.
+//
 //
 
 import XCTest

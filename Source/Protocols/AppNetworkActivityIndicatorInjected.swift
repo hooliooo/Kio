@@ -1,9 +1,9 @@
 //
-//  AppNetworkActivityIndicatorInjected.swift
-//  Kio-iOS
+//  Kio
+//  Copyright (c) Julio Miguel Alorro
 //
-//  Created by Julio Miguel Alorro on 3/14/18.
-//  Copyright © 2018 Some Enterprises. All rights reserved.
+//  Licensed under the MIT license. See LICENSE file.
+//
 //
 
 import class Foundation.DispatchQueue

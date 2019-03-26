@@ -1,9 +1,9 @@
 //
-//  KioDebuggable.swift
 //  Kio
+//  Copyright (c) Julio Miguel Alorro
 //
-//  Created by Julio Miguel Alorro on 10/25/18.
-//  Copyright © 2018 Some Enterprises. All rights reserved.
+//  Licensed under the MIT license. See LICENSE file.
+//
 //
 
 public protocol KioDebuggable: class {

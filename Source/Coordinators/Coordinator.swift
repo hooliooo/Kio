@@ -1,6 +1,6 @@
 //
 //  Kio
-//  Copyright (c) 2017-2018 Julio Miguel Alorro
+//  Copyright (c) Julio Miguel Alorro
 //
 //  Licensed under the MIT license. See LICENSE file.
 //
@@ -38,7 +38,7 @@ public protocol Coordinator: class {
      The start method is where the Coordinator executes its setup logic to manage its UIViewController.
      This should only be called once in the entire lifetime of the Coordinator instance.
      Calling this more than once results in a forced fatalError.
-     Must call super.
+     - Warning: Must call super.
     */
     func start()
 
