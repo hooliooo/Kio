@@ -50,6 +50,6 @@ Pod::Spec.new do |s|
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   s.requires_arc = true
-  s.swift_version = '4.2'
+  s.swift_version = '5.0'
 
 end
