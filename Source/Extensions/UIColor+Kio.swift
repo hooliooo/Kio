@@ -52,12 +52,25 @@ public struct KioColorrDSL {
         var rgbValue: UInt32 = 0
         Scanner(string: hexValue).scanHexInt32(&rgbValue)
 
-        return UIColor(
-            red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
-            green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
-            blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
-            alpha: 1.0
-        )
+        switch hexValue.count {
+            case 6:
+                return UIColor(
+                    red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
+                    green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
+                    blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
+                    alpha: 1.0
+                )
+            case 8:
+                return UIColor(
+                    red: CGFloat((rgbValue & 0xFF000000) >> 24) / 255.0,
+                    green: CGFloat((rgbValue & 0x00FF0000) >> 16) / 255.0,
+                    blue: CGFloat((rgbValue & 0x0000FF00) >> 8) / 255.0,
+                    alpha: CGFloat(rgbValue & 0x000000FF) / 255.0
+                )
+
+            default:
+                return UIColor.black
+        }
     }
 
 }
