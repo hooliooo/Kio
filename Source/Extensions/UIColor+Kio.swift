@@ -45,10 +45,6 @@ public struct KioColorrDSL {
             hexValue.remove(at: hexValue.startIndex)
         }
 
-        if hexValue.count != 6 {
-            return UIColor.black
-        }
-
         var rgbValue: UInt32 = 0
         Scanner(string: hexValue).scanHexInt32(&rgbValue)
 
